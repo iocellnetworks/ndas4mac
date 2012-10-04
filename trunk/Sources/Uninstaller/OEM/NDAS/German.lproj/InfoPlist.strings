@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "NDAS Deinstallationsprogramm";
+NSHumanReadableCopyright = "Copyright © 2009 XIMETA, Inc. Alle Rechte vorbehalten.";

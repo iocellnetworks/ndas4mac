@@ -1,0 +1,66 @@
+/* Disk is inuse */
+"Please Disable the DISK first." = "디스크를 비활성 시킨후 다시하십시오.";
+
+/* Disk ID Browser error */
+"!!! Disk ID Browser error" = "!!! 디스크 아이디 탐색기 오류";
+
+/* Too many Disk is registered */
+"!!! Disk ID list is full" = "!!! 더이상 추가 할 수 없습니다";
+
+/* Wrong disk id */
+"!!! Invalid Disk ID" = "!!! 잘못된 디스크 아이디";
+
+/* Wrong Write Key */
+"!!! Invalid Write Key" = "!!! 잘못된 쓰기 키";
+
+/* Enter valid WriteKey to enable write mount */
+"!!! Invalid WriteKey...Add Disk ID with valid write key" = "!!! 잘못된 쓰기 키...디스크 아이디에 맞는 쓰기 키를 입력 하십시오";
+
+/* No Disk ID is specified for operation */
+"!!! Select Disk IDs first" = "!!! 디스크 이이디를 선택 하십시오";
+
+/* Configure disk not to mount */
+"Disabled" = "비활성";
+
+/* Disk is not mounted */
+"Inactive" = "비활성";
+
+/* Read Only disk configuration */
+"Read Only" = "읽기전용";
+
+/* Read/Write disk configuration */
+"Read/Write" = "읽기/쓰기";
+
+/* User Answer */
+"Delete" = "삭제";
+"Disable" = "비활성";
+"Cancel" = "취소";
+
+/* Delete Alert */
+"Delete Question" = "디스크이이디를 삭제 합니다.";									/* Alert Dialog Question*/
+"Delete Note" = "다음에 이 디스크를 다시 사용 할거면 디스크아이디를 지울 필요는 없습니다";		/* Alert Dialog note*/
+
+/* Disable Alert */
+"Disable Question" = "이 디스크를 비활성화 합니다.";									/* Alert Dialog Question*/
+"Disable Note" = "디스크가 연결되어 있는 상태에서 비활성화 시키면 데이타가 손상되거나 지워질 수 있습니다.";		/* Alert Dialog noten*/
+
+/* Send Surrender Request Alert */
+"Send Surrender access Question" = "이 디스크를 읽기/쓰기 권한으로 사용하고 있는 호스트에게 접근권한해제 요청을 하시겠습니까?";
+"Send Surrender access Note" = "이 디스크를 읽기/쓰기 권한으로 사용하고 있는 호스트는 접근권한해재 요청을 거부할 수도 있습니다.";
+
+"Send" = "보내기";
+
+"AddButtonTitle %@" = "새 %@ 추가";
+
+"About %@" = "%@에 관하여";
+"Hide %@" = "%@ 가리기";
+"Quit %@" = "%@ 종료";
+
+/* Quit Button */
+"Quit" = "닫기";
+
+/* Disk ID*/
+"Disk ID" = "디스크 아이디";
+
+/* Write Key */
+"Write Key" = "쓰기 키";

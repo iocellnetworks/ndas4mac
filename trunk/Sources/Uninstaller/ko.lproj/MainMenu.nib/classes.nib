@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {quit = id; uninstall = id; }; 
+            CLASS = UIController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {AboutMenu = id; HideMenu = id; QuitMenu = id; textView = id; uninstall = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

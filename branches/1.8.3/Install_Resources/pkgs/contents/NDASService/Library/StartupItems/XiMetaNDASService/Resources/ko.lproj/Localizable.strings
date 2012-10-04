@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Restarting XIMETA ND Service</key>
+	<string>자이메타 ND 서비스 재시동 중</string>
+	<key>Starting XIMETA ND Service</key>
+	<string>자이메타 ND 서비스 시동 중</string>
+	<key>Stopping XIMETA ND Service</key>
+	<string>자이메타 ND 서비스 중단 중</string>
+	<key>XIMETA ND Service is not running</key>
+	<string>자이메타 ND 서비스가 실행중이 아닙니다.</string>
+</dict>
+</plist>

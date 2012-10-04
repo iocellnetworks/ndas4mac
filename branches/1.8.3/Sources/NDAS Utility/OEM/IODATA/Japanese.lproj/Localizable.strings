@@ -1,0 +1,63 @@
+/* Disk is inuse */
+"Please Disable the DISK first." = "まずディスクを接続解除してください。";
+
+/* Disk ID Browser error */
+"!!! Disk ID Browser error" = "!!! アクセスキーブラウザエラー";
+
+/* Too many Disk is registered */
+"!!! Disk ID list is full" = "!!! Disk ID list is full";
+
+/* Wrong disk id */
+"!!! Invalid Disk ID" = "無効のアクセスキー";
+
+/* Enter valid WriteKey to enable write mount */
+"!!! Invalid WriteKey...Add Disk ID with valid write key" = "無効のライトキー、有効のアクセスキーを追加する";
+
+/* No Disk ID is specified for operation */
+"!!! Select Disk IDs first" = "!!! 先にアクセスキーを選択する";
+
+/* Configure disk not to mount */
+"Disabled" = "接続解除";
+
+/* Disk is not mounted */
+"Inactive" = "無効化";
+
+/* Read Only disk configuration */
+"Read Only" = "リードオンリー";
+
+/* Read/Write disk configuration */
+"Read/Write" = "リード/ライト";
+
+/* User Answer */
+"Delete" = "削除";
+"Disable" = "接続解除";
+"Cancel" = "キャンセル";
+
+/* Delete Alert */
+"Delete Note" = "後で、ディスクを使うなら、アクセスキーを削除する必要はありません。";			/* Alert Dialog Title*/
+"Delete Question" = "本当にアクセスキーを削除しますか。";		/* Alert Dialog Question*/
+
+/* Disable Alert */
+"Disable Question" = "ディスクを接続解除しますか。";									/* Alert Dialog Question*/
+"Disable Note" = "今動作中であるディスクを接続解除するなら、データ損失の恐れがあります。";		/* Alert Dialog noten*/
+
+/* Send Surrender Request Alert */
+"Send Surrender access Question" = "Do you want to Send Surrender access message to the host using the Disk with Read/Write access?";
+"Send Surrender access Note" = "The host using the Disk with Read/Write access may not release it's access right.";
+
+"Send" = "Send";
+
+"AddButtonTitle %@" = "新しい%@の登録";
+
+"About %@" = "%@について";
+"Hide %@" = "%@を隠す";
+"Quit %@" = "%@を終了";
+
+/* Quit Button */
+"Quit" = "閉じる";
+
+/* Disk ID*/
+"Disk ID" = "ID";
+
+/* Write Key */
+"Write Key" = "KEY";

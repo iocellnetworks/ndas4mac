@@ -1,0 +1,8 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "EOSEED Admin";
+CFBundleDisplayName = "EOSEED Admin";
+CFBundleShortVersionString = "1.3.1";
+CFBundleGetInfoString = "1.3.1, Copyright 2004 XIMETA, Inc., all rights reserved.";
+NSHumanReadableCopyright = "Copyright 2004 XIMETA, Inc.";
+

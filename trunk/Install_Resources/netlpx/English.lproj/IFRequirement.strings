@@ -1,0 +1,5 @@
+﻿/* Label key */
+"OSverLabel" = "Mac OS X v10.2.8 or newer";
+
+/* Message key */
+"OSverMessage" = "You must upgrade to Mac OS X v10.2.8 or newer before installing this software.";

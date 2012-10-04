@@ -1,0 +1,8 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Freecom NDAS アンインストール";
+CFBundleDisplayName = "Freecom NDAS アンインストール";
+CFBundleShortVersionString = "1.6.7";
+CFBundleGetInfoString = "1.6.7, Copyright 2004 XIMETA, Inc., all rights reserved.";
+NSHumanReadableCopyright = "Copyright 2004 XIMETA, Inc.";
+UtilityName = "管理ユーティリティ";

@@ -1,0 +1,5 @@
+/* Label key */
+"OSverLabel" = "Mac OS X v10.3.9 or newer";
+
+/* Message key */
+"OSverMessage" = "이 소프트웨어를 설치하기 전에 Mac OS를 버전 10.3.9이상으로 갱신하여야 합니다.";

@@ -1,0 +1,20 @@
+/* This will remove all files previously installed by the %@ installer. */
+"This will remove all files previously installed by the %@ installer." = "Этот мастер удалит все установленные ранее файлы %@.";
+
+/* Uninstall start */
+"Now Uninstalling..." = "Удаление..."; 
+
+/* Uninstall success */
+"The %@ software was sucessfully uninstalled. You must restsart your computer now." = "Программное обеспечение %@ было успешно удалено. Теперь Вам необходимо перезагрузить компьютер.";
+
+/* About Menu */
+"About %@" = "О программе %@";
+
+/* Hide Menu */
+"Hide %@" = "Скрыть %@";
+
+/* Quit Menu */
+"Quit %@" = "Завершить %@";
+
+/* Restart Button */
+"Restart" = "Перезагрузить";

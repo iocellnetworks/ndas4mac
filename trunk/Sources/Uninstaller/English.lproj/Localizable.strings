@@ -1,0 +1,17 @@
+/* This will remove all files previously installed by the %@ installer. */
+"This will remove all files previously installed by the %@ installer." = "This will remove all files previously installed by the %@ installer.";
+
+/* Uninstall start */
+"Now Uninstalling..." = "Now Uninstalling..."; 
+
+/* Uninstall success */
+"The uninstaller has successfully uninstalled the %@ Software." = "The uninstaller has successfully uninstalled the %@ Software.";
+
+/* About Menu */
+"About %@" = "About %@";
+
+/* Hide Menu */
+"Hide %@" = "Hide %@";
+
+/* Quit Menu */
+"Quit %@" = "Quit %@";

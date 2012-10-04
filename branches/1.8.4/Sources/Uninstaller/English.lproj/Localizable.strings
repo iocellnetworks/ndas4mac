@@ -1,0 +1,20 @@
+/* This will remove all files previously installed by the %@ installer. */
+"This will remove all files previously installed by the %@ installer." = "This will remove all files previously installed by the %@ installer.";
+
+/* Uninstall start */
+"Now Uninstalling..." = "Now Uninstalling..."; 
+
+/* Uninstall success */
+"The %@ software was sucessfully uninstalled. You must restsart your computer now." = "The %@ software was sucessfully uninstalled. You must restsart your computer now.";
+
+/* About Menu */
+"About %@" = "About %@";
+
+/* Hide Menu */
+"Hide %@" = "Hide %@";
+
+/* Quit Menu */
+"Quit %@" = "Quit %@";
+
+/* Restart Button */
+"Restart" = "Restart";

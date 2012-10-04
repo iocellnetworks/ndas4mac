@@ -1,0 +1,63 @@
+/* Disk is inuse */
+"Please Disable the DISK first." = "Please Disable the DISK first.";
+
+/* Disk ID Browser error */
+"!!! Disk ID Browser error" = "!!! Disk ID Browser error";
+
+/* Too many Disk is registered */
+"!!! Disk ID list is full" = "!!! Disk ID list is full";
+
+/* Wrong disk id */
+"!!! Invalid Disk ID" = "!!! Invalid Disk ID";
+
+/* Enter valid WriteKey to enable write mount */
+"!!! Invalid WriteKey...Add Disk ID with valid write key" = "!!! Invalid WriteKey... Add Disk ID with valid write key";
+
+/* No Disk ID is specified for operation */
+"!!! Select Disk IDs first" = "!!! Select Disk IDs first";
+
+/* Configure disk not to mount */
+"Disabled" = "Disabled";
+
+/* Disk is not mounted */
+"Inactive" = "Inactive";
+
+/* Read Only disk configuration */
+"Read Only" = "Read Only";
+
+/* Read/Write disk configuration */
+"Read/Write" = "Read/Write";
+
+/* User Answer */
+"Delete" = "Delete";
+"Disable" = "Disable";
+"Cancel" = "Cancel";
+
+/* Delete Alert */
+"Delete Question" = "Are you sure you want to delete the Disk ID?";									/* Alert Dialog Question*/
+"Delete Note" = "If you want to use this disk next time, you don't have to delete the Disk ID";		/* Alert Dialog note*/
+
+/* Disable Alert */
+"Disable Question" = "Do you want to Disable the Disk?";									/* Alert Dialog Question*/
+"Disable Note" = "If you disable a Disk that still mounting, data might have been lost or damage";		/* Alert Dialog noten*/
+
+/* Send Surrender Request Alert */
+"Send Surrender access Question" = "Do you want to Send Surrender access message to the host using the Disk with Read/Write access?";
+"Send Surrender access Note" = "The host using the Disk with Read/Write access may not release it's access right.";
+
+"Send" = "Send";
+
+"AddButtonTitle %@" = "Add";
+
+"About %@" = "About %@";
+"Hide %@" = "Hide %@";
+"Quit %@" = "Quit %@";
+
+/* Quit Button */
+"Quit" = "Close";
+
+/* Disk ID*/
+"Disk ID" = "ID";
+
+/* Write Key */
+"Write Key" = "KEY";

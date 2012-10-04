@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>quit</key>
+				<string>id</string>
+				<key>uninstall</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>UIController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>AboutMenu</key>
+				<string>id</string>
+				<key>HideMenu</key>
+				<string>id</string>
+				<key>InfoTextField</key>
+				<string>id</string>
+				<key>ProgressBar</key>
+				<string>id</string>
+				<key>QuitButton</key>
+				<string>id</string>
+				<key>QuitMenu</key>
+				<string>id</string>
+				<key>RemoveButton</key>
+				<string>id</string>
+				<key>WithPropertyCheckbox</key>
+				<string>id</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

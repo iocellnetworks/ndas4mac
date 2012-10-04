@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "젠디스크 관리 유틸리티";
+CFBundleDisplayName = "젠디스크 관리 유틸리티";
+CFBundleShortVersionString = "1.3.2";
+CFBundleGetInfoString = "1.3.2, Copyright by Gennetworks and NDAS created by XIMETA";
+NSHumanReadableCopyright = "Copyright by Gennetworks and NDAS created by XIMETA";

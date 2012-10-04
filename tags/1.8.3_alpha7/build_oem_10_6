@@ -1,0 +1,498 @@
+#! /bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Build Installer.
+#
+###########################################################################
+
+function _xcodebuild {
+    _BUILD_ROOT="$1"/"$4"
+    _PROJECT_PATH="$2"
+    _PROJECT="$3"
+    _TARGET="$4"
+    _CONFIGURATION="$5"
+
+    _PWD=`pwd`
+
+	if [ -d "${_BUILD_ROOT}" ] ; then
+		chmod -R 700 "${_BUILD_ROOT}"
+		rm -rf "${_BUILD_ROOT}"
+	fi
+	cd "${_PROJECT_PATH}"
+
+    _CMD=" xcodebuild clean install \
+	-project \"${_PROJECT}\" \
+	-target \"${_TARGET}\" \
+	-configuration \"${_CONFIGURATION}\" \
+	DSTROOT=\"${_BUILD_ROOT}\" \
+	OBJROOT=\"${_BUILD_ROOT}\""
+
+    echo ${_CMD} > /dev/stderr
+    eval ${_CMD}
+
+    cd "${_PWD}"
+if [ $? != 0 ] ; then
+    echo "BUILD FAILED : ${_PROJECT} - ${_TARGET} - ${_CONFIGURATION}" > /dev/stderr
+    exit
+fi
+}
+
+##########################################################################
+#
+# Start building.
+#
+
+if [ "$(id -u)" != "0" ] ; then
+	echo "You need super user privilege to build package."
+	exit 1
+fi
+
+case $1 in
+    ndas        ) OEM_PREFIX="NDAS";;
+    iocell		) OEM_PREFIX="IOCELL NDAS";;
+    *           )   echo "Usage: $0 { ndas | iocell }"
+                    exit -1
+;;
+esac
+
+# Install Folder Name
+INSTALL_FOLDER_NAME="${OEM_PREFIX}"\ Mac\ Installer
+
+# Get Currentn Dir.
+BUILDROOT=`pwd`
+
+# Tools
+XCODEBUILD=/Developer/usr/bin/xcodebuild
+PKGMAKER=/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker
+
+# Clean Temp Files.
+if [ -d "${BUILDROOT}"/Build ] ; then 
+	chmod -R 777 "${BUILDROOT}"/Build
+	rm -R "${BUILDROOT}"/Build
+fi
+
+#Clean Dist Files.
+if [ -d "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}" ] ; then 
+	chmod -R 777 "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"
+	rm -R "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"
+fi
+
+
+# Copy Package Contents.
+mkdir "${BUILDROOT}"/Build
+
+cp -Rf "${BUILDROOT}"/Install_Resources/pkgs/contents/ "${BUILDROOT}"/Build/
+chown -R root:wheel "${BUILDROOT}"/Build/
+
+#################################################
+#
+# Build Contents.
+#
+#################################################
+
+#################################################
+# Build Utility
+
+cd "${BUILDROOT}"/Sources/NDAS\ Utility
+
+if [ -d  build ] ; then 
+	chmod -R 777 build
+	rm -R build	
+fi
+
+case $1 in
+    iocell	    )   UTILITY_TARGET="NDAS Utility"
+					UTILITY_DST="${BUILDROOT}/Build/NDAS Utility";;
+    *           )   UTILITY_TARGET="${OEM_PREFIX} Utility"
+					UTILITY_DST="${BUILDROOT}/Build/${OEM_PREFIX} Utility";;
+esac
+
+$XCODEBUILD clean install -target "${UTILITY_TARGET}" DSTROOT="${UTILITY_DST}" SYMROOT="/tmp"
+if [ $? != 0 ] ; then
+	echo "Can't Build NDAS Utility"
+	exit
+fi
+chown -R root:admin "${UTILITY_DST}"
+
+#################################################
+# Build NDASFamily
+
+mkdir "${BUILDROOT}"/Build/NDASFamily
+mkdir "${BUILDROOT}"/Build/NDASFamily/System
+mkdir "${BUILDROOT}"/Build/NDASFamily/System/Library
+mkdir "${BUILDROOT}"/Build/NDASFamily/System/Library/Extensions
+
+# For Snow Leopard.
+cd "${BUILDROOT}"/Sources/NDASFamily
+$XCODEBUILD clean install -project NDASFamily.xcodeproj -target NDASFamily_10.6 DSTROOT="${BUILDROOT}"/Build/NDASFamily-10.6 SYMROOT="/tmp"
+if [ $? != 0 ] ; then
+	echo "Can't Build NDASFamily for 10.6"
+	exit
+fi
+mv "${BUILDROOT}"/Build/NDASFamily-10.6/System/Library/Extensions/NDASFamily.kext "${BUILDROOT}"/Build/NDASFamily/System/Library/Extensions/NDASFamily.kext-10.6 
+
+#################################################
+# Build NDASService
+
+cd "${BUILDROOT}"/Sources/NDASService
+$XCODEBUILD clean install -project NDASService.xcodeproj DSTROOT="${BUILDROOT}"/Build/NDASService SYMROOT="/tmp"
+if [ $? != 0 ] ; then
+	echo "Can't Build NDASService"
+	exit
+fi
+
+chown root:admin "${BUILDROOT}"/Build/NDASService/Library
+chmod 1775 "${BUILDROOT}"/Build/NDASService/Library
+
+#################################################
+# Build netlpx
+
+mkdir "${BUILDROOT}"/Build/netlpx/System/Library/Extensions
+
+# For Snow Leopard.
+cd "${BUILDROOT}"/Sources/netlpx
+$XCODEBUILD clean install -target netlpx.10.6 DSTROOT="${BUILDROOT}"/Build/netlpx-10.6 SYMROOT="/tmp"
+if [ $? != 0 ] ; then
+	echo "Can't Build netlpx for 10.6"
+	exit
+fi
+mv "${BUILDROOT}"/Build/netlpx-10.6/System/Library/Extensions/netlpx.kext "${BUILDROOT}"/Build/netlpx/System/Library/Extensions/netlpx.kext-10.6
+
+chown root:admin "${BUILDROOT}"/Build/netlpx/Library
+chmod 1775 "${BUILDROOT}"/Build/netlpx/Library
+
+#################################################
+# Build Uninstallers
+
+cd "${BUILDROOT}"/Sources/Uninstaller
+
+if [ -d  build ] ; then 
+	chmod -R 777 build
+	rm -R build	
+fi
+
+case $1 in
+    iocell     	)   $XCODEBUILD clean install -project Uninstaller.xcodeproj -target NDAS\ Uninstaller DSTROOT="${BUILDROOT}"/Build SYMROOT="/tmp";;
+    *           )   $XCODEBUILD clean install -project Uninstaller.xcodeproj -target "${OEM_PREFIX}"\ Uninstaller DSTROOT="${BUILDROOT}"/Build SYMROOT="/tmp";;
+esac
+if [ $? != 0 ] ; then
+	echo "Can't Build Uninstaller"
+	exit
+fi
+
+#################################################
+# Cleanup svn files
+
+cd "${BUILDROOT}"/Build
+
+# oem root
+rm -rf */.svn
+#Packages
+rm -rf */*/.svn
+# In Package 
+rm -rf */*/.svn
+# In Package Contents 
+rm -rf */*/*/.svn
+# In Package Resources 
+rm -rf */*/*/*/.svn
+# In Package for localizing 
+rm -rf */*/*/*/*/.svn
+# In Package for localizing 
+rm -rf */*/*/*/*/*/.svn
+
+#################################################
+# Cleanup .DS_Store files
+
+# oem root
+rm -f */.DS_Store
+#Packages
+rm -f */*/.DS_Store
+# In Package 
+rm -f */*/.DS_Store
+# In Package Contents 
+rm -f */*/*/.DS_Store
+# In Package Resources 
+rm -f */*/*/*/.DS_Store
+# In Package for localizing 
+rm -f */*/*/*/*/.DS_Store
+# In Package for localizing 
+rm -f */*/*/*/*/*/.DS_Store
+
+#################################################
+#
+# Build Packages.
+#
+#################################################
+
+if [  ! -d  "${BUILDROOT}"/Dist ] ; then 
+	mkdir "${BUILDROOT}"/Dist
+fi
+
+if [  ! -d  "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}" ] ; then 
+    mkdir "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"
+fi
+
+#################################################
+# Copy mpkg
+
+case $1 in
+  	generic     )   MPKG_NAME="NDAS Install.mpkg";;
+  	iocell      )   MPKG_NAME="NDAS Install.mpkg";;
+  	*           )   MPKG_NAME="${OEM_PREFIX}"\ Install.mpkg;;
+esac
+
+mkdir "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/"${MPKG_NAME}"
+cp -Rf "${BUILDROOT}/Install_Resources/mpkg/contents/${OEM_PREFIX}" "${BUILDROOT}/Dist/${INSTALL_FOLDER_NAME}/${MPKG_NAME}/Contents"
+
+# Copy Resources.
+cp -Rf "${BUILDROOT}/Install_Resources/mpkg/resources/${OEM_PREFIX}/" "${BUILDROOT}/Dist/${INSTALL_FOLDER_NAME}/${MPKG_NAME}/Contents/Resources/"
+
+#################################################
+# Build NDASFammily
+
+$PKGMAKER -build -p "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/"${MPKG_NAME}"/NDASFamily.pkg -f "${BUILDROOT}"/Build/NDASFamily -r "${BUILDROOT}"/Install_Resources/pkgs/resources/NDASFamily_10_6 -i "${BUILDROOT}"/Install_Resources/pkgs/plists/NDAS\ Family_10_6/Info.plist -d "${BUILDROOT}"/Install_Resources/pkgs/plists/NDAS\ Family_10_6/Description.plist 
+
+#################################################
+# Build Utility
+
+case $1 in
+    iocell	    )   UTILITY_TARGET="NDAS Utility"
+					UTILITY_DST="${BUILDROOT}/Build/NDAS Utility";;
+    *           )   UTILITY_TARGET="${OEM_PREFIX} Utility"
+					UTILITY_DST="${BUILDROOT}/Build/${OEM_PREFIX} Utility";;
+esac
+
+UTILITY_PKG_OUT="${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/"${MPKG_NAME}"/"${UTILITY_TARGET}.pkg"
+
+$PKGMAKER -build -p "${UTILITY_PKG_OUT}" -f "${BUILDROOT}/Build/${UTILITY_TARGET}" -i "${BUILDROOT}/Install_Resources/pkgs/plists/${UTILITY_TARGET}/Info.plist" -d "${BUILDROOT}/Install_Resources/pkgs/plists/${UTILITY_TARGET}/Description.plist"
+
+# Remove TokenDefinitions.plist and IFPkgPathMappings in Info.plist, which would cause installer to find a previous copy of BOINCManager and install there
+rm -f "${UTILITY_PKG_OUT}/Contents/Resources/TokenDefinitions.plist"
+defaults delete "${UTILITY_PKG_OUT}/Contents/Info" IFPkgPathMappings
+chmod 644 "${UTILITY_PKG_OUT}/Contents/Info.plist"
+
+#################################################
+# Build NDASService
+
+$PKGMAKER -build -p "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/"${MPKG_NAME}"/NDASService.pkg -f "${BUILDROOT}"/Build/NDASService -r "${BUILDROOT}"/Install_Resources/pkgs/resources/NDASService -i "${BUILDROOT}"/Install_Resources/pkgs/plists/NDASService/Info.plist -d "${BUILDROOT}"/Install_Resources/pkgs/plists/NDASService/Description.plist 
+
+#################################################
+# Build netlpx
+
+$PKGMAKER -build -p "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/"${MPKG_NAME}"/netlpx.pkg -f "${BUILDROOT}"/Build/netlpx -r "${BUILDROOT}"/Install_Resources/pkgs/resources/netlpx_10_6 -i "${BUILDROOT}"/Install_Resources/pkgs/plists/netlpx_10_6/Info.plist -d "${BUILDROOT}"/Install_Resources/pkgs/plists/netlpx_10_6/Description.plist 
+
+#################################################
+# Copy Uninstallers
+
+case $1 in
+    iocell	    )   cp -Rf "${BUILDROOT}"/Build/Applications/NDAS\ Uninstaller.app "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}";;
+    *           )   cp -Rf "${BUILDROOT}"/Build/Applications/"${OEM_PREFIX}"\ Uninstaller.app "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}";;
+esac
+
+#################################################
+# Copy Manual
+
+case $1 in
+	ndas 	)	MANUAL_NAME="nd_macmanual_us_1-1.8.x.pdf"
+			cp -f "${BUILDROOT}"/Install_Resources/Documents/"${MANUAL_NAME}" "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/NDAS\ Manual.pdf;;
+	iocell	)	
+			mkdir "${BUILDROOT}/Dist/${INSTALL_FOLDER_NAME}/NDAS Manuals"
+			cp -f "${BUILDROOT}/Install_Resources/Documents/${OEM_PREFIX}/enu/Mac 1.8.x Manual (v1.1) English IOCELL.pdf" "${BUILDROOT}/Dist/${INSTALL_FOLDER_NAME}/NDAS Manuals/Mac 1.8.x Manual (v1.0) English IOCELL.pdf"
+			cp -f "${BUILDROOT}/Install_Resources/Documents/${OEM_PREFIX}/kor/Mac 1.8.x Manual (v1.1) Korean IOCELL.pdf" "${BUILDROOT}/Dist/${INSTALL_FOLDER_NAME}/NDAS Manuals/Mac 1.8.x Manual (v1.0) Korean IOCELL.pdf"
+			cp -f "${BUILDROOT}/Install_Resources/Documents/${OEM_PREFIX}/deu/Mac 1.8.x Manual (v1.1) German IOCELL_ger_ToC.pdf" "${BUILDROOT}/Dist/${INSTALL_FOLDER_NAME}/NDAS Manuals/Mac 1.8.x Manual (v1.0) German IOCELL_ger_ToC.pdf"
+			cp -f "${BUILDROOT}/Install_Resources/Documents/${OEM_PREFIX}/rus/Mac 1.8.x Manual (v1.1) russian IOCELL.pdf" "${BUILDROOT}/Dist/${INSTALL_FOLDER_NAME}/NDAS Manuals/Mac 1.8.x Manual (v1.0) russian IOCELL.pdf";;
+
+esac
+
+#################################################
+# Cleanup svn files
+
+cd "${BUILDROOT}"/Dist
+
+# oem root
+rm -rf */.svn
+#Packages
+rm -rf */*/.svn
+# In Package 
+rm -rf */*/.svn
+# In Package Contents 
+rm -rf */*/*/.svn
+# In Package Resources 
+rm -rf */*/*/*/.svn
+# In Package for localizing 
+rm -rf */*/*/*/*/.svn
+# In Package for localizing 
+rm -rf */*/*/*/*/*/.svn
+
+#################################################
+# Cleanup .DS_Store files
+
+# oem root
+rm -f */.DS_Store
+#Packages
+rm -f */*/.DS_Store
+# In Package 
+rm -f */*/.DS_Store
+# In Package Contents 
+rm -f */*/*/.DS_Store
+# In Package Resources 
+rm -f */*/*/*/.DS_Store
+# In Package for localizing 
+rm -f */*/*/*/*/.DS_Store
+# In Package for localizing 
+rm -f */*/*/*/*/*/.DS_Store
+
+#################################################
+# Build package.
+
+case $1 in 
+	ndas 	)
+	#################################################
+	# Copy mpkg background
+
+	if [ -d "${BUILDROOT}"/Install_Resources/dmg/"${OEM_PREFIX}" ] ; then
+
+		if [  ! -d  "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/.Background ] ; then 
+			mkdir "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/.Background
+		fi
+
+		cp -f "${BUILDROOT}"/Install_Resources/dmg/"${OEM_PREFIX}"/background.png "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"/.Background/background.png
+
+	fi
+
+	#################################################
+	# Create DMG
+
+	if [ -d /Volumes/"${INSTALL_FOLDER_NAME}" ] ; then
+		hdiutil detach /Volumes/"${INSTALL_FOLDER_NAME}"
+	fi
+
+	# Create temp DMG.
+	hdiutil create -ov -srcfolder "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}" -format UDRW -attach temp.dmg
+
+	# set to auto open
+	bless -openfolder /Volumes/"${INSTALL_FOLDER_NAME}"
+
+	open /Volumes/"${INSTALL_FOLDER_NAME}"
+
+	# Set view to icon view.
+	osascript -e 'tell application "Finder" to set the current view of window "'"${INSTALL_FOLDER_NAME}"'" to icon view'
+
+	# Copy Background and Volume Icon.	
+	if [ -d "${BUILDROOT}"/Install_Resources/dmg/"${OEM_PREFIX}" ] ; then
+
+       osascript -e 'tell application "Finder" to set the background picture of icon view options of window "'"${INSTALL_FOLDER_NAME}"'" to file "Volumes:'"${INSTALL_FOLDER_NAME}"':.Background:background.png" of startup disk'
+
+		# Copy Volume Icon
+		cp -f "${BUILDROOT}"/Install_Resources/dmg/"${OEM_PREFIX}"/Image\ Icon.icns /Volumes/"${INSTALL_FOLDER_NAME}"/.VolumeIcon.icns
+		/Developer/Tools/SetFile -a C /Volumes/"${INSTALL_FOLDER_NAME}"
+
+	fi
+	
+	# Icon size.
+	osascript -e 'tell application "Finder" to set the icon size of icon view options of window "'"${INSTALL_FOLDER_NAME}"'" to 48'
+	
+	# Set positon of icons.
+	osascript -e 'tell application "Finder" to set the position of item "NDAS Install.mpkg" of window "'"${INSTALL_FOLDER_NAME}"'" to {100, 280}'
+
+	osascript -e 'tell application "Finder" to set the position of item "NDAS Manual.pdf" of window "'"${INSTALL_FOLDER_NAME}"'" to {300, 280}'
+
+	osascript -e 'tell application "Finder" to set the position of item "NDAS Uninstaller.app" of window "'"${INSTALL_FOLDER_NAME}"'" to {500, 280}'
+
+	# Hide statusbar
+	osascript -e 'tell application "Finder" to set the statusbar visible of window "'"${INSTALL_FOLDER_NAME}"'" to false'
+
+	# Hide toolbar
+	osascript -e 'tell application "Finder" to set the toolbar visible of window "'"${INSTALL_FOLDER_NAME}"'" to false'
+
+	osascript -e 'tell application "Finder" to set the bounds of window "'"${INSTALL_FOLDER_NAME}"'" to {100, 100, 100 + 600, 100 + 400}'
+	
+	osascript -e "delay 10"
+
+	# detach DMG.
+	hdiutil detach /Volumes/"${INSTALL_FOLDER_NAME}"
+
+	# Resizing DMG.
+	hdiutil resize -sectors min temp.dmg
+
+	TIME_STAMP=`date "+%y%m%d_%H.%M"`
+
+	# Convert DMG
+	if [ -f  "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"_"${TIME_STAMP}".dmg ] ; then
+		rm "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"_"${TIME_STAMP}".dmg
+	fi
+
+	hdiutil convert -format UDZO -imagekey zlib-level=3D9 -o "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"_"${TIME_STAMP}"_10_6.dmg temp.dmg
+
+	# Cleanup
+	rm temp.dmg;;
+	
+	iocell	)
+
+	#################################################
+	# Create DMG
+
+	if [ -d /Volumes/"${INSTALL_FOLDER_NAME}" ] ; then
+		hdiutil detach /Volumes/"${INSTALL_FOLDER_NAME}"
+	fi
+
+	# Create temp DMG.
+	hdiutil create -ov -srcfolder "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}" -format UDRW -attach temp.dmg
+
+	# set to auto open
+	bless -openfolder /Volumes/"${INSTALL_FOLDER_NAME}"
+
+	open /Volumes/"${INSTALL_FOLDER_NAME}"
+
+	# Set view to icon view.
+	osascript -e 'tell application "Finder" to set the current view of window "'"${INSTALL_FOLDER_NAME}"'" to icon view'
+	
+	# Icon size.
+	osascript -e 'tell application "Finder" to set the icon size of icon view options of window "'"${INSTALL_FOLDER_NAME}"'" to 48'
+	
+	# Set positon of icons.
+	osascript -e 'tell application "Finder" to set the position of item "NDAS Install.mpkg" of window "'"${INSTALL_FOLDER_NAME}"'" to {100, 168}'
+
+	osascript -e 'tell application "Finder" to set the position of item "NDAS Manuals" of window "'"${INSTALL_FOLDER_NAME}"'" to {300, 168}'
+
+	osascript -e 'tell application "Finder" to set the position of item "NDAS Uninstaller.app" of window "'"${INSTALL_FOLDER_NAME}"'" to {500, 168}'
+
+	# Hide statusbar
+	osascript -e 'tell application "Finder" to set the statusbar visible of window "'"${INSTALL_FOLDER_NAME}"'" to false'
+
+	# Hide toolbar
+	osascript -e 'tell application "Finder" to set the toolbar visible of window "'"${INSTALL_FOLDER_NAME}"'" to false'
+
+	osascript -e 'tell application "Finder" to set the bounds of window "'"${INSTALL_FOLDER_NAME}"'" to {100, 100, 100 + 600, 100 + 400}'
+	
+	osascript -e "delay 10"
+
+	# detach DMG.
+	hdiutil detach /Volumes/"${INSTALL_FOLDER_NAME}"
+
+	# Resizing DMG.
+	hdiutil resize -sectors min temp.dmg
+
+	TIME_STAMP=`date "+%y%m%d_%H.%M"`
+
+	# Convert DMG
+	if [ -f  "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"_"${TIME_STAMP}".dmg ] ; then
+		rm "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"_"${TIME_STAMP}".dmg
+	fi
+
+	hdiutil convert -format UDZO -imagekey zlib-level=3D9 -o "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"_"${TIME_STAMP}"_10_6.dmg temp.dmg
+
+	# Cleanup
+	rm temp.dmg;;
+
+
+	*		)
+	# Compress
+	TIME_STAMP=`date "+%y%m%d_%H.%M"`
+	cd "${BUILDROOT}"/Dist
+	zip -rq9 "${BUILDROOT}"/Dist/"${INSTALL_FOLDER_NAME}"_"${TIME_STAMP}"_10_6.zip "${INSTALL_FOLDER_NAME}";;
+	
+esac

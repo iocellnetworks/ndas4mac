@@ -1,0 +1,6 @@
+﻿/* Label key */
+"OSverLabel" = "Mac OS X v10.2 or newer";
+
+/* Message key */
+
+"OSverMessage" = "이 소프트웨어를 설치하려면 Mac OS X v10.2이상으로 업그래이드 해야 합니다.";

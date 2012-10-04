@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "ND 유틸리티";
+CFBundleDisplayName = "ND 유틸리티";
+CFBundleShortVersionString = "1.0";
+CFBundleGetInfoString = "1.0 Copyright 2005 XIMETA, Inc., All rights reserved.";
+NSHumanReadableCopyright = "Copyright © 2005 XIMETA, Inc., All rights reserved.";

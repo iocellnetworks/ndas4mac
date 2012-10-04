@@ -1,0 +1,37 @@
+#!/bin/sh
+
+##
+# XIMETA NDAS Service
+##
+
+. /etc/rc.common
+
+StartService ()
+{
+    if ! pid=$(GetPID /usr/sbin/NDASService); then
+        ConsoleMessage "Starting XIMETA NDAS Service"
+        /usr/sbin/NDASService &
+    fi
+}
+
+StopService ()
+{
+    if pid=$(GetPID /usr/sbin/NDASService); then
+        ConsoleMessage "Stopping XIMETA NDAS Service"
+        kill -TERM "${pid}"
+    else
+        echo "XIMETA NDAS Service is not running."
+    fi
+}
+
+RestartService ()
+{
+    if pid=$(GetPID /usr/sbin/NDASService); then
+        ConsoleMessage "Restarting XIMETA NDAS Service"
+        kill -HUP "${pid}"
+    else
+        StartService
+    fi
+}
+
+RunService "$1"

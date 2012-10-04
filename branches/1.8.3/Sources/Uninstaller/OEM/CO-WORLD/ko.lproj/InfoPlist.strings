@@ -1,0 +1,8 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "ShareDisk 제거기";
+CFBundleDisplayName = "ShareDisk 제거기";
+CFBundleShortVersionString = "1.6.7";
+CFBundleGetInfoString = "1.6.7, Copyright 2004 XIMETA, Inc., 모든 권리 보유";
+NSHumanReadableCopyright = "Copyright 2004 XIMETA, Inc., 모든 권리 보유";
+UtilityName = "장치 관리자";

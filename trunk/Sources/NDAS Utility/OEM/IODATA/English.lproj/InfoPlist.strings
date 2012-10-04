@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "HDH-UL Series Admin Utility";
+CFBundleDisplayName = "HDH-UL Series Admin Utility";
+CFBundleShortVersionString = "1.3.1";
+CFBundleGetInfoString = "1.3.1, Copyright 2004 XIMETA, Inc., all rights reserved.";
+NSHumanReadableCopyright = "Copyright 2004 XIMETA, Inc.";

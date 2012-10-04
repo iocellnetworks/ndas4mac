@@ -1,0 +1,38 @@
+/* Uninstall success */
+"\nThe uninstaller has successfully uninstalled the %@ Software.\n" = "\nアンインストールが正常に完了しました。\n";
+
+/* Uninstall NDAdmin */
+"\n%@ %@ is being removed.\n" = "\n%@%@をアンインストールします。\n";
+
+/* Uninstall lanscsibus */
+"\nNDAS Bus Enumerator is being removed.\n" = "\nLanSCSIバスをアンインストールします。\n";
+
+/* Uninstall NDService */
+"\nNDAS Service is being removed.\n" = "\nNDサービスをアンインストールします。\n";
+
+/* Uninstall netLpx */
+"\nnetLpx is being removed.\n" = "\nnetLpxをアンインストールします。\n";
+
+/* This will remove all files previously installed by the %@ installer. */
+"All files previously installed by the %@ installer are being removed.\n" = "%@ インストーラーでインストールされた全てのファイルを削除します。\n";
+
+/* Uninstall NDAS Utility success */
+"%@ %@ has been successfully removed.\n" = "%@%@は正常にアンインストールされました。\n";
+
+/* Uninstall NDAS Bus Enumerator success */
+"NDAS Bus Enumerator has been successfully removed.\n" = "NDAS接続確認ツールは正常にアンインストールされました。\n";
+
+/* Uninstall NDASService success */
+"NDAS Service has been successfully removed.\n" = "NDASサービスは正常にアンインストールされました。\n";
+
+/* Uninstall netLpx success */
+"netLpx was has been successfully removed.\n" = "netLpxは正常にアンインストールされました。\n";
+
+/* About Menu */
+"About %@" = "%@について";
+
+/* Hide Menu */
+"Hide %@" = "%@を隠す";
+
+/* Quit Menu */
+"Quit %@" = "%@を終了";

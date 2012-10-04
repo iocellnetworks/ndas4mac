@@ -1,0 +1,32 @@
+#! /bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Darwin/OSX XiMeta NetDisk Meta package installation script.
+#
+###########################################################################
+
+ID="/usr/bin/id"
+WHOAMI=`$ID|sed -e 's/(.*//'`
+SYSTEM=`uname -sr`
+
+if [ "$WHOAMI" != "uid=0" ] ; then
+	echo "You need super user privilege to install."
+	exit 1
+fi
+
+# -------------------------------------------------------------------------
+# Make sure we have the right permissions
+# -------------------------------------------------------------------------
+
+SERVICE_INSTALL_DIR="/System/Library/StartupItems"
+
+chown root.wheel "${SERVICE_INSTALL_DIR}"
+
+# -------------------------------------------------------------------------
+# exit successfully.
+# -------------------------------------------------------------------------
+
+exit 0

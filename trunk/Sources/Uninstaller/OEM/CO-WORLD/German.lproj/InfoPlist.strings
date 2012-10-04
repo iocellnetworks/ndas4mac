@@ -1,0 +1,8 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "ShareDisk Deinstallationsprogramm";
+CFBundleDisplayName = "ShareDisk Deinstallationsprogramm";
+CFBundleShortVersionString = "1.6.7";
+CFBundleGetInfoString = "1.6.7, Copyright 2004 XIMETA, Inc., Alle Rechte vorbehalten.";
+NSHumanReadableCopyright = "Copyright 2004 XIMETA, Inc., Alle Rechte vorbehalten.";
+UtilityName = "Geräte-Manager";

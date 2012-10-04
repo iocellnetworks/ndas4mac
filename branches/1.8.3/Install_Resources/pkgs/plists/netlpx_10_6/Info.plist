@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.ximeta.nke.netlpx.pkg</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.2.5</string>
+	<key>IFMajorVersion</key>
+	<integer>2</integer>
+	<key>IFMinorVersion</key>
+	<integer>207</integer>
+	<key>IFPkgFlagAllowBackRev</key>
+	<false/>
+	<key>IFPkgFlagAuthorizationAction</key>
+	<string>RootAuthorization</string>
+	<key>IFPkgFlagDefaultLocation</key>
+	<string>/</string>
+	<key>IFPkgFlagInstallFat</key>
+	<false/>
+	<key>IFPkgFlagIsRequired</key>
+	<true/>
+	<key>IFPkgFlagRelocatable</key>
+	<false/>
+	<key>IFPkgFlagRestartAction</key>
+	<string>RequiredRestart</string>
+	<key>IFPkgFlagRootVolumeOnly</key>
+	<true/>
+	<key>IFPkgFlagUpdateInstalledLanguages</key>
+	<false/>
+	<key>IFPkgFormatVersion</key>
+	<real>0.1000000014901161</real>
+	<key>IFRequirementDicts</key>
+	<array>
+		<dict>
+			<key>LabelKey</key>
+			<string>OSverLabel</string>
+			<key>Level</key>
+			<string>requires</string>
+			<key>MessageKey</key>
+			<string>OSverMessage</string>
+			<key>SpecArgument</key>
+			<string>/System/Library/CoreServices/SystemVersion.plist</string>
+			<key>SpecProperty</key>
+			<string>ProductVersion</string>
+			<key>SpecType</key>
+			<string>plist</string>
+			<key>TestObject</key>
+			<string>10.6</string>
+			<key>TestOperator</key>
+			<string>ge</string>
+		</dict>
+	</array>
+</dict>
+</plist>

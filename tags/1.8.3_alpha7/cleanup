@@ -1,0 +1,65 @@
+#! /bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Clean up XIMETA Installer.
+#
+###########################################################################
+
+# Get Currentn Dir.
+BUILDROOT=`pwd`
+
+# Clean Temp Files.
+chmod -R 777 $BUILDROOT/Dist_Root/Package_Contents
+rm -R $BUILDROOT/Dist_Root/Package_Contents
+
+#################################################
+#
+# Clean up Contents.
+#
+#################################################
+
+#################################################
+# Clean up NDASFamily
+
+cd $BUILDROOT/Sources/NDASFamily
+xcodebuild clean
+
+#################################################
+# Clean up NDAdmin
+
+cd $BUILDROOT/Sources/NDAdmin
+xcodebuild clean
+
+#################################################
+# Clean up NDService
+
+cd $BUILDROOT/Sources/NDASService
+xcodebuild clean
+
+#################################################
+# Clean up netlpx
+
+cd $BUILDROOT/Sources/netlpx
+xcodebuild clean
+
+#################################################
+# Clean up Uninstaller
+
+cd $BUILDROOT/Sources/Uninstaller
+xcodebuild clean
+
+#################################################
+#
+# Clean up Packages.
+#
+#################################################
+
+chmod -R 777 $BUILDROOT/Dist/*
+rm -R $BUILDROOT/Dist/*
+
+rm -rf $BUILDROOT/Dist_Root/Packages/Packages
+
+rm -rf $BUILDROOT/Develop_Packages/Packages/*

@@ -1,0 +1,1153 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32D94FC80562CBF700B6AF17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		9A17B1B1096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A17B1AF096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp */; };
+		9A1B169D096BA2B600F73E34 /* scrc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B169C096BA2B600F73E34 /* scrc32.c */; };
+		9A1B173E096BB26E00F73E34 /* NDASDIB.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B173D096BB26E00F73E34 /* NDASDIB.c */; };
+		9A1B1769096BB60200F73E34 /* NDASRAIDUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1767096BB60200F73E34 /* NDASRAIDUnitDevice.cpp */; };
+		9A1F6F76072CD9FF0038C0E6 /* NDASBusEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F75072CD9FF0038C0E6 /* NDASBusEnumerator.cpp */; };
+		9A1F6F8E072CDEB50038C0E6 /* NDASLogicalDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F8D072CDEB50038C0E6 /* NDASLogicalDevice.cpp */; };
+		9A1F6FB9072CE7B50038C0E6 /* Utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6FB8072CE7B50038C0E6 /* Utilities.c */; };
+		9A2474350FD621130082E8F3 /* lsp_wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2474340FD621130082E8F3 /* lsp_wrapper.c */; };
+		9A2B54CB07C9B2490035577C /* NDASProtocolTransport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B54C907C9B2490035577C /* NDASProtocolTransport.cpp */; };
+		9A2DD59A072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DD599072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp */; };
+		9A41F67807C613E20016BF2F /* NDASDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A41F67707C613E20016BF2F /* NDASDevice.cpp */; };
+		9A44272707CA0FCC00D8EDDD /* NDAS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A44272607CA0FCC00D8EDDD /* NDAS.icns */; };
+		9A4E8D7607C07D10003CAE24 /* DebugPrint.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7207C07D10003CAE24 /* DebugPrint.c */; };
+		9A4E8D7707C07D10003CAE24 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7307C07D10003CAE24 /* des.c */; };
+		9A4E8D7807C07D10003CAE24 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7407C07D10003CAE24 /* hash.c */; };
+		9A4E8D7907C07D10003CAE24 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7507C07D10003CAE24 /* key.c */; };
+		9A66478D10312CDE0043E073 /* NDAS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A44272607CA0FCC00D8EDDD /* NDAS.icns */; };
+		9A66478E10312CE70043E073 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		9A66479110312D0A0043E073 /* DebugPrint.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7207C07D10003CAE24 /* DebugPrint.c */; };
+		9A66479210312D0A0043E073 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7307C07D10003CAE24 /* des.c */; };
+		9A66479310312D0A0043E073 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7407C07D10003CAE24 /* hash.c */; };
+		9A66479410312D0A0043E073 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7507C07D10003CAE24 /* key.c */; };
+		9A66479510312D0A0043E073 /* LanScsiProtocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A788AC107C6129000D06522 /* LanScsiProtocol.c */; };
+		9A66479610312D0A0043E073 /* LanScsiSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F293307423F3800BDF9C9 /* LanScsiSocket.c */; };
+		9A66479710312D0A0043E073 /* lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529E0C1603B5008EB3E4 /* lsp.c */; };
+		9A66479810312D0A0043E073 /* lsp_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = C31252990C1603B5008EB3E4 /* lsp_debug.c */; };
+		9A66479910312D0A0043E073 /* lsp_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529B0C1603B5008EB3E4 /* lsp_hash.c */; };
+		9A66479A10312D0A0043E073 /* lsp_util.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529D0C1603B5008EB3E4 /* lsp_util.c */; };
+		9A66479B10312D0A0043E073 /* lsp_wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2474340FD621130082E8F3 /* lsp_wrapper.c */; };
+		9A66479C10312D0A0043E073 /* NDASBusEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F75072CD9FF0038C0E6 /* NDASBusEnumerator.cpp */; };
+		9A66479D10312D0A0043E073 /* NDASBusEnumeratorUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DD599072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp */; };
+		9A66479E10312D0A0043E073 /* NDASChangeSettingCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D57B100324AD00F6CE07 /* NDASChangeSettingCommand.cpp */; };
+		9A66479F10312D0A0043E073 /* NDASCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC2A43073B7C6E00BD55FE /* NDASCommand.cpp */; };
+		9A6647A010312D0A0043E073 /* NDASDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A41F67707C613E20016BF2F /* NDASDevice.cpp */; };
+		9A6647A110312D0A0043E073 /* NDASDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEA76B094443C0004598F5 /* NDASDeviceController.cpp */; };
+		9A6647A210312D0A0043E073 /* NDASDeviceNotificationCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5C01003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp */; };
+		9A6647A310312D0A0043E073 /* NDASDIB.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B173D096BB26E00F73E34 /* NDASDIB.c */; };
+		9A6647A410312D0A0043E073 /* NDASLogicalDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F8D072CDEB50038C0E6 /* NDASLogicalDevice.cpp */; };
+		9A6647A510312D0A0043E073 /* NDASLogicalDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D61D100486A700F6CE07 /* NDASLogicalDeviceController.cpp */; };
+		9A6647A610312D0A0043E073 /* NDASManagingIOCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5BB1003313900F6CE07 /* NDASManagingIOCommand.cpp */; };
+		9A6647A710312D0A0043E073 /* NDASPhysicalUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA521093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp */; };
+		9A6647A810312D0A0043E073 /* NDASPhysicalUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D3E60FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp */; };
+		9A6647A910312D0A0043E073 /* NDASPnpCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D4E110031B2400F6CE07 /* NDASPnpCommand.cpp */; };
+		9A6647AA10312D0A0043E073 /* NDASProtocolTransport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B54C907C9B2490035577C /* NDASProtocolTransport.cpp */; };
+		9A6647AB10312D0A0043E073 /* NDASProtocolTransportNub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AE07F170963DCAC00FAF24B /* NDASProtocolTransportNub.cpp */; };
+		9A6647AC10312D0A0043E073 /* NDASRAIDUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1767096BB60200F73E34 /* NDASRAIDUnitDevice.cpp */; };
+		9A6647AD10312D0A0043E073 /* NDASRAIDUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A17B1AF096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp */; };
+		9A6647AE10312D0A0043E073 /* NDASRefreshCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D58D100327BF00F6CE07 /* NDASRefreshCommand.cpp */; };
+		9A6647AF10312D0A0043E073 /* NDASSCSICommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D59710032A9300F6CE07 /* NDASSCSICommand.cpp */; };
+		9A6647B010312D0A0043E073 /* NDASUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA4FD093BF6EE00DC15B0 /* NDASUnitDevice.cpp */; };
+		9A6647B110312D0A0043E073 /* NDASUnitDeviceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA405060B1C03B700B276A8 /* NDASUnitDeviceList.cpp */; };
+		9A6647B210312D0A0043E073 /* scrc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B169C096BA2B600F73E34 /* scrc32.c */; };
+		9A6647B310312D0A0043E073 /* Utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6FB8072CE7B50038C0E6 /* Utilities.c */; };
+		9A713D161027FD7B00EB977C /* DebugPrint.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7207C07D10003CAE24 /* DebugPrint.c */; };
+		9A713D171027FD7B00EB977C /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7307C07D10003CAE24 /* des.c */; };
+		9A713D181027FD7B00EB977C /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7407C07D10003CAE24 /* hash.c */; };
+		9A713D191027FD7B00EB977C /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7507C07D10003CAE24 /* key.c */; };
+		9A713D1A1027FD7B00EB977C /* LanScsiProtocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A788AC107C6129000D06522 /* LanScsiProtocol.c */; };
+		9A713D1B1027FD7B00EB977C /* LanScsiSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F293307423F3800BDF9C9 /* LanScsiSocket.c */; };
+		9A713D1C1027FD7B00EB977C /* lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529E0C1603B5008EB3E4 /* lsp.c */; };
+		9A713D1D1027FD7B00EB977C /* lsp_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = C31252990C1603B5008EB3E4 /* lsp_debug.c */; };
+		9A713D1E1027FD7B00EB977C /* lsp_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529B0C1603B5008EB3E4 /* lsp_hash.c */; };
+		9A713D1F1027FD7B00EB977C /* lsp_util.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529D0C1603B5008EB3E4 /* lsp_util.c */; };
+		9A713D201027FD7B00EB977C /* lsp_wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2474340FD621130082E8F3 /* lsp_wrapper.c */; };
+		9A713D211027FD7B00EB977C /* NDASBusEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F75072CD9FF0038C0E6 /* NDASBusEnumerator.cpp */; };
+		9A713D221027FD7B00EB977C /* NDASBusEnumeratorUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DD599072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp */; };
+		9A713D231027FD7B00EB977C /* NDASChangeSettingCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D57B100324AD00F6CE07 /* NDASChangeSettingCommand.cpp */; };
+		9A713D241027FD7B00EB977C /* NDASCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC2A43073B7C6E00BD55FE /* NDASCommand.cpp */; };
+		9A713D251027FD7B00EB977C /* NDASDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A41F67707C613E20016BF2F /* NDASDevice.cpp */; };
+		9A713D261027FD7B00EB977C /* NDASDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEA76B094443C0004598F5 /* NDASDeviceController.cpp */; };
+		9A713D271027FD7B00EB977C /* NDASDeviceNotificationCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5C01003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp */; };
+		9A713D281027FD7B00EB977C /* NDASDIB.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B173D096BB26E00F73E34 /* NDASDIB.c */; };
+		9A713D291027FD7B00EB977C /* NDASLogicalDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F8D072CDEB50038C0E6 /* NDASLogicalDevice.cpp */; };
+		9A713D2A1027FD7B00EB977C /* NDASLogicalDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D61D100486A700F6CE07 /* NDASLogicalDeviceController.cpp */; };
+		9A713D2B1027FD7B00EB977C /* NDASManagingIOCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5BB1003313900F6CE07 /* NDASManagingIOCommand.cpp */; };
+		9A713D2C1027FD7B00EB977C /* NDASPhysicalUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA521093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp */; };
+		9A713D2D1027FD7B00EB977C /* NDASPhysicalUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D3E60FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp */; };
+		9A713D2E1027FD7B00EB977C /* NDASPnpCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D4E110031B2400F6CE07 /* NDASPnpCommand.cpp */; };
+		9A713D2F1027FD7B00EB977C /* NDASProtocolTransport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B54C907C9B2490035577C /* NDASProtocolTransport.cpp */; };
+		9A713D301027FD7B00EB977C /* NDASProtocolTransportNub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AE07F170963DCAC00FAF24B /* NDASProtocolTransportNub.cpp */; };
+		9A713D311027FD7B00EB977C /* NDASRAIDUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1767096BB60200F73E34 /* NDASRAIDUnitDevice.cpp */; };
+		9A713D321027FD7B00EB977C /* NDASRAIDUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A17B1AF096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp */; };
+		9A713D331027FD7B00EB977C /* NDASRefreshCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D58D100327BF00F6CE07 /* NDASRefreshCommand.cpp */; };
+		9A713D341027FD7B00EB977C /* NDASSCSICommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D59710032A9300F6CE07 /* NDASSCSICommand.cpp */; };
+		9A713D351027FD7B00EB977C /* NDASUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA4FD093BF6EE00DC15B0 /* NDASUnitDevice.cpp */; };
+		9A713D361027FD7B00EB977C /* NDASUnitDeviceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA405060B1C03B700B276A8 /* NDASUnitDeviceList.cpp */; };
+		9A713D371027FD7B00EB977C /* scrc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B169C096BA2B600F73E34 /* scrc32.c */; };
+		9A713D381027FD7B00EB977C /* Utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6FB8072CE7B50038C0E6 /* Utilities.c */; };
+		9A713D391027FD9100EB977C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		9A713D3A1027FD9100EB977C /* NDAS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A44272607CA0FCC00D8EDDD /* NDAS.icns */; };
+		9A788AC207C6129000D06522 /* LanScsiProtocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A788AC107C6129000D06522 /* LanScsiProtocol.c */; };
+		9A7B6AC80FE76C810081FBDD /* NDASCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC2A43073B7C6E00BD55FE /* NDASCommand.cpp */; };
+		9A7B6AC90FE76C990081FBDD /* lsp_wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A2474340FD621130082E8F3 /* lsp_wrapper.c */; };
+		9A7B6ACA0FE76CA30081FBDD /* NDASBusEnumerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F75072CD9FF0038C0E6 /* NDASBusEnumerator.cpp */; };
+		9A7B6ACB0FE76CA30081FBDD /* NDASLogicalDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6F8D072CDEB50038C0E6 /* NDASLogicalDevice.cpp */; };
+		9A7B6ACC0FE76CA30081FBDD /* Utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6FB8072CE7B50038C0E6 /* Utilities.c */; };
+		9A7B6ACD0FE76CA30081FBDD /* NDASBusEnumeratorUserClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DD599072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp */; };
+		9A7B6ACE0FE76CA30081FBDD /* LanScsiSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F293307423F3800BDF9C9 /* LanScsiSocket.c */; };
+		9A7B6ACF0FE76CA30081FBDD /* DebugPrint.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7207C07D10003CAE24 /* DebugPrint.c */; };
+		9A7B6AD00FE76CA30081FBDD /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7307C07D10003CAE24 /* des.c */; };
+		9A7B6AD10FE76CA30081FBDD /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7407C07D10003CAE24 /* hash.c */; };
+		9A7B6AD20FE76CA30081FBDD /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E8D7507C07D10003CAE24 /* key.c */; };
+		9A7B6AD30FE76CA30081FBDD /* LanScsiProtocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A788AC107C6129000D06522 /* LanScsiProtocol.c */; };
+		9A7B6AD40FE76CA30081FBDD /* NDASDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A41F67707C613E20016BF2F /* NDASDevice.cpp */; };
+		9A7B6AD50FE76CA30081FBDD /* NDASProtocolTransport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A2B54C907C9B2490035577C /* NDASProtocolTransport.cpp */; };
+		9A7B6AD60FE76CA30081FBDD /* NDASUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA4FD093BF6EE00DC15B0 /* NDASUnitDevice.cpp */; };
+		9A7B6AD70FE76CA30081FBDD /* NDASPhysicalUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA521093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp */; };
+		9A7B6AD80FE76CA30081FBDD /* NDASDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEA76B094443C0004598F5 /* NDASDeviceController.cpp */; };
+		9A7B6AD90FE76CA30081FBDD /* NDASProtocolTransportNub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AE07F170963DCAC00FAF24B /* NDASProtocolTransportNub.cpp */; };
+		9A7B6ADA0FE76CA30081FBDD /* scrc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B169C096BA2B600F73E34 /* scrc32.c */; };
+		9A7B6ADB0FE76CA30081FBDD /* NDASDIB.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B173D096BB26E00F73E34 /* NDASDIB.c */; };
+		9A7B6ADC0FE76CA30081FBDD /* NDASRAIDUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B1767096BB60200F73E34 /* NDASRAIDUnitDevice.cpp */; };
+		9A7B6ADD0FE76CA30081FBDD /* NDASRAIDUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A17B1AF096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp */; };
+		9A7B6ADE0FE76CA30081FBDD /* NDASUnitDeviceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA405060B1C03B700B276A8 /* NDASUnitDeviceList.cpp */; };
+		9A7B6ADF0FE76CA30081FBDD /* lsp_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = C31252990C1603B5008EB3E4 /* lsp_debug.c */; };
+		9A7B6AE00FE76CA30081FBDD /* lsp_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529B0C1603B5008EB3E4 /* lsp_hash.c */; };
+		9A7B6AE10FE76CA30081FBDD /* lsp_util.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529D0C1603B5008EB3E4 /* lsp_util.c */; };
+		9A7B6AE20FE76CA30081FBDD /* lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529E0C1603B5008EB3E4 /* lsp.c */; };
+		9A7B6B5A0FE773B70081FBDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		9A7B6B5B0FE773BA0081FBDD /* NDAS.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A44272607CA0FCC00D8EDDD /* NDAS.icns */; };
+		9A7F293507423F3800BDF9C9 /* LanScsiSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F293307423F3800BDF9C9 /* LanScsiSocket.c */; };
+		9A83D3E70FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D3E60FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp */; };
+		9A83D3E80FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D3E60FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp */; };
+		9A83D4E210031B2400F6CE07 /* NDASPnpCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D4E110031B2400F6CE07 /* NDASPnpCommand.cpp */; };
+		9A83D4E310031B2400F6CE07 /* NDASPnpCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D4E110031B2400F6CE07 /* NDASPnpCommand.cpp */; };
+		9A83D57C100324AD00F6CE07 /* NDASChangeSettingCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D57B100324AD00F6CE07 /* NDASChangeSettingCommand.cpp */; };
+		9A83D57D100324AD00F6CE07 /* NDASChangeSettingCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D57B100324AD00F6CE07 /* NDASChangeSettingCommand.cpp */; };
+		9A83D58E100327BF00F6CE07 /* NDASRefreshCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D58D100327BF00F6CE07 /* NDASRefreshCommand.cpp */; };
+		9A83D58F100327BF00F6CE07 /* NDASRefreshCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D58D100327BF00F6CE07 /* NDASRefreshCommand.cpp */; };
+		9A83D59810032A9300F6CE07 /* NDASSCSICommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D59710032A9300F6CE07 /* NDASSCSICommand.cpp */; };
+		9A83D59910032A9300F6CE07 /* NDASSCSICommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D59710032A9300F6CE07 /* NDASSCSICommand.cpp */; };
+		9A83D5BC1003313900F6CE07 /* NDASManagingIOCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5BB1003313900F6CE07 /* NDASManagingIOCommand.cpp */; };
+		9A83D5BD1003313900F6CE07 /* NDASManagingIOCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5BB1003313900F6CE07 /* NDASManagingIOCommand.cpp */; };
+		9A83D5C11003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5C01003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp */; };
+		9A83D5C21003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D5C01003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp */; };
+		9A83D61E100486A700F6CE07 /* NDASLogicalDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D61D100486A700F6CE07 /* NDASLogicalDeviceController.cpp */; };
+		9A83D61F100486A700F6CE07 /* NDASLogicalDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A83D61D100486A700F6CE07 /* NDASLogicalDeviceController.cpp */; };
+		9AA405080B1C03B700B276A8 /* NDASUnitDeviceList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AA405060B1C03B700B276A8 /* NDASUnitDeviceList.cpp */; };
+		9ABBA4FF093BF6EE00DC15B0 /* NDASUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA4FD093BF6EE00DC15B0 /* NDASUnitDevice.cpp */; };
+		9ABBA523093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBA521093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp */; };
+		9ABEA76D094443C0004598F5 /* NDASDeviceController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEA76B094443C0004598F5 /* NDASDeviceController.cpp */; };
+		9ADC2A44073B7C6E00BD55FE /* NDASCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC2A43073B7C6E00BD55FE /* NDASCommand.cpp */; };
+		9AE07F190963DCAC00FAF24B /* NDASProtocolTransportNub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AE07F170963DCAC00FAF24B /* NDASProtocolTransportNub.cpp */; };
+		C31252A00C1603B5008EB3E4 /* lsp_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = C31252990C1603B5008EB3E4 /* lsp_debug.c */; };
+		C31252A20C1603B5008EB3E4 /* lsp_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529B0C1603B5008EB3E4 /* lsp_hash.c */; };
+		C31252A40C1603B5008EB3E4 /* lsp_util.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529D0C1603B5008EB3E4 /* lsp_util.c */; };
+		C31252A50C1603B5008EB3E4 /* lsp.c in Sources */ = {isa = PBXBuildFile; fileRef = C312529E0C1603B5008EB3E4 /* lsp.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32D94FCF0562CBF700B6AF17 /* NDASFamily_10.4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NDASFamily_10.4-Info.plist"; sourceTree = "<group>"; };
+		32D94FD00562CBF700B6AF17 /* NDASFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDASFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA80CCF06AD972A00E5AC22 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+		9A17B1AE096E5D7100BE5998 /* NDASRAIDUnitDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASRAIDUnitDeviceController.h; sourceTree = "<group>"; };
+		9A17B1AF096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASRAIDUnitDeviceController.cpp; sourceTree = "<group>"; };
+		9A1B169A096BA29E00F73E34 /* scrc32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = scrc32.h; path = ../Inc/scrc32.h; sourceTree = SOURCE_ROOT; };
+		9A1B169C096BA2B600F73E34 /* scrc32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = scrc32.c; path = "../Shared Sources/scrc32.c"; sourceTree = SOURCE_ROOT; };
+		9A1B173D096BB26E00F73E34 /* NDASDIB.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = NDASDIB.c; path = "../Shared Sources/NDASDIB.c"; sourceTree = "<group>"; };
+		9A1B1741096BB29A00F73E34 /* NDASDIB.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NDASDIB.h; path = ../Inc/NDASDIB.h; sourceTree = SOURCE_ROOT; };
+		9A1B1766096BB60200F73E34 /* NDASRAIDUnitDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASRAIDUnitDevice.h; sourceTree = "<group>"; };
+		9A1B1767096BB60200F73E34 /* NDASRAIDUnitDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASRAIDUnitDevice.cpp; sourceTree = "<group>"; };
+		9A1F6F75072CD9FF0038C0E6 /* NDASBusEnumerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASBusEnumerator.cpp; sourceTree = "<group>"; };
+		9A1F6F77072CDA190038C0E6 /* NDASBusEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASBusEnumerator.h; sourceTree = "<group>"; };
+		9A1F6F7F072CDC190038C0E6 /* NDASDevice.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NDASDevice.h; sourceTree = "<group>"; };
+		9A1F6F8D072CDEB50038C0E6 /* NDASLogicalDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASLogicalDevice.cpp; sourceTree = "<group>"; };
+		9A1F6F8F072CDEC20038C0E6 /* NDASLogicalDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASLogicalDevice.h; sourceTree = "<group>"; };
+		9A1F6FB6072CE7000038C0E6 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		9A1F6FB8072CE7B50038C0E6 /* Utilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utilities.c; sourceTree = "<group>"; };
+		9A2474340FD621130082E8F3 /* lsp_wrapper.c */ = {isa = PBXFileReference; fileEncoding = 2147484706; lastKnownFileType = sourcecode.c.c; path = lsp_wrapper.c; sourceTree = "<group>"; };
+		9A2B54C907C9B2490035577C /* NDASProtocolTransport.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NDASProtocolTransport.cpp; sourceTree = "<group>"; };
+		9A2B54CA07C9B2490035577C /* NDASProtocolTransport.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NDASProtocolTransport.h; sourceTree = "<group>"; };
+		9A2DD599072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NDASBusEnumeratorUserClient.cpp; sourceTree = "<group>"; };
+		9A2DD59B072FCF1B002BC454 /* NDASBusEnumeratorUserClient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NDASBusEnumeratorUserClient.h; sourceTree = "<group>"; };
+		9A33B76407D6D834003AD61F /* cdb.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = cdb.h; path = ../Inc/cdb.h; sourceTree = "<group>"; };
+		9A38C5661050A93A0077B1F6 /* hdreg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hdreg.h; path = ../Inc/hdreg.h; sourceTree = SOURCE_ROOT; };
+		9A41F67707C613E20016BF2F /* NDASDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASDevice.cpp; sourceTree = "<group>"; };
+		9A44270507CA0DC900D8EDDD /* NDASProtocolTransportDebugging.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NDASProtocolTransportDebugging.h; sourceTree = "<group>"; };
+		9A44272607CA0FCC00D8EDDD /* NDAS.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = NDAS.icns; path = Icons/NDAS.icns; sourceTree = "<group>"; };
+		9A4E8D7207C07D10003CAE24 /* DebugPrint.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = DebugPrint.c; path = "../Shared Sources/DebugPrint.c"; sourceTree = SOURCE_ROOT; };
+		9A4E8D7307C07D10003CAE24 /* des.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = des.c; path = "../Shared Sources/des.c"; sourceTree = SOURCE_ROOT; };
+		9A4E8D7407C07D10003CAE24 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = hash.c; path = "../Shared Sources/hash.c"; sourceTree = SOURCE_ROOT; };
+		9A4E8D7507C07D10003CAE24 /* key.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = key.c; path = "../Shared Sources/key.c"; sourceTree = SOURCE_ROOT; };
+		9A4E90F707C32D35003CAE24 /* Hash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Hash.h; path = ../Inc/Hash.h; sourceTree = SOURCE_ROOT; };
+		9A66477010312C210043E073 /* NDASFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDASFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A66478B10312CBD0043E073 /* NDASFamily_10.5-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NDASFamily_10.5-Info.plist"; sourceTree = "<group>"; };
+		9A6647C510312DB20043E073 /* NDASFamily_10.3-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NDASFamily_10.3-Info.plist"; sourceTree = "<group>"; };
+		9A6647DB103134700043E073 /* DebugPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DebugPrint.h; path = ../Inc/DebugPrint.h; sourceTree = SOURCE_ROOT; };
+		9A713D0B1027FD4600EB977C /* NDASFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDASFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A713D0C1027FD4600EB977C /* NDASFamily_10.6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NDASFamily_10.6-Info.plist"; sourceTree = "<group>"; };
+		9A788AC107C6129000D06522 /* LanScsiProtocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LanScsiProtocol.c; path = "../Shared Sources/LanScsiProtocol.c"; sourceTree = SOURCE_ROOT; };
+		9A7B6AC10FE76B9E0081FBDD /* NDASFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDASFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7F293207423F3800BDF9C9 /* LanScsiSocket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LanScsiSocket.h; sourceTree = "<group>"; };
+		9A7F293307423F3800BDF9C9 /* LanScsiSocket.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = LanScsiSocket.c; sourceTree = "<group>"; };
+		9A83D3E50FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASPhysicalUnitDeviceController.h; sourceTree = "<group>"; };
+		9A83D3E60FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASPhysicalUnitDeviceController.cpp; sourceTree = "<group>"; };
+		9A83D4E010031B2400F6CE07 /* NDASPnpCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASPnpCommand.h; sourceTree = "<group>"; };
+		9A83D4E110031B2400F6CE07 /* NDASPnpCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASPnpCommand.cpp; sourceTree = "<group>"; };
+		9A83D57A100324AD00F6CE07 /* NDASChangeSettingCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASChangeSettingCommand.h; sourceTree = "<group>"; };
+		9A83D57B100324AD00F6CE07 /* NDASChangeSettingCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASChangeSettingCommand.cpp; sourceTree = "<group>"; };
+		9A83D58C100327BF00F6CE07 /* NDASRefreshCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASRefreshCommand.h; sourceTree = "<group>"; };
+		9A83D58D100327BF00F6CE07 /* NDASRefreshCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASRefreshCommand.cpp; sourceTree = "<group>"; };
+		9A83D59610032A9300F6CE07 /* NDASSCSICommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASSCSICommand.h; sourceTree = "<group>"; };
+		9A83D59710032A9300F6CE07 /* NDASSCSICommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASSCSICommand.cpp; sourceTree = "<group>"; };
+		9A83D5BA1003313900F6CE07 /* NDASManagingIOCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASManagingIOCommand.h; sourceTree = "<group>"; };
+		9A83D5BB1003313900F6CE07 /* NDASManagingIOCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASManagingIOCommand.cpp; sourceTree = "<group>"; };
+		9A83D5BF1003352A00F6CE07 /* NDASDeviceNotificationCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASDeviceNotificationCommand.h; sourceTree = "<group>"; };
+		9A83D5C01003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASDeviceNotificationCommand.cpp; sourceTree = "<group>"; };
+		9A83D61C100486A700F6CE07 /* NDASLogicalDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASLogicalDeviceController.h; sourceTree = "<group>"; };
+		9A83D61D100486A700F6CE07 /* NDASLogicalDeviceController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASLogicalDeviceController.cpp; sourceTree = "<group>"; };
+		9A9795E20B5B2652009C5AC5 /* ProtocolFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProtocolFormat.h; path = ../Inc/ProtocolFormat.h; sourceTree = SOURCE_ROOT; };
+		9AA2982A095803D4006012FB /* LanScsiDiskInformationBlock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LanScsiDiskInformationBlock.h; path = ../Inc/LanScsiDiskInformationBlock.h; sourceTree = SOURCE_ROOT; };
+		9AA405050B1C03B700B276A8 /* NDASUnitDeviceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASUnitDeviceList.h; sourceTree = "<group>"; };
+		9AA405060B1C03B700B276A8 /* NDASUnitDeviceList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASUnitDeviceList.cpp; sourceTree = "<group>"; };
+		9ABBA4FC093BF6EE00DC15B0 /* NDASUnitDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASUnitDevice.h; sourceTree = "<group>"; };
+		9ABBA4FD093BF6EE00DC15B0 /* NDASUnitDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASUnitDevice.cpp; sourceTree = "<group>"; };
+		9ABBA520093BFC7400DC15B0 /* NDASPhysicalUnitDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASPhysicalUnitDevice.h; sourceTree = "<group>"; };
+		9ABBA521093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASPhysicalUnitDevice.cpp; sourceTree = "<group>"; };
+		9ABEA76A094443C0004598F5 /* NDASDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASDeviceController.h; sourceTree = "<group>"; };
+		9ABEA76B094443C0004598F5 /* NDASDeviceController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASDeviceController.cpp; sourceTree = "<group>"; };
+		9ADC25E307308DEF00BD55FE /* NDASBusEnumeratorUserClientTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NDASBusEnumeratorUserClientTypes.h; path = ../Inc/NDASBusEnumeratorUserClientTypes.h; sourceTree = SOURCE_ROOT; };
+		9ADC28C407363D9600BD55FE /* LanScsiProtocol.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LanScsiProtocol.h; path = ../Inc/LanScsiProtocol.h; sourceTree = SOURCE_ROOT; };
+		9ADC2A41073B7C5D00BD55FE /* NDASCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASCommand.h; sourceTree = "<group>"; };
+		9ADC2A43073B7C6E00BD55FE /* NDASCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASCommand.cpp; sourceTree = "<group>"; };
+		9AE07F160963DCAC00FAF24B /* NDASProtocolTransportNub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASProtocolTransportNub.h; sourceTree = "<group>"; };
+		9AE07F170963DCAC00FAF24B /* NDASProtocolTransportNub.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDASProtocolTransportNub.cpp; sourceTree = "<group>"; };
+		9AF31DB30B9FEEF2001E4DA7 /* NDASFamilyIOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NDASFamilyIOMessage.h; path = ../Inc/NDASFamilyIOMessage.h; sourceTree = SOURCE_ROOT; };
+		C31252980C1603B5008EB3E4 /* lsp_binparm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_binparm.h; path = lspx/lsp_binparm.h; sourceTree = "<group>"; };
+		C31252990C1603B5008EB3E4 /* lsp_debug.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = lsp_debug.c; path = lspx/lsp_debug.c; sourceTree = "<group>"; };
+		C312529A0C1603B5008EB3E4 /* lsp_debug.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_debug.h; path = lspx/lsp_debug.h; sourceTree = "<group>"; };
+		C312529B0C1603B5008EB3E4 /* lsp_hash.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = lsp_hash.c; path = lspx/lsp_hash.c; sourceTree = "<group>"; };
+		C312529C0C1603B5008EB3E4 /* lsp_type_internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_type_internal.h; path = lspx/lsp_type_internal.h; sourceTree = "<group>"; };
+		C312529D0C1603B5008EB3E4 /* lsp_util.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = lsp_util.c; path = lspx/lsp_util.c; sourceTree = "<group>"; };
+		C312529E0C1603B5008EB3E4 /* lsp.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = lsp.c; path = lspx/lsp.c; sourceTree = "<group>"; };
+		C31252A70C1603E2008EB3E4 /* lsp_hash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_hash.h; path = ../Inc/lspx/lsp_hash.h; sourceTree = SOURCE_ROOT; };
+		C31252A80C1603E2008EB3E4 /* lsp_host.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_host.h; path = ../Inc/lspx/lsp_host.h; sourceTree = SOURCE_ROOT; };
+		C31252A90C1603E2008EB3E4 /* lsp_ide_def.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_ide_def.h; path = ../Inc/lspx/lsp_ide_def.h; sourceTree = SOURCE_ROOT; };
+		C31252AA0C1603E2008EB3E4 /* lsp_spec.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_spec.h; path = ../Inc/lspx/lsp_spec.h; sourceTree = SOURCE_ROOT; };
+		C31252AB0C1603E2008EB3E4 /* lsp_type.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_type.h; path = ../Inc/lspx/lsp_type.h; sourceTree = SOURCE_ROOT; };
+		C31252AC0C1603E2008EB3E4 /* lsp_util.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp_util.h; path = ../Inc/lspx/lsp_util.h; sourceTree = SOURCE_ROOT; };
+		C31252AD0C1603E2008EB3E4 /* lsp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lsp.h; path = ../Inc/lspx/lsp.h; sourceTree = SOURCE_ROOT; };
+		C31252AE0C1603E2008EB3E4 /* lspspecstring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = lspspecstring.h; path = ../Inc/lspx/lspspecstring.h; sourceTree = SOURCE_ROOT; };
+		C31252AF0C1603E2008EB3E4 /* poppack.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = poppack.h; path = ../Inc/lspx/poppack.h; sourceTree = SOURCE_ROOT; };
+		C31252B00C1603E2008EB3E4 /* pshpack1.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pshpack1.h; path = ../Inc/lspx/pshpack1.h; sourceTree = SOURCE_ROOT; };
+		C31252B10C1603E2008EB3E4 /* pshpack2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pshpack2.h; path = ../Inc/lspx/pshpack2.h; sourceTree = SOURCE_ROOT; };
+		C31252B20C1603E2008EB3E4 /* pshpack4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pshpack4.h; path = ../Inc/lspx/pshpack4.h; sourceTree = SOURCE_ROOT; };
+		C31252B30C1603E2008EB3E4 /* pshpack8.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pshpack8.h; path = ../Inc/lspx/pshpack8.h; sourceTree = SOURCE_ROOT; };
+		C31252F10C160B12008EB3E4 /* lsp_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = lsp_wrapper.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D94FCB0562CBF700B6AF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A66476E10312C210043E073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A713D091027FD4600EB977C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A7B6ABF0FE76B9E0081FBDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* NDASFamily */ = {
+			isa = PBXGroup;
+			children = (
+				247142CAFF3F8F9811CA285C /* Source */,
+				8DA80CCF06AD972A00E5AC22 /* Kernel.framework */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = NDASFamily;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A713D0C1027FD4600EB977C /* NDASFamily_10.6-Info.plist */,
+				9A66478B10312CBD0043E073 /* NDASFamily_10.5-Info.plist */,
+				32D94FCF0562CBF700B6AF17 /* NDASFamily_10.4-Info.plist */,
+				9A6647C510312DB20043E073 /* NDASFamily_10.3-Info.plist */,
+				9A44272607CA0FCC00D8EDDD /* NDAS.icns */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D94FD00562CBF700B6AF17 /* NDASFamily.kext */,
+				9A7B6AC10FE76B9E0081FBDD /* NDASFamily.kext */,
+				9A713D0B1027FD4600EB977C /* NDASFamily.kext */,
+				9A66477010312C210043E073 /* NDASFamily.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9A83D4DF10031AF100F6CE07 /* Command */,
+				C31252970C16039C008EB3E4 /* LSP */,
+				9ABEA77E09444470004598F5 /* Controller */,
+				9ABEA77B0944445F004598F5 /* Nub */,
+				9ABEA746094441B1004598F5 /* Library */,
+				9A1F6F77072CDA190038C0E6 /* NDASBusEnumerator.h */,
+				9A1F6F75072CD9FF0038C0E6 /* NDASBusEnumerator.cpp */,
+				9ADC25E307308DEF00BD55FE /* NDASBusEnumeratorUserClientTypes.h */,
+				9A2DD59B072FCF1B002BC454 /* NDASBusEnumeratorUserClient.h */,
+				9A2DD599072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp */,
+				9A44270507CA0DC900D8EDDD /* NDASProtocolTransportDebugging.h */,
+				9AA405050B1C03B700B276A8 /* NDASUnitDeviceList.h */,
+				9AA405060B1C03B700B276A8 /* NDASUnitDeviceList.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		9A83D4DF10031AF100F6CE07 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				9ADC2A41073B7C5D00BD55FE /* NDASCommand.h */,
+				9ADC2A43073B7C6E00BD55FE /* NDASCommand.cpp */,
+				9A83D4E010031B2400F6CE07 /* NDASPnpCommand.h */,
+				9A83D4E110031B2400F6CE07 /* NDASPnpCommand.cpp */,
+				9A83D57A100324AD00F6CE07 /* NDASChangeSettingCommand.h */,
+				9A83D57B100324AD00F6CE07 /* NDASChangeSettingCommand.cpp */,
+				9A83D58C100327BF00F6CE07 /* NDASRefreshCommand.h */,
+				9A83D58D100327BF00F6CE07 /* NDASRefreshCommand.cpp */,
+				9A83D59610032A9300F6CE07 /* NDASSCSICommand.h */,
+				9A83D59710032A9300F6CE07 /* NDASSCSICommand.cpp */,
+				9A83D5BA1003313900F6CE07 /* NDASManagingIOCommand.h */,
+				9A83D5BB1003313900F6CE07 /* NDASManagingIOCommand.cpp */,
+				9A83D5BF1003352A00F6CE07 /* NDASDeviceNotificationCommand.h */,
+				9A83D5C01003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		9ABEA746094441B1004598F5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				9A38C5661050A93A0077B1F6 /* hdreg.h */,
+				9A2474340FD621130082E8F3 /* lsp_wrapper.c */,
+				C31252F10C160B12008EB3E4 /* lsp_wrapper.h */,
+				9A9795E20B5B2652009C5AC5 /* ProtocolFormat.h */,
+				9AA2982A095803D4006012FB /* LanScsiDiskInformationBlock.h */,
+				9A6647DB103134700043E073 /* DebugPrint.h */,
+				9A4E8D7207C07D10003CAE24 /* DebugPrint.c */,
+				9A4E8D7307C07D10003CAE24 /* des.c */,
+				9A4E90F707C32D35003CAE24 /* Hash.h */,
+				9A4E8D7407C07D10003CAE24 /* hash.c */,
+				9A4E8D7507C07D10003CAE24 /* key.c */,
+				9A7F293207423F3800BDF9C9 /* LanScsiSocket.h */,
+				9A7F293307423F3800BDF9C9 /* LanScsiSocket.c */,
+				9ADC28C407363D9600BD55FE /* LanScsiProtocol.h */,
+				9A788AC107C6129000D06522 /* LanScsiProtocol.c */,
+				9A1F6FB6072CE7000038C0E6 /* Utilities.h */,
+				9A1F6FB8072CE7B50038C0E6 /* Utilities.c */,
+				9A33B76407D6D834003AD61F /* cdb.h */,
+				9A1B169A096BA29E00F73E34 /* scrc32.h */,
+				9A1B169C096BA2B600F73E34 /* scrc32.c */,
+				9A1B1741096BB29A00F73E34 /* NDASDIB.h */,
+				9A1B173D096BB26E00F73E34 /* NDASDIB.c */,
+				9AF31DB30B9FEEF2001E4DA7 /* NDASFamilyIOMessage.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		9ABEA77B0944445F004598F5 /* Nub */ = {
+			isa = PBXGroup;
+			children = (
+				9A1F6F7F072CDC190038C0E6 /* NDASDevice.h */,
+				9A41F67707C613E20016BF2F /* NDASDevice.cpp */,
+				9ABBA4FC093BF6EE00DC15B0 /* NDASUnitDevice.h */,
+				9ABBA4FD093BF6EE00DC15B0 /* NDASUnitDevice.cpp */,
+				9ABBA520093BFC7400DC15B0 /* NDASPhysicalUnitDevice.h */,
+				9ABBA521093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp */,
+				9A1B1766096BB60200F73E34 /* NDASRAIDUnitDevice.h */,
+				9A1B1767096BB60200F73E34 /* NDASRAIDUnitDevice.cpp */,
+				9A1F6F8F072CDEC20038C0E6 /* NDASLogicalDevice.h */,
+				9A1F6F8D072CDEB50038C0E6 /* NDASLogicalDevice.cpp */,
+				9AE07F160963DCAC00FAF24B /* NDASProtocolTransportNub.h */,
+				9AE07F170963DCAC00FAF24B /* NDASProtocolTransportNub.cpp */,
+			);
+			name = Nub;
+			sourceTree = "<group>";
+		};
+		9ABEA77E09444470004598F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9ABEA76A094443C0004598F5 /* NDASDeviceController.h */,
+				9ABEA76B094443C0004598F5 /* NDASDeviceController.cpp */,
+				9A17B1AE096E5D7100BE5998 /* NDASRAIDUnitDeviceController.h */,
+				9A17B1AF096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp */,
+				9A83D3E50FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.h */,
+				9A83D3E60FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp */,
+				9A83D61C100486A700F6CE07 /* NDASLogicalDeviceController.h */,
+				9A83D61D100486A700F6CE07 /* NDASLogicalDeviceController.cpp */,
+				9A2B54CA07C9B2490035577C /* NDASProtocolTransport.h */,
+				9A2B54C907C9B2490035577C /* NDASProtocolTransport.cpp */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C31252970C16039C008EB3E4 /* LSP */ = {
+			isa = PBXGroup;
+			children = (
+				C31252A60C1603C5008EB3E4 /* Inc */,
+				C31252980C1603B5008EB3E4 /* lsp_binparm.h */,
+				C31252990C1603B5008EB3E4 /* lsp_debug.c */,
+				C312529A0C1603B5008EB3E4 /* lsp_debug.h */,
+				C312529B0C1603B5008EB3E4 /* lsp_hash.c */,
+				C312529C0C1603B5008EB3E4 /* lsp_type_internal.h */,
+				C312529D0C1603B5008EB3E4 /* lsp_util.c */,
+				C312529E0C1603B5008EB3E4 /* lsp.c */,
+			);
+			name = LSP;
+			sourceTree = "<group>";
+		};
+		C31252A60C1603C5008EB3E4 /* Inc */ = {
+			isa = PBXGroup;
+			children = (
+				C31252A70C1603E2008EB3E4 /* lsp_hash.h */,
+				C31252A80C1603E2008EB3E4 /* lsp_host.h */,
+				C31252A90C1603E2008EB3E4 /* lsp_ide_def.h */,
+				C31252AA0C1603E2008EB3E4 /* lsp_spec.h */,
+				C31252AB0C1603E2008EB3E4 /* lsp_type.h */,
+				C31252AC0C1603E2008EB3E4 /* lsp_util.h */,
+				C31252AD0C1603E2008EB3E4 /* lsp.h */,
+				C31252AE0C1603E2008EB3E4 /* lspspecstring.h */,
+				C31252AF0C1603E2008EB3E4 /* poppack.h */,
+				C31252B00C1603E2008EB3E4 /* pshpack1.h */,
+				C31252B10C1603E2008EB3E4 /* pshpack2.h */,
+				C31252B20C1603E2008EB3E4 /* pshpack4.h */,
+				C31252B30C1603E2008EB3E4 /* pshpack8.h */,
+			);
+			name = Inc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32D94FC30562CBF700B6AF17 /* NDASFamily_10.4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A37113E085EBB9800DC468F /* Build configuration list for PBXNativeTarget "NDASFamily_10.4" */;
+			buildPhases = (
+				32D94FC90562CBF700B6AF17 /* Sources */,
+				32D94FC70562CBF700B6AF17 /* Resources */,
+				32D94FCB0562CBF700B6AF17 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDASFamily_10.4;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = NDASFamily;
+			productReference = 32D94FD00562CBF700B6AF17 /* NDASFamily.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+		9A66476F10312C210043E073 /* NDASFamily_10.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A66477410312C230043E073 /* Build configuration list for PBXNativeTarget "NDASFamily_10.5" */;
+			buildPhases = (
+				9A66476C10312C210043E073 /* Sources */,
+				9A66476D10312C210043E073 /* Resources */,
+				9A66476E10312C210043E073 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDASFamily_10.5;
+			productName = NDASFamily_10.5;
+			productReference = 9A66477010312C210043E073 /* NDASFamily.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+		9A713D0A1027FD4600EB977C /* NDASFamily_10.6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A713D0F1027FD4700EB977C /* Build configuration list for PBXNativeTarget "NDASFamily_10.6" */;
+			buildPhases = (
+				9A713D071027FD4600EB977C /* Sources */,
+				9A713D081027FD4600EB977C /* Resources */,
+				9A713D091027FD4600EB977C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDASFamily_10.6;
+			productName = NDASFamily_10.6;
+			productReference = 9A713D0B1027FD4600EB977C /* NDASFamily.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+		9A7B6AC00FE76B9E0081FBDD /* NDASFamily_10.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A7B6AC60FE76B9F0081FBDD /* Build configuration list for PBXNativeTarget "NDASFamily_10.3" */;
+			buildPhases = (
+				9A7B6ABD0FE76B9E0081FBDD /* Sources */,
+				9A7B6ABE0FE76B9E0081FBDD /* Resources */,
+				9A7B6ABF0FE76B9E0081FBDD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDASFamily_10.3;
+			productName = NDASFamily_Legacy;
+			productReference = 9A7B6AC10FE76B9E0081FBDD /* NDASFamily.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = com.ximeta;
+			};
+			buildConfigurationList = 9A371142085EBB9800DC468F /* Build configuration list for PBXProject "NDASFamily" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* NDASFamily */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A713D0A1027FD4600EB977C /* NDASFamily_10.6 */,
+				9A66476F10312C210043E073 /* NDASFamily_10.5 */,
+				32D94FC30562CBF700B6AF17 /* NDASFamily_10.4 */,
+				9A7B6AC00FE76B9E0081FBDD /* NDASFamily_10.3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32D94FC70562CBF700B6AF17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D94FC80562CBF700B6AF17 /* InfoPlist.strings in Resources */,
+				9A44272707CA0FCC00D8EDDD /* NDAS.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A66476D10312C210043E073 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A66478E10312CE70043E073 /* InfoPlist.strings in Resources */,
+				9A66478D10312CDE0043E073 /* NDAS.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A713D081027FD4600EB977C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A713D391027FD9100EB977C /* InfoPlist.strings in Resources */,
+				9A713D3A1027FD9100EB977C /* NDAS.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A7B6ABE0FE76B9E0081FBDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7B6B5B0FE773BA0081FBDD /* NDAS.icns in Resources */,
+				9A7B6B5A0FE773B70081FBDD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32D94FC90562CBF700B6AF17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1F6F76072CD9FF0038C0E6 /* NDASBusEnumerator.cpp in Sources */,
+				9A1F6F8E072CDEB50038C0E6 /* NDASLogicalDevice.cpp in Sources */,
+				9A1F6FB9072CE7B50038C0E6 /* Utilities.c in Sources */,
+				9A2DD59A072FCF0F002BC454 /* NDASBusEnumeratorUserClient.cpp in Sources */,
+				9ADC2A44073B7C6E00BD55FE /* NDASCommand.cpp in Sources */,
+				9A7F293507423F3800BDF9C9 /* LanScsiSocket.c in Sources */,
+				9A4E8D7607C07D10003CAE24 /* DebugPrint.c in Sources */,
+				9A4E8D7707C07D10003CAE24 /* des.c in Sources */,
+				9A4E8D7807C07D10003CAE24 /* hash.c in Sources */,
+				9A4E8D7907C07D10003CAE24 /* key.c in Sources */,
+				9A788AC207C6129000D06522 /* LanScsiProtocol.c in Sources */,
+				9A41F67807C613E20016BF2F /* NDASDevice.cpp in Sources */,
+				9A2B54CB07C9B2490035577C /* NDASProtocolTransport.cpp in Sources */,
+				9ABBA4FF093BF6EE00DC15B0 /* NDASUnitDevice.cpp in Sources */,
+				9ABBA523093BFC7400DC15B0 /* NDASPhysicalUnitDevice.cpp in Sources */,
+				9ABEA76D094443C0004598F5 /* NDASDeviceController.cpp in Sources */,
+				9AE07F190963DCAC00FAF24B /* NDASProtocolTransportNub.cpp in Sources */,
+				9A1B169D096BA2B600F73E34 /* scrc32.c in Sources */,
+				9A1B173E096BB26E00F73E34 /* NDASDIB.c in Sources */,
+				9A1B1769096BB60200F73E34 /* NDASRAIDUnitDevice.cpp in Sources */,
+				9A17B1B1096E5D7100BE5998 /* NDASRAIDUnitDeviceController.cpp in Sources */,
+				9AA405080B1C03B700B276A8 /* NDASUnitDeviceList.cpp in Sources */,
+				C31252A00C1603B5008EB3E4 /* lsp_debug.c in Sources */,
+				C31252A20C1603B5008EB3E4 /* lsp_hash.c in Sources */,
+				C31252A40C1603B5008EB3E4 /* lsp_util.c in Sources */,
+				C31252A50C1603B5008EB3E4 /* lsp.c in Sources */,
+				9A2474350FD621130082E8F3 /* lsp_wrapper.c in Sources */,
+				9A83D3E80FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp in Sources */,
+				9A83D4E210031B2400F6CE07 /* NDASPnpCommand.cpp in Sources */,
+				9A83D57C100324AD00F6CE07 /* NDASChangeSettingCommand.cpp in Sources */,
+				9A83D58E100327BF00F6CE07 /* NDASRefreshCommand.cpp in Sources */,
+				9A83D59810032A9300F6CE07 /* NDASSCSICommand.cpp in Sources */,
+				9A83D5BC1003313900F6CE07 /* NDASManagingIOCommand.cpp in Sources */,
+				9A83D5C11003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp in Sources */,
+				9A83D61E100486A700F6CE07 /* NDASLogicalDeviceController.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A66476C10312C210043E073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A66479110312D0A0043E073 /* DebugPrint.c in Sources */,
+				9A66479210312D0A0043E073 /* des.c in Sources */,
+				9A66479310312D0A0043E073 /* hash.c in Sources */,
+				9A66479410312D0A0043E073 /* key.c in Sources */,
+				9A66479510312D0A0043E073 /* LanScsiProtocol.c in Sources */,
+				9A66479610312D0A0043E073 /* LanScsiSocket.c in Sources */,
+				9A66479710312D0A0043E073 /* lsp.c in Sources */,
+				9A66479810312D0A0043E073 /* lsp_debug.c in Sources */,
+				9A66479910312D0A0043E073 /* lsp_hash.c in Sources */,
+				9A66479A10312D0A0043E073 /* lsp_util.c in Sources */,
+				9A66479B10312D0A0043E073 /* lsp_wrapper.c in Sources */,
+				9A66479C10312D0A0043E073 /* NDASBusEnumerator.cpp in Sources */,
+				9A66479D10312D0A0043E073 /* NDASBusEnumeratorUserClient.cpp in Sources */,
+				9A66479E10312D0A0043E073 /* NDASChangeSettingCommand.cpp in Sources */,
+				9A66479F10312D0A0043E073 /* NDASCommand.cpp in Sources */,
+				9A6647A010312D0A0043E073 /* NDASDevice.cpp in Sources */,
+				9A6647A110312D0A0043E073 /* NDASDeviceController.cpp in Sources */,
+				9A6647A210312D0A0043E073 /* NDASDeviceNotificationCommand.cpp in Sources */,
+				9A6647A310312D0A0043E073 /* NDASDIB.c in Sources */,
+				9A6647A410312D0A0043E073 /* NDASLogicalDevice.cpp in Sources */,
+				9A6647A510312D0A0043E073 /* NDASLogicalDeviceController.cpp in Sources */,
+				9A6647A610312D0A0043E073 /* NDASManagingIOCommand.cpp in Sources */,
+				9A6647A710312D0A0043E073 /* NDASPhysicalUnitDevice.cpp in Sources */,
+				9A6647A810312D0A0043E073 /* NDASPhysicalUnitDeviceController.cpp in Sources */,
+				9A6647A910312D0A0043E073 /* NDASPnpCommand.cpp in Sources */,
+				9A6647AA10312D0A0043E073 /* NDASProtocolTransport.cpp in Sources */,
+				9A6647AB10312D0A0043E073 /* NDASProtocolTransportNub.cpp in Sources */,
+				9A6647AC10312D0A0043E073 /* NDASRAIDUnitDevice.cpp in Sources */,
+				9A6647AD10312D0A0043E073 /* NDASRAIDUnitDeviceController.cpp in Sources */,
+				9A6647AE10312D0A0043E073 /* NDASRefreshCommand.cpp in Sources */,
+				9A6647AF10312D0A0043E073 /* NDASSCSICommand.cpp in Sources */,
+				9A6647B010312D0A0043E073 /* NDASUnitDevice.cpp in Sources */,
+				9A6647B110312D0A0043E073 /* NDASUnitDeviceList.cpp in Sources */,
+				9A6647B210312D0A0043E073 /* scrc32.c in Sources */,
+				9A6647B310312D0A0043E073 /* Utilities.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A713D071027FD4600EB977C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A713D161027FD7B00EB977C /* DebugPrint.c in Sources */,
+				9A713D171027FD7B00EB977C /* des.c in Sources */,
+				9A713D181027FD7B00EB977C /* hash.c in Sources */,
+				9A713D191027FD7B00EB977C /* key.c in Sources */,
+				9A713D1A1027FD7B00EB977C /* LanScsiProtocol.c in Sources */,
+				9A713D1B1027FD7B00EB977C /* LanScsiSocket.c in Sources */,
+				9A713D1C1027FD7B00EB977C /* lsp.c in Sources */,
+				9A713D1D1027FD7B00EB977C /* lsp_debug.c in Sources */,
+				9A713D1E1027FD7B00EB977C /* lsp_hash.c in Sources */,
+				9A713D1F1027FD7B00EB977C /* lsp_util.c in Sources */,
+				9A713D201027FD7B00EB977C /* lsp_wrapper.c in Sources */,
+				9A713D211027FD7B00EB977C /* NDASBusEnumerator.cpp in Sources */,
+				9A713D221027FD7B00EB977C /* NDASBusEnumeratorUserClient.cpp in Sources */,
+				9A713D231027FD7B00EB977C /* NDASChangeSettingCommand.cpp in Sources */,
+				9A713D241027FD7B00EB977C /* NDASCommand.cpp in Sources */,
+				9A713D251027FD7B00EB977C /* NDASDevice.cpp in Sources */,
+				9A713D261027FD7B00EB977C /* NDASDeviceController.cpp in Sources */,
+				9A713D271027FD7B00EB977C /* NDASDeviceNotificationCommand.cpp in Sources */,
+				9A713D281027FD7B00EB977C /* NDASDIB.c in Sources */,
+				9A713D291027FD7B00EB977C /* NDASLogicalDevice.cpp in Sources */,
+				9A713D2A1027FD7B00EB977C /* NDASLogicalDeviceController.cpp in Sources */,
+				9A713D2B1027FD7B00EB977C /* NDASManagingIOCommand.cpp in Sources */,
+				9A713D2C1027FD7B00EB977C /* NDASPhysicalUnitDevice.cpp in Sources */,
+				9A713D2D1027FD7B00EB977C /* NDASPhysicalUnitDeviceController.cpp in Sources */,
+				9A713D2E1027FD7B00EB977C /* NDASPnpCommand.cpp in Sources */,
+				9A713D2F1027FD7B00EB977C /* NDASProtocolTransport.cpp in Sources */,
+				9A713D301027FD7B00EB977C /* NDASProtocolTransportNub.cpp in Sources */,
+				9A713D311027FD7B00EB977C /* NDASRAIDUnitDevice.cpp in Sources */,
+				9A713D321027FD7B00EB977C /* NDASRAIDUnitDeviceController.cpp in Sources */,
+				9A713D331027FD7B00EB977C /* NDASRefreshCommand.cpp in Sources */,
+				9A713D341027FD7B00EB977C /* NDASSCSICommand.cpp in Sources */,
+				9A713D351027FD7B00EB977C /* NDASUnitDevice.cpp in Sources */,
+				9A713D361027FD7B00EB977C /* NDASUnitDeviceList.cpp in Sources */,
+				9A713D371027FD7B00EB977C /* scrc32.c in Sources */,
+				9A713D381027FD7B00EB977C /* Utilities.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A7B6ABD0FE76B9E0081FBDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A7B6ACA0FE76CA30081FBDD /* NDASBusEnumerator.cpp in Sources */,
+				9A7B6ACB0FE76CA30081FBDD /* NDASLogicalDevice.cpp in Sources */,
+				9A7B6ACC0FE76CA30081FBDD /* Utilities.c in Sources */,
+				9A7B6ACD0FE76CA30081FBDD /* NDASBusEnumeratorUserClient.cpp in Sources */,
+				9A7B6AC80FE76C810081FBDD /* NDASCommand.cpp in Sources */,
+				9A7B6ACE0FE76CA30081FBDD /* LanScsiSocket.c in Sources */,
+				9A7B6ACF0FE76CA30081FBDD /* DebugPrint.c in Sources */,
+				9A7B6AD00FE76CA30081FBDD /* des.c in Sources */,
+				9A7B6AD10FE76CA30081FBDD /* hash.c in Sources */,
+				9A7B6AD20FE76CA30081FBDD /* key.c in Sources */,
+				9A7B6AD30FE76CA30081FBDD /* LanScsiProtocol.c in Sources */,
+				9A7B6AD40FE76CA30081FBDD /* NDASDevice.cpp in Sources */,
+				9A7B6AD50FE76CA30081FBDD /* NDASProtocolTransport.cpp in Sources */,
+				9A7B6AD60FE76CA30081FBDD /* NDASUnitDevice.cpp in Sources */,
+				9A7B6AD70FE76CA30081FBDD /* NDASPhysicalUnitDevice.cpp in Sources */,
+				9A7B6AD80FE76CA30081FBDD /* NDASDeviceController.cpp in Sources */,
+				9A7B6AD90FE76CA30081FBDD /* NDASProtocolTransportNub.cpp in Sources */,
+				9A7B6ADA0FE76CA30081FBDD /* scrc32.c in Sources */,
+				9A7B6ADB0FE76CA30081FBDD /* NDASDIB.c in Sources */,
+				9A7B6ADC0FE76CA30081FBDD /* NDASRAIDUnitDevice.cpp in Sources */,
+				9A7B6ADD0FE76CA30081FBDD /* NDASRAIDUnitDeviceController.cpp in Sources */,
+				9A7B6ADE0FE76CA30081FBDD /* NDASUnitDeviceList.cpp in Sources */,
+				9A7B6ADF0FE76CA30081FBDD /* lsp_debug.c in Sources */,
+				9A7B6AE00FE76CA30081FBDD /* lsp_hash.c in Sources */,
+				9A7B6AE10FE76CA30081FBDD /* lsp_util.c in Sources */,
+				9A7B6AE20FE76CA30081FBDD /* lsp.c in Sources */,
+				9A7B6AC90FE76C990081FBDD /* lsp_wrapper.c in Sources */,
+				9A83D3E70FFCDC9100F6CE07 /* NDASPhysicalUnitDeviceController.cpp in Sources */,
+				9A83D4E310031B2400F6CE07 /* NDASPnpCommand.cpp in Sources */,
+				9A83D57D100324AD00F6CE07 /* NDASChangeSettingCommand.cpp in Sources */,
+				9A83D58F100327BF00F6CE07 /* NDASRefreshCommand.cpp in Sources */,
+				9A83D59910032A9300F6CE07 /* NDASSCSICommand.cpp in Sources */,
+				9A83D5BD1003313900F6CE07 /* NDASManagingIOCommand.cpp in Sources */,
+				9A83D5C21003352A00F6CE07 /* NDASDeviceNotificationCommand.cpp in Sources */,
+				9A83D61F100486A700F6CE07 /* NDASLogicalDeviceController.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A37113F085EBB9800DC468F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 225;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "NDASFamily_10.4-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				"OTHER_LDFLAGS[sdk=macosx10.4][arch=ppc]" = (
+					"-Xlinker",
+					"-no_uuid",
+				);
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(KEXT_FRAMEWORK)/Contents/PrivateHeaders/$(KEXT_FAMILY_NAME)";
+				PRODUCT_NAME = NDASFamily;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(KEXT_FRAMEWORK)/Contents/Headers/$(KEXT_FAMILY_NAME)";
+				SDKROOT = macosx10.4;
+				SYMROOT = build_10.4;
+				USER_HEADER_SEARCH_PATHS = "../Inc ../Inc/lspx";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		9A371140085EBB9800DC468F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 225;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SSE3_EXTENSIONS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_VERSION = 4.0;
+				INFOPLIST_FILE = "NDASFamily_10.4-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				"OTHER_LDFLAGS[sdk=macosx10.4][arch=ppc]" = (
+					"-Xlinker",
+					"-no_uuid",
+				);
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = "$(KEXT_FRAMEWORK)/Contents/PrivateHeaders/$(KEXT_FAMILY_NAME)";
+				PRODUCT_NAME = NDASFamily;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(KEXT_FRAMEWORK)/Contents/Headers/$(KEXT_FAMILY_NAME)";
+				SDKROOT = macosx10.4;
+				SYMROOT = build_10.4;
+				USER_HEADER_SEARCH_PATHS = "../Inc ../Inc/lspx";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9A371143085EBB9800DC468F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		9A371144085EBB9800DC468F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		9A66477210312C230043E073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 225;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "NDASFamily_10.5-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				PREBINDING = NO;
+				PRODUCT_NAME = NDASFamily;
+				SDKROOT = macosx10.5;
+				SYMROOT = build_10.5;
+				USER_HEADER_SEARCH_PATHS = "../Inc ../Inc/lspx";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		9A66477310312C230043E073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 225;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = "NDASFamily_10.5-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				PREBINDING = NO;
+				PRODUCT_NAME = NDASFamily;
+				SDKROOT = macosx10.5;
+				SYMROOT = build_10.5;
+				USER_HEADER_SEARCH_PATHS = "../Inc ../Inc/lspx";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9A713D0D1027FD4700EB977C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 225;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				HEADER_SEARCH_PATHS = "../Inc/**";
+				INFOPLIST_FILE = "NDASFamily_10.6-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				PREBINDING = NO;
+				PRODUCT_NAME = NDASFamily;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+				SYMROOT = build_10.6;
+				USER_HEADER_SEARCH_PATHS = "../Inc ../Inc/lspx";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		9A713D0E1027FD4700EB977C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 225;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				HEADER_SEARCH_PATHS = "../Inc/**";
+				INFOPLIST_FILE = "NDASFamily_10.6-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				PREBINDING = NO;
+				PRODUCT_NAME = NDASFamily;
+				SDKROOT = macosx10.6;
+				SYMROOT = build_10.6;
+				USER_HEADER_SEARCH_PATHS = "../Inc ../Inc/lspx";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9A7B6AC30FE76B9F0081FBDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = ppc;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 225;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = 3.3;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				HEADER_SEARCH_PATHS = "../Inc/**";
+				INFOPLIST_FILE = "NDASFamily_10.3-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				PREBINDING = NO;
+				PRODUCT_NAME = NDASFamily;
+				SDKROOT = macosx10.3.9;
+				SYMROOT = build_10.3;
+				USER_HEADER_SEARCH_PATHS = "../Inc/**";
+				VALID_ARCHS = "ppc ppc64 ppc7400 ppc970";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		9A7B6AC40FE76B9F0081FBDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = ppc;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 225;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = 3.3;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = NO;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = NO;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				HEADER_SEARCH_PATHS = "../Inc/**";
+				INFOPLIST_FILE = "NDASFamily_10.3-Info.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.driver.NDASFamily;
+				MODULE_VERSION = 225;
+				PREBINDING = NO;
+				PRODUCT_NAME = NDASFamily;
+				SDKROOT = macosx10.3.9;
+				SYMROOT = build_10.3;
+				USER_HEADER_SEARCH_PATHS = "../Inc/**";
+				VALID_ARCHS = "ppc ppc64 ppc7400 ppc970";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A37113E085EBB9800DC468F /* Build configuration list for PBXNativeTarget "NDASFamily_10.4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A37113F085EBB9800DC468F /* Debug */,
+				9A371140085EBB9800DC468F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A371142085EBB9800DC468F /* Build configuration list for PBXProject "NDASFamily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A371143085EBB9800DC468F /* Debug */,
+				9A371144085EBB9800DC468F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A66477410312C230043E073 /* Build configuration list for PBXNativeTarget "NDASFamily_10.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A66477210312C230043E073 /* Debug */,
+				9A66477310312C230043E073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A713D0F1027FD4700EB977C /* Build configuration list for PBXNativeTarget "NDASFamily_10.6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A713D0D1027FD4700EB977C /* Debug */,
+				9A713D0E1027FD4700EB977C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A7B6AC60FE76B9F0081FBDD /* Build configuration list for PBXNativeTarget "NDASFamily_10.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A7B6AC30FE76B9F0081FBDD /* Debug */,
+				9A7B6AC40FE76B9F0081FBDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

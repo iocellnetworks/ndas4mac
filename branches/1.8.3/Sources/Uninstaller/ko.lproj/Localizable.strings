@@ -1,0 +1,20 @@
+/* This will remove all files previously installed by the %@ installer. */
+"This will remove all files previously installed by the %@ installer." = "이 프로그램은 %@ 인스톨러로 설치된 모든 파일을 제거 합니다.";
+
+/* Uninstall start */
+"Now Uninstalling..." = "제거하고 있습니다..."; 
+
+/* Uninstall success */
+"The %@ software was sucessfully uninstalled. You must restsart your computer now." = "%@ 소프트웨어를 제거하였습니다. 컴퓨터를 재시동 하여야 합니다.";
+
+/* About Menu */
+"About %@" = "%@에 관하여";
+
+/* Hide Menu */
+"Hide %@" = "%@ 가리기";
+
+/* Quit Menu */
+"Quit %@" = "%@ 종료";
+
+/* Restart Button */
+"Restart" = "재시동";

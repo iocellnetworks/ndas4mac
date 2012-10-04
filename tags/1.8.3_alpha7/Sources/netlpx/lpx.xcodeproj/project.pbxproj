@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B105CE60DA21FB2009BD0D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		0B105CE80DA21FB2009BD0D1 /* lpx_module.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3CFF42312311CA2CB7 /* lpx_module.c */; settings = {ATTRIBUTES = (); }; };
+		0B105CEA0DA21FB2009BD0D1 /* lpx_proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A312C7F088E21860015C60C /* lpx_proto.c */; };
+		0B105CEB0DA21FB2009BD0D1 /* lpx_if.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A312D31088E4EFE0015C60C /* lpx_if.c */; };
+		0B105CEC0DA21FB2009BD0D1 /* lpx_datagram.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39E59088EAD5F005F4E0B /* lpx_datagram.c */; };
+		0B105CED0DA21FB2009BD0D1 /* lpx_base.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39E7B088F7AAF005F4E0B /* lpx_base.c */; };
+		0B105CEE0DA21FB2009BD0D1 /* lpx_pcb.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39F36088F9793005F4E0B /* lpx_pcb.c */; };
+		0B105CEF0DA21FB2009BD0D1 /* lpx_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DE4ED0895F87300F97758 /* lpx_stream.c */; };
+		0B105CF00DA21FB2009BD0D1 /* lpx_stream_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DE5D208960DA300F97758 /* lpx_stream_timer.c */; };
+		0B105D0B0DA22380009BD0D1 /* Utilities.10.5.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B105D0A0DA22380009BD0D1 /* Utilities.10.5.c */; };
+		0B105D0D0DA2238D009BD0D1 /* Utilities.10.4.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B105D0C0DA2238D009BD0D1 /* Utilities.10.4.c */; };
+		32A4FEBC0562C75700D090E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		32A4FEBE0562C75700D090E7 /* lpx_module.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3CFF42312311CA2CB7 /* lpx_module.c */; settings = {ATTRIBUTES = (); }; };
+		9A312C80088E21860015C60C /* lpx_proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A312C7F088E21860015C60C /* lpx_proto.c */; };
+		9A312D32088E4EFE0015C60C /* lpx_if.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A312D31088E4EFE0015C60C /* lpx_if.c */; };
+		9A713CB31027F74700EB977C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		9A713CB41027F75400EB977C /* lpx_base.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39E7B088F7AAF005F4E0B /* lpx_base.c */; };
+		9A713CB51027F75400EB977C /* lpx_datagram.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39E59088EAD5F005F4E0B /* lpx_datagram.c */; };
+		9A713CB61027F75400EB977C /* lpx_if.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A312D31088E4EFE0015C60C /* lpx_if.c */; };
+		9A713CB71027F75400EB977C /* lpx_module.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3CFF42312311CA2CB7 /* lpx_module.c */; };
+		9A713CB81027F75400EB977C /* lpx_pcb.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39F36088F9793005F4E0B /* lpx_pcb.c */; };
+		9A713CB91027F75400EB977C /* lpx_proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A312C7F088E21860015C60C /* lpx_proto.c */; };
+		9A713CBA1027F75400EB977C /* lpx_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DE4ED0895F87300F97758 /* lpx_stream.c */; };
+		9A713CBB1027F75400EB977C /* lpx_stream_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DE5D208960DA300F97758 /* lpx_stream_timer.c */; };
+		9A8DE4EF0895F87300F97758 /* lpx_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DE4ED0895F87300F97758 /* lpx_stream.c */; };
+		9A8DE5D308960DA300F97758 /* lpx_stream_timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A8DE5D208960DA300F97758 /* lpx_stream_timer.c */; };
+		9AAA115110310B1F0054C65C /* Utilities.10.6.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AAA115010310B1F0054C65C /* Utilities.10.6.c */; };
+		9AB39E5A088EAD5F005F4E0B /* lpx_datagram.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39E59088EAD5F005F4E0B /* lpx_datagram.c */; };
+		9AB39E7C088F7AAF005F4E0B /* lpx_base.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39E7B088F7AAF005F4E0B /* lpx_base.c */; };
+		9AB39F38088F9793005F4E0B /* lpx_pcb.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB39F36088F9793005F4E0B /* lpx_pcb.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		0B105D330DA226E3009BD0D1 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.4_2;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		0B105D340DA226E3009BD0D1 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.4_2;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0B105CF60DA21FB2009BD0D1 /* netlpx.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = netlpx.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B105CFE0DA22174009BD0D1 /* Info.10.5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.10.5.plist; sourceTree = "<group>"; };
+		0B105D000DA2217F009BD0D1 /* Info.10.4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.10.4.plist; sourceTree = "<group>"; };
+		0B105D0A0DA22380009BD0D1 /* Utilities.10.5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utilities.10.5.c; sourceTree = "<group>"; };
+		0B105D0C0DA2238D009BD0D1 /* Utilities.10.4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utilities.10.4.c; sourceTree = "<group>"; };
+		1A224C3CFF42312311CA2CB7 /* lpx_module.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_module.c; sourceTree = "<group>"; };
+		32A4FEC40562C75800D090E7 /* netlpx.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = netlpx.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A312C5A088E1EC80015C60C /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		9A312C63088E20490015C60C /* lpx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = lpx.h; sourceTree = "<group>"; };
+		9A312C7F088E21860015C60C /* lpx_proto.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = lpx_proto.c; sourceTree = "<group>"; };
+		9A312D31088E4EFE0015C60C /* lpx_if.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_if.c; sourceTree = "<group>"; };
+		9A312D51088E53680015C60C /* lpx_if.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = lpx_if.h; sourceTree = "<group>"; };
+		9A713CAE1027F6ED00EB977C /* netlpx.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = netlpx.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A713CAF1027F6ED00EB977C /* Info.10.6.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.10.6.plist; sourceTree = "<group>"; };
+		9A8DE4EC0895F87300F97758 /* lpx_stream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = lpx_stream.h; sourceTree = "<group>"; };
+		9A8DE4ED0895F87300F97758 /* lpx_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_stream.c; sourceTree = "<group>"; };
+		9A8DE54B0895FF4E00F97758 /* lpx_stream_var.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = lpx_stream_var.h; sourceTree = "<group>"; };
+		9A8DE5610896004300F97758 /* lpx_stream_timer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = lpx_stream_timer.h; sourceTree = "<group>"; };
+		9A8DE5D208960DA300F97758 /* lpx_stream_timer.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = lpx_stream_timer.c; sourceTree = "<group>"; };
+		9AAA115010310B1F0054C65C /* Utilities.10.6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utilities.10.6.c; sourceTree = "<group>"; };
+		9AB39E59088EAD5F005F4E0B /* lpx_datagram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_datagram.c; sourceTree = "<group>"; };
+		9AB39E60088EAE06005F4E0B /* lpx_datagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_datagram.h; sourceTree = "<group>"; };
+		9AB39E7B088F7AAF005F4E0B /* lpx_base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_base.c; sourceTree = "<group>"; };
+		9AB39E94088F8E85005F4E0B /* lpx_var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_var.h; sourceTree = "<group>"; };
+		9AB39F29088F95B4005F4E0B /* lpx_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_base.h; sourceTree = "<group>"; };
+		9AB39F35088F9793005F4E0B /* lpx_pcb.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = lpx_pcb.h; sourceTree = "<group>"; };
+		9AB39F36088F9793005F4E0B /* lpx_pcb.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = lpx_pcb.c; sourceTree = "<group>"; };
+		D27513B306A6225300ADB3A4 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B105CF10DA21FB2009BD0D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A4FEBF0562C75700D090E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A713CAC1027F6ED00EB977C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* lpx */ = {
+			isa = PBXGroup;
+			children = (
+				247142CAFF3F8F9811CA285C /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				D27513B306A6225300ADB3A4 /* Kernel.framework */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = lpx;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A713CAF1027F6ED00EB977C /* Info.10.6.plist */,
+				0B105D000DA2217F009BD0D1 /* Info.10.4.plist */,
+				0B105CFE0DA22174009BD0D1 /* Info.10.5.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32A4FEC40562C75800D090E7 /* netlpx.kext */,
+				0B105CF60DA21FB2009BD0D1 /* netlpx.kext */,
+				9A713CAE1027F6ED00EB977C /* netlpx.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9AAA115010310B1F0054C65C /* Utilities.10.6.c */,
+				0B105D0A0DA22380009BD0D1 /* Utilities.10.5.c */,
+				0B105D0C0DA2238D009BD0D1 /* Utilities.10.4.c */,
+				9A312C63088E20490015C60C /* lpx.h */,
+				9AB39E94088F8E85005F4E0B /* lpx_var.h */,
+				1A224C3CFF42312311CA2CB7 /* lpx_module.c */,
+				9A312C7F088E21860015C60C /* lpx_proto.c */,
+				9A312D51088E53680015C60C /* lpx_if.h */,
+				9A312D31088E4EFE0015C60C /* lpx_if.c */,
+				9AB39E60088EAE06005F4E0B /* lpx_datagram.h */,
+				9AB39E59088EAD5F005F4E0B /* lpx_datagram.c */,
+				9A312C5A088E1EC80015C60C /* Utilities.h */,
+				9AB39F29088F95B4005F4E0B /* lpx_base.h */,
+				9AB39E7B088F7AAF005F4E0B /* lpx_base.c */,
+				9AB39F35088F9793005F4E0B /* lpx_pcb.h */,
+				9AB39F36088F9793005F4E0B /* lpx_pcb.c */,
+				9A8DE54B0895FF4E00F97758 /* lpx_stream_var.h */,
+				9A8DE4EC0895F87300F97758 /* lpx_stream.h */,
+				9A8DE4ED0895F87300F97758 /* lpx_stream.c */,
+				9A8DE5610896004300F97758 /* lpx_stream_timer.h */,
+				9A8DE5D208960DA300F97758 /* lpx_stream_timer.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B105CD90DA21FB2009BD0D1 /* netlpx.10.4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B105CF30DA21FB2009BD0D1 /* Build configuration list for PBXNativeTarget "netlpx.10.4" */;
+			buildPhases = (
+				0B105CE50DA21FB2009BD0D1 /* Resources */,
+				0B105CE70DA21FB2009BD0D1 /* Sources */,
+				0B105CF10DA21FB2009BD0D1 /* Frameworks */,
+			);
+			buildRules = (
+				0B105D340DA226E3009BD0D1 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = netlpx.10.4;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = lpx;
+			productReference = 0B105CF60DA21FB2009BD0D1 /* netlpx.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		32A4FEB80562C75700D090E7 /* netlpx.10.5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A312C4F088E1E220015C60C /* Build configuration list for PBXNativeTarget "netlpx.10.5" */;
+			buildPhases = (
+				32A4FEBD0562C75700D090E7 /* Sources */,
+				32A4FEBB0562C75700D090E7 /* Resources */,
+				32A4FEBF0562C75700D090E7 /* Frameworks */,
+			);
+			buildRules = (
+				0B105D330DA226E3009BD0D1 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = netlpx.10.5;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = lpx;
+			productReference = 32A4FEC40562C75800D090E7 /* netlpx.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+		9A713CAD1027F6ED00EB977C /* netlpx.10.6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A713CB21027F6EE00EB977C /* Build configuration list for PBXNativeTarget "netlpx.10.6" */;
+			buildPhases = (
+				9A713CAA1027F6ED00EB977C /* Sources */,
+				9A713CAB1027F6ED00EB977C /* Resources */,
+				9A713CAC1027F6ED00EB977C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = netlpx.10.6;
+			productName = netlpx.10.6;
+			productReference = 9A713CAE1027F6ED00EB977C /* netlpx.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9A312C53088E1E220015C60C /* Build configuration list for PBXProject "lpx" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* lpx */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A713CAD1027F6ED00EB977C /* netlpx.10.6 */,
+				32A4FEB80562C75700D090E7 /* netlpx.10.5 */,
+				0B105CD90DA21FB2009BD0D1 /* netlpx.10.4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B105CE50DA21FB2009BD0D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B105CE60DA21FB2009BD0D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A4FEBB0562C75700D090E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A4FEBC0562C75700D090E7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A713CAB1027F6ED00EB977C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A713CB31027F74700EB977C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B105CE70DA21FB2009BD0D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B105CE80DA21FB2009BD0D1 /* lpx_module.c in Sources */,
+				0B105CEA0DA21FB2009BD0D1 /* lpx_proto.c in Sources */,
+				0B105CEB0DA21FB2009BD0D1 /* lpx_if.c in Sources */,
+				0B105CEC0DA21FB2009BD0D1 /* lpx_datagram.c in Sources */,
+				0B105CED0DA21FB2009BD0D1 /* lpx_base.c in Sources */,
+				0B105CEE0DA21FB2009BD0D1 /* lpx_pcb.c in Sources */,
+				0B105CEF0DA21FB2009BD0D1 /* lpx_stream.c in Sources */,
+				0B105CF00DA21FB2009BD0D1 /* lpx_stream_timer.c in Sources */,
+				0B105D0D0DA2238D009BD0D1 /* Utilities.10.4.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A4FEBD0562C75700D090E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A4FEBE0562C75700D090E7 /* lpx_module.c in Sources */,
+				9A312C80088E21860015C60C /* lpx_proto.c in Sources */,
+				9A312D32088E4EFE0015C60C /* lpx_if.c in Sources */,
+				9AB39E5A088EAD5F005F4E0B /* lpx_datagram.c in Sources */,
+				9AB39E7C088F7AAF005F4E0B /* lpx_base.c in Sources */,
+				9AB39F38088F9793005F4E0B /* lpx_pcb.c in Sources */,
+				9A8DE4EF0895F87300F97758 /* lpx_stream.c in Sources */,
+				9A8DE5D308960DA300F97758 /* lpx_stream_timer.c in Sources */,
+				0B105D0B0DA22380009BD0D1 /* Utilities.10.5.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A713CAA1027F6ED00EB977C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A713CB41027F75400EB977C /* lpx_base.c in Sources */,
+				9A713CB51027F75400EB977C /* lpx_datagram.c in Sources */,
+				9A713CB61027F75400EB977C /* lpx_if.c in Sources */,
+				9A713CB71027F75400EB977C /* lpx_module.c in Sources */,
+				9A713CB81027F75400EB977C /* lpx_pcb.c in Sources */,
+				9A713CB91027F75400EB977C /* lpx_proto.c in Sources */,
+				9A713CBA1027F75400EB977C /* lpx_stream.c in Sources */,
+				9A713CBB1027F75400EB977C /* lpx_stream_timer.c in Sources */,
+				9AAA115110310B1F0054C65C /* Utilities.10.6.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B105CF40DA21FB2009BD0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 209;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PRIVATE,
+					"NOTFB31=1",
+					_KERNEL,
+					"NDAS_MACOSXVERSION=4",
+				);
+				INFOPLIST_FILE = Info.10.4.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.nke.lpx;
+				MODULE_START = lpx_start;
+				MODULE_STOP = lpx_stop;
+				MODULE_VERSION = 209;
+				"OTHER_LDFLAGS[sdk=macosx10.4][arch=ppc]" = (
+					"-Xlinker",
+					"-no_uuid",
+				);
+				PRODUCT_NAME = netlpx;
+				SYMROOT = build_10.4;
+				USER_HEADER_SEARCH_PATHS = "../Inc /xnuSources/10.4.i386.recent/bsd /xnuSources/10.4.i386.recent/osfmk";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		0B105CF50DA21FB2009BD0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 209;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PRIVATE,
+					"NOTFB31=1",
+					_KERNEL,
+					"NDAS_MACOSXVERSION=4",
+				);
+				INFOPLIST_FILE = Info.10.4.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.nke.lpx;
+				MODULE_START = lpx_start;
+				MODULE_STOP = lpx_stop;
+				MODULE_VERSION = 209;
+				"OTHER_LDFLAGS[sdk=macosx10.4][arch=ppc]" = (
+					"-Xlinker",
+					"-no_uuid",
+				);
+				PRODUCT_NAME = netlpx;
+				SYMROOT = build_10.4;
+				USER_HEADER_SEARCH_PATHS = "../Inc /xnuSources/10.4.i386.recent/bsd /xnuSources/10.4.i386.recent/osfmk";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		9A312C50088E1E220015C60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 209;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PRIVATE,
+					_KERNEL,
+					"NOTFB31=1",
+					"NDAS_MACOSXVERSION=5",
+				);
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = Info.10.5.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.nke.lpx;
+				MODULE_START = lpx_start;
+				MODULE_STOP = lpx_stop;
+				MODULE_VERSION = 209;
+				PRODUCT_NAME = netlpx;
+				SDKROOT = macosx10.5;
+				SYMROOT = build_10.5;
+				USER_HEADER_SEARCH_PATHS = "../Inc /xnuSources/10.5.recent/bsd /xnuSources/10.5.recent/osfmk";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		9A312C51088E1E220015C60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 209;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PRIVATE,
+					_KERNEL,
+					"NOTFB31=1",
+					"NDAS_MACOSXVERSION=5",
+				);
+				GCC_VERSION = 4.2;
+				INFOPLIST_FILE = Info.10.5.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.nke.lpx;
+				MODULE_START = lpx_start;
+				MODULE_STOP = lpx_stop;
+				MODULE_VERSION = 209;
+				PRODUCT_NAME = netlpx;
+				SDKROOT = macosx10.5;
+				SYMROOT = build_10.5;
+				USER_HEADER_SEARCH_PATHS = "../Inc /xnuSources/10.5.recent/bsd /xnuSources/10.5.recent/osfmk";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		9A312C54088E1E220015C60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_VERSION = 4.0;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.4;
+			};
+			name = Debug;
+		};
+		9A312C55088E1E220015C60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_AUTO_VECTORIZATION = NO;
+				GCC_UNROLL_LOOPS = NO;
+				GCC_VERSION = 4.0;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.4;
+			};
+			name = Release;
+		};
+		9A713CB01027F6EE00EB977C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 209;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PRIVATE,
+					_KERNEL,
+					"NOTFB31=1",
+					"NDAS_MACOSXVERSION=5",
+				);
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Info.10.6.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.nke.lpx;
+				MODULE_START = lpx_start;
+				MODULE_STOP = lpx_stop;
+				MODULE_VERSION = 209;
+				PREBINDING = NO;
+				PRODUCT_NAME = netlpx;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+				SYMROOT = build_10.6;
+				USER_HEADER_SEARCH_PATHS = "../Inc /xnuSources/10.6.recent/bsd /xnuSources/10.6.recent/osfmk";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		9A713CB11027F6EE00EB977C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 209;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PRIVATE,
+					_KERNEL,
+					"NOTFB31=1",
+					"NDAS_MACOSXVERSION=5",
+				);
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = Info.10.6.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.nke.lpx;
+				MODULE_START = lpx_start;
+				MODULE_STOP = lpx_stop;
+				MODULE_VERSION = 209;
+				PREBINDING = NO;
+				PRODUCT_NAME = netlpx;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = macosx10.6;
+				SYMROOT = build_10.6;
+				USER_HEADER_SEARCH_PATHS = "../Inc /xnuSources/10.6.recent/bsd /xnuSources/10.6.recent/osfmk";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B105CF30DA21FB2009BD0D1 /* Build configuration list for PBXNativeTarget "netlpx.10.4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B105CF40DA21FB2009BD0D1 /* Debug */,
+				0B105CF50DA21FB2009BD0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A312C4F088E1E220015C60C /* Build configuration list for PBXNativeTarget "netlpx.10.5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A312C50088E1E220015C60C /* Debug */,
+				9A312C51088E1E220015C60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A312C53088E1E220015C60C /* Build configuration list for PBXProject "lpx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A312C54088E1E220015C60C /* Debug */,
+				9A312C55088E1E220015C60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A713CB21027F6EE00EB977C /* Build configuration list for PBXNativeTarget "netlpx.10.6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A713CB01027F6EE00EB977C /* Debug */,
+				9A713CB11027F6EE00EB977C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

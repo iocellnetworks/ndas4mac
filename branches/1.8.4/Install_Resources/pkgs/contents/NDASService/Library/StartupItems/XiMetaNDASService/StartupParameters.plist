@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>XIMETA NDAS Service</string>
+	<key>OrderPreference</key>
+	<string></string>
+	<key>Provides</key>
+	<array>
+		<string>XiMetaNDASService</string>
+	</array>
+	<key>Requires</key>
+	<array>
+		<string>XiMetaNetLpx</string>
+	</array>
+</dict>
+</plist>

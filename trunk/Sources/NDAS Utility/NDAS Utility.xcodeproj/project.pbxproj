@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B9FC5B40DC018B100BEBC10 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B9FC5B20DC018B100BEBC10 /* MainMenu.xib */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9A002C4E0C30166A00FE30A5 /* NDAS Info.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A002C4D0C30166A00FE30A5 /* NDAS Info.icns */; };
+		9A077EE4084318D100FD576F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A077EE2084318D100FD576F /* InfoPlist.strings */; };
+		9A0C6C7C07F3F7BA0007358E /* DiskDisabled.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A0C6C7A07F3F7BA0007358E /* DiskDisabled.tiff */; };
+		9A0F518D09A9B45C00234B1D /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A0F518A09A9B45C00234B1D /* crc.c */; };
+		9A0FC66E09977467009A0573 /* RAIDBindSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0FC66B09977467009A0573 /* RAIDBindSheetController.m */; };
+		9A11987F098A47AE004652A2 /* RAIDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A11987C098A47AE004652A2 /* RAIDDevice.m */; };
+		9A16B653099736190019CF9A /* gray.tif in Resources */ = {isa = PBXBuildFile; fileRef = 9A16B651099736190019CF9A /* gray.tif */; };
+		9A16FB1F0C4B0DED00834159 /* reload.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A16FB1E0C4B0DED00834159 /* reload.tiff */; };
+		9A203C9709998D5100BFE314 /* minusbutton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A203C9409998D5100BFE314 /* minusbutton.tiff */; };
+		9A23B0100C17DD7300F46686 /* ExportIDFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A23B00F0C17DD7300F46686 /* ExportIDFieldDelegate.m */; };
+		9A3DF822099C3B1F0049FED4 /* Caution.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A3DF81F099C3B1E0049FED4 /* Caution.tiff */; };
+		9A3DF86E099C52790049FED4 /* RAID.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A3DF86B099C52790049FED4 /* RAID.icns */; };
+		9A4085860B64B9B7003D9870 /* NDASID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A4085840B64B9B7003D9870 /* NDASID.cpp */; };
+		9A4E5D270AAE668A00C88C21 /* Separator.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E5D250AAE668A00C88C21 /* Separator.tiff */; };
+		9A534BFD0994C7ED00142452 /* RAIDSubDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A534BFB0994C7ED00142452 /* RAIDSubDevice.m */; };
+		9A5DBD8407F7A95C00B52409 /* Register.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DBD8207F7A95C00B52409 /* Register.tiff */; };
+		9A5DBD8507F7A95C00B52409 /* Unregister.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DBD8307F7A95C00B52409 /* Unregister.tiff */; };
+		9A5DBFEC07F7B6FF00B52409 /* External.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DBFEB07F7B6FF00B52409 /* External.icns */; };
+		9A5DC0F207F7CBA400B52409 /* UnitDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC0F007F7CBA400B52409 /* UnitDevice.m */; };
+		9A5DC18307F7D74300B52409 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC18107F7D74300B52409 /* Device.m */; };
+		9A5DC24507F7E3DB00B52409 /* Disk.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DC24407F7E3DB00B52409 /* Disk.tiff */; };
+		9A68573809C7D628007E311C /* Gear.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9A68573509C7D628007E311C /* Gear.tiff */; };
+		9A781B8708E26F9800625E6A /* ODD.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9A781B8408E26F9800625E6A /* ODD.icns */; };
+		9A82FDF007F413EF00A88D19 /* NDASGetInformation.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A82FDEF07F413EF00A88D19 /* NDASGetInformation.c */; };
+		9AA8D60107F97D0B00D81386 /* WriteKeyDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8D5FF07F97D0B00D81386 /* WriteKeyDelegate.m */; };
+		9ABC832907F2B1F000532862 /* UtilityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC832707F2B1F000532862 /* UtilityController.m */; };
+		9ABC838A07F2E94900532862 /* IDFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC838807F2E94900532862 /* IDFieldDelegate.m */; };
+		9ABC848507F3B3EE00532862 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC847F07F3B3EE00532862 /* des.c */; };
+		9ABC848607F3B3EE00532862 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC848007F3B3EE00532862 /* hash.c */; };
+		9ABC848707F3B3EE00532862 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC848107F3B3EE00532862 /* key.c */; };
+		9ABC848907F3B3EE00532862 /* serial.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC848307F3B3EE00532862 /* serial.c */; };
+		9ABC850B07F3D14300532862 /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC850907F3D14300532862 /* ImageAndTextCell.m */; };
+		9ABC853007F3DCC200532862 /* NDASDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC852E07F3DCC200532862 /* NDASDevice.m */; };
+		9AC0DA2009972E9700A473DE /* red.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9AC0DA1E09972E9700A473DE /* red.tiff */; };
+		9AC0DA2409972EC000A473DE /* green.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9AC0DA2209972EC000A473DE /* green.tiff */; };
+		9AC0DA2809972EC800A473DE /* yellow.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9AC0DA2609972EC800A473DE /* yellow.tiff */; };
+		9AC54E6B07FC72C900855EA3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AC54E6A07FC72C900855EA3 /* Localizable.strings */; };
+		9AC54EE107FC7F7F00855EA3 /* NDAS Utility.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9AC54EDF07FC7F7F00855EA3 /* NDAS Utility.icns */; };
+		9AC55EB707FCB95800855EA3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC55EB607FCB95800855EA3 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		0B5CCB250D8215D500237125 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.4_2;
+			fileType = sourcecode.asm;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		0B3B40DD0E8C378E00EFD702 /* ru */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0B3B40DE0E8C392A00EFD702 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0B9FC5B30DC018B100BEBC10 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0B9FC5B50DC018C500BEBC10 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0BA824850E1AAD6900FD14EC /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = OEM/NDAS/German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BA824860E1AAD7900FD14EC /* German */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0BA824870E1AAD8B00FD14EC /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* NDAS Utility_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NDAS Utility_Prefix.pch"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* NDAS Utility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NDAS Utility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A00225F0898B34D00445E8B /* ko */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ko; path = OEM/NDAS/ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A002C4D0C30166A00FE30A5 /* NDAS Info.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "NDAS Info.icns"; path = "Resources/NDAS Info.icns"; sourceTree = "<group>"; };
+		9A077EE3084318D100FD576F /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = OEM/NDAS/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A0C6C7A07F3F7BA0007358E /* DiskDisabled.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = DiskDisabled.tiff; path = Resources/DiskDisabled.tiff; sourceTree = "<group>"; };
+		9A0CEFFF095155DA00C7B504 /* NDASNotification.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NDASNotification.h; path = ../Inc/NDASNotification.h; sourceTree = SOURCE_ROOT; };
+		9A0F518A09A9B45C00234B1D /* crc.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = crc.c; path = "../Shared Sources/crc.c"; sourceTree = SOURCE_ROOT; };
+		9A0FC66A09977467009A0573 /* RAIDBindSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAIDBindSheetController.h; sourceTree = "<group>"; };
+		9A0FC66B09977467009A0573 /* RAIDBindSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAIDBindSheetController.m; sourceTree = "<group>"; };
+		9A11987B098A47AE004652A2 /* RAIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAIDDevice.h; sourceTree = "<group>"; };
+		9A11987C098A47AE004652A2 /* RAIDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAIDDevice.m; sourceTree = "<group>"; };
+		9A1198FC098A4C28004652A2 /* LanScsiDiskInformationBlock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LanScsiDiskInformationBlock.h; path = ../Inc/LanScsiDiskInformationBlock.h; sourceTree = SOURCE_ROOT; };
+		9A16B651099736190019CF9A /* gray.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = gray.tif; path = Resources/gray.tif; sourceTree = "<group>"; };
+		9A16FB1E0C4B0DED00834159 /* reload.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = reload.tiff; path = Resources/reload.tiff; sourceTree = "<group>"; };
+		9A203C9409998D5100BFE314 /* minusbutton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = minusbutton.tiff; path = Resources/minusbutton.tiff; sourceTree = "<group>"; };
+		9A23B00E0C17DD7300F46686 /* ExportIDFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExportIDFieldDelegate.h; sourceTree = "<group>"; };
+		9A23B00F0C17DD7300F46686 /* ExportIDFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExportIDFieldDelegate.m; sourceTree = "<group>"; };
+		9A2E291D0956B33700BD0080 /* NDASBusEnumeratorUserClientTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NDASBusEnumeratorUserClientTypes.h; path = ../Inc/NDASBusEnumeratorUserClientTypes.h; sourceTree = SOURCE_ROOT; };
+		9A3DF81F099C3B1E0049FED4 /* Caution.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Caution.tiff; path = Resources/Caution.tiff; sourceTree = "<group>"; };
+		9A3DF86B099C52790049FED4 /* RAID.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = RAID.icns; path = Resources/RAID.icns; sourceTree = "<group>"; };
+		9A4085840B64B9B7003D9870 /* NDASID.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NDASID.cpp; path = "../Shared Sources/NDASID.cpp"; sourceTree = SOURCE_ROOT; };
+		9A4E5D250AAE668A00C88C21 /* Separator.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Separator.tiff; path = Resources/Separator.tiff; sourceTree = "<group>"; };
+		9A534BFA0994C7ED00142452 /* RAIDSubDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAIDSubDevice.h; sourceTree = "<group>"; };
+		9A534BFB0994C7ED00142452 /* RAIDSubDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAIDSubDevice.m; sourceTree = "<group>"; };
+		9A5DBD8207F7A95C00B52409 /* Register.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Register.tiff; path = Resources/Register.tiff; sourceTree = "<group>"; };
+		9A5DBD8307F7A95C00B52409 /* Unregister.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Unregister.tiff; path = Resources/Unregister.tiff; sourceTree = "<group>"; };
+		9A5DBFEB07F7B6FF00B52409 /* External.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = External.icns; path = Resources/External.icns; sourceTree = "<group>"; };
+		9A5DC0EF07F7CBA400B52409 /* UnitDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitDevice.h; sourceTree = "<group>"; };
+		9A5DC0F007F7CBA400B52409 /* UnitDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitDevice.m; sourceTree = "<group>"; };
+		9A5DC18007F7D74300B52409 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		9A5DC18107F7D74300B52409 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		9A5DC24407F7E3DB00B52409 /* Disk.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Disk.tiff; path = Resources/Disk.tiff; sourceTree = "<group>"; };
+		9A68573509C7D628007E311C /* Gear.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = Gear.tiff; path = Resources/Gear.tiff; sourceTree = "<group>"; };
+		9A781B8408E26F9800625E6A /* ODD.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = ODD.icns; path = Resources/ODD.icns; sourceTree = "<group>"; };
+		9A82FDEF07F413EF00A88D19 /* NDASGetInformation.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = NDASGetInformation.c; path = "../Shared Sources/NDASGetInformation.c"; sourceTree = SOURCE_ROOT; };
+		9AA16179096127930032B5F5 /* NDASGetInformation.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; name = NDASGetInformation.h; path = ../Inc/NDASGetInformation.h; sourceTree = SOURCE_ROOT; };
+		9AA2A5BF0FE1F7F0008E3CA9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = OEM/NDAS/ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AA8D5FE07F97D0B00D81386 /* WriteKeyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteKeyDelegate.h; sourceTree = "<group>"; };
+		9AA8D5FF07F97D0B00D81386 /* WriteKeyDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteKeyDelegate.m; sourceTree = "<group>"; };
+		9ABC832607F2B1F000532862 /* UtilityController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UtilityController.h; sourceTree = "<group>"; };
+		9ABC832707F2B1F000532862 /* UtilityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityController.m; sourceTree = "<group>"; };
+		9ABC838707F2E94900532862 /* IDFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IDFieldDelegate.h; sourceTree = "<group>"; };
+		9ABC838807F2E94900532862 /* IDFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = IDFieldDelegate.m; sourceTree = "<group>"; };
+		9ABC847F07F3B3EE00532862 /* des.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = des.c; path = "../Shared Sources/des.c"; sourceTree = SOURCE_ROOT; };
+		9ABC848007F3B3EE00532862 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = hash.c; path = "../Shared Sources/hash.c"; sourceTree = SOURCE_ROOT; };
+		9ABC848107F3B3EE00532862 /* key.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = key.c; path = "../Shared Sources/key.c"; sourceTree = SOURCE_ROOT; };
+		9ABC848307F3B3EE00532862 /* serial.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = serial.c; path = "../Shared Sources/serial.c"; sourceTree = SOURCE_ROOT; };
+		9ABC850807F3D14300532862 /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
+		9ABC850907F3D14300532862 /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
+		9ABC852D07F3DCC200532862 /* NDASDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDASDevice.h; sourceTree = "<group>"; };
+		9ABC852E07F3DCC200532862 /* NDASDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDASDevice.m; sourceTree = "<group>"; };
+		9AC0DA1E09972E9700A473DE /* red.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = red.tiff; path = Resources/red.tiff; sourceTree = "<group>"; };
+		9AC0DA2209972EC000A473DE /* green.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = green.tiff; path = Resources/green.tiff; sourceTree = "<group>"; };
+		9AC0DA2609972EC800A473DE /* yellow.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = yellow.tiff; path = Resources/yellow.tiff; sourceTree = "<group>"; };
+		9AC54E5407FC724900855EA3 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9AC54E6C07FC72D400855EA3 /* ko */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9AC54EDF07FC7F7F00855EA3 /* NDAS Utility.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "NDAS Utility.icns"; sourceTree = "<group>"; };
+		9AC5506B07FCA81700855EA3 /* NDAS Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "NDAS Info.plist"; path = "OEM/NDAS/NDAS Info.plist"; sourceTree = "<group>"; };
+		9AC55EB607FCB95800855EA3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				9AC55EB707FCB95800855EA3 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* NDAS Utility_Prefix.pch */,
+				9AA8D5FE07F97D0B00D81386 /* WriteKeyDelegate.h */,
+				9AA8D5FF07F97D0B00D81386 /* WriteKeyDelegate.m */,
+				9A5DC18007F7D74300B52409 /* Device.h */,
+				9A5DC18107F7D74300B52409 /* Device.m */,
+				9A5DC0EF07F7CBA400B52409 /* UnitDevice.h */,
+				9A5DC0F007F7CBA400B52409 /* UnitDevice.m */,
+				9ABC852D07F3DCC200532862 /* NDASDevice.h */,
+				9ABC852E07F3DCC200532862 /* NDASDevice.m */,
+				9A534BFA0994C7ED00142452 /* RAIDSubDevice.h */,
+				9A534BFB0994C7ED00142452 /* RAIDSubDevice.m */,
+				9A11987B098A47AE004652A2 /* RAIDDevice.h */,
+				9A11987C098A47AE004652A2 /* RAIDDevice.m */,
+				9ABC850807F3D14300532862 /* ImageAndTextCell.h */,
+				9ABC850907F3D14300532862 /* ImageAndTextCell.m */,
+				9ABC832607F2B1F000532862 /* UtilityController.h */,
+				9ABC832707F2B1F000532862 /* UtilityController.m */,
+				9ABC838707F2E94900532862 /* IDFieldDelegate.h */,
+				9ABC838807F2E94900532862 /* IDFieldDelegate.m */,
+				9A0FC66A09977467009A0573 /* RAIDBindSheetController.h */,
+				9A0FC66B09977467009A0573 /* RAIDBindSheetController.m */,
+				9A23B00E0C17DD7300F46686 /* ExportIDFieldDelegate.h */,
+				9A23B00F0C17DD7300F46686 /* ExportIDFieldDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AC55EB607FCB95800855EA3 /* IOKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* NDAS Utility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* NDAS Utility */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "NDAS Utility";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A0F518A09A9B45C00234B1D /* crc.c */,
+				9A1198FC098A4C28004652A2 /* LanScsiDiskInformationBlock.h */,
+				9A0CEFFF095155DA00C7B504 /* NDASNotification.h */,
+				9AA16179096127930032B5F5 /* NDASGetInformation.h */,
+				9A82FDEF07F413EF00A88D19 /* NDASGetInformation.c */,
+				9A2E291D0956B33700BD0080 /* NDASBusEnumeratorUserClientTypes.h */,
+				9ABC847F07F3B3EE00532862 /* des.c */,
+				9ABC848007F3B3EE00532862 /* hash.c */,
+				9ABC848107F3B3EE00532862 /* key.c */,
+				9A4085840B64B9B7003D9870 /* NDASID.cpp */,
+				9ABC848307F3B3EE00532862 /* serial.c */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B9FC5B20DC018B100BEBC10 /* MainMenu.xib */,
+				9AD3AC410A230ED5003ABC69 /* NDAS */,
+				9AD3AC420A230F1E003ABC69 /* Icons */,
+				9AC54E6A07FC72C900855EA3 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AD3AC410A230ED5003ABC69 /* NDAS */ = {
+			isa = PBXGroup;
+			children = (
+				9AC54EDF07FC7F7F00855EA3 /* NDAS Utility.icns */,
+				9AC5506B07FCA81700855EA3 /* NDAS Info.plist */,
+				9A077EE2084318D100FD576F /* InfoPlist.strings */,
+			);
+			name = NDAS;
+			sourceTree = "<group>";
+		};
+		9AD3AC420A230F1E003ABC69 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				9A16FB1E0C4B0DED00834159 /* reload.tiff */,
+				9A002C4D0C30166A00FE30A5 /* NDAS Info.icns */,
+				9A4E5D250AAE668A00C88C21 /* Separator.tiff */,
+				9A3DF86B099C52790049FED4 /* RAID.icns */,
+				9A3DF81F099C3B1E0049FED4 /* Caution.tiff */,
+				9A5DC24407F7E3DB00B52409 /* Disk.tiff */,
+				9A5DBFEB07F7B6FF00B52409 /* External.icns */,
+				9A5DBD8207F7A95C00B52409 /* Register.tiff */,
+				9A5DBD8307F7A95C00B52409 /* Unregister.tiff */,
+				9A0C6C7A07F3F7BA0007358E /* DiskDisabled.tiff */,
+				9A781B8408E26F9800625E6A /* ODD.icns */,
+				9A16B651099736190019CF9A /* gray.tif */,
+				9AC0DA1E09972E9700A473DE /* red.tiff */,
+				9AC0DA2209972EC000A473DE /* green.tiff */,
+				9AC0DA2609972EC800A473DE /* yellow.tiff */,
+				9A203C9409998D5100BFE314 /* minusbutton.tiff */,
+				9A68573509C7D628007E311C /* Gear.tiff */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* NDAS Utility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5AA1A308A74DA20063F151 /* Build configuration list for PBXNativeTarget "NDAS Utility" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				9AD7637A0C7A7AE900C05C4D /* Strip nib Bundle */,
+			);
+			buildRules = (
+				0B5CCB250D8215D500237125 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "NDAS Utility";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "NDAS Utility";
+			productReference = 8D1107320486CEB800E47090 /* NDAS Utility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9A5AA1AF08A74DA20063F151 /* Build configuration list for PBXProject "NDAS Utility" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				ko,
+				pt,
+				it,
+				nl,
+				pl,
+				Italian,
+				Dutch,
+				sv,
+				es,
+				Spanish,
+				ru,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* NDAS Utility */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* NDAS Utility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC54E6B07FC72C900855EA3 /* Localizable.strings in Resources */,
+				9A077EE4084318D100FD576F /* InfoPlist.strings in Resources */,
+				9A0C6C7C07F3F7BA0007358E /* DiskDisabled.tiff in Resources */,
+				9A5DBD8407F7A95C00B52409 /* Register.tiff in Resources */,
+				9A5DBD8507F7A95C00B52409 /* Unregister.tiff in Resources */,
+				9A5DBFEC07F7B6FF00B52409 /* External.icns in Resources */,
+				9A5DC24507F7E3DB00B52409 /* Disk.tiff in Resources */,
+				9AC54EE107FC7F7F00855EA3 /* NDAS Utility.icns in Resources */,
+				9A781B8708E26F9800625E6A /* ODD.icns in Resources */,
+				9AC0DA2009972E9700A473DE /* red.tiff in Resources */,
+				9AC0DA2409972EC000A473DE /* green.tiff in Resources */,
+				9AC0DA2809972EC800A473DE /* yellow.tiff in Resources */,
+				9A16B653099736190019CF9A /* gray.tif in Resources */,
+				9A203C9709998D5100BFE314 /* minusbutton.tiff in Resources */,
+				9A3DF822099C3B1F0049FED4 /* Caution.tiff in Resources */,
+				9A3DF86E099C52790049FED4 /* RAID.icns in Resources */,
+				9A68573809C7D628007E311C /* Gear.tiff in Resources */,
+				9A4E5D270AAE668A00C88C21 /* Separator.tiff in Resources */,
+				9A002C4E0C30166A00FE30A5 /* NDAS Info.icns in Resources */,
+				9A16FB1F0C4B0DED00834159 /* reload.tiff in Resources */,
+				0B9FC5B40DC018B100BEBC10 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AD7637A0C7A7AE900C05C4D /* Strip nib Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip nib Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"$TARGET_BUILD_DIR\" -name info.nib -delete\nfind \"$TARGET_BUILD_DIR\" -name classes.nib -delete";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				9ABC832907F2B1F000532862 /* UtilityController.m in Sources */,
+				9ABC838A07F2E94900532862 /* IDFieldDelegate.m in Sources */,
+				9ABC848507F3B3EE00532862 /* des.c in Sources */,
+				9ABC848607F3B3EE00532862 /* hash.c in Sources */,
+				9ABC848707F3B3EE00532862 /* key.c in Sources */,
+				9ABC848907F3B3EE00532862 /* serial.c in Sources */,
+				9ABC850B07F3D14300532862 /* ImageAndTextCell.m in Sources */,
+				9ABC853007F3DCC200532862 /* NDASDevice.m in Sources */,
+				9A82FDF007F413EF00A88D19 /* NDASGetInformation.c in Sources */,
+				9A5DC0F207F7CBA400B52409 /* UnitDevice.m in Sources */,
+				9A5DC18307F7D74300B52409 /* Device.m in Sources */,
+				9AA8D60107F97D0B00D81386 /* WriteKeyDelegate.m in Sources */,
+				9A11987F098A47AE004652A2 /* RAIDDevice.m in Sources */,
+				9A534BFD0994C7ED00142452 /* RAIDSubDevice.m in Sources */,
+				9A0FC66E09977467009A0573 /* RAIDBindSheetController.m in Sources */,
+				9A0F518D09A9B45C00234B1D /* crc.c in Sources */,
+				9A4085860B64B9B7003D9870 /* NDASID.cpp in Sources */,
+				9A23B0100C17DD7300F46686 /* ExportIDFieldDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0B9FC5B20DC018B100BEBC10 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B9FC5B30DC018B100BEBC10 /* English */,
+				0B9FC5B50DC018C500BEBC10 /* ko */,
+				0BA824870E1AAD8B00FD14EC /* German */,
+				0B3B40DE0E8C392A00EFD702 /* ru */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9A077EE2084318D100FD576F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A077EE3084318D100FD576F /* English */,
+				9A00225F0898B34D00445E8B /* ko */,
+				0BA824850E1AAD6900FD14EC /* German */,
+				9AA2A5BF0FE1F7F0008E3CA9 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9AC54E6A07FC72C900855EA3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC54E5407FC724900855EA3 /* English */,
+				9AC54E6C07FC72D400855EA3 /* ko */,
+				0BA824860E1AAD7900FD14EC /* German */,
+				0B3B40DD0E8C378E00EFD702 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A5AA1A408A74DA20063F151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 209;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "OEM/NDAS/NDAS Info.plist";
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "NDAS Utility";
+				SDKROOT = macosx10.4;
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9A5AA1A508A74DA20063F151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 209;
+				INFOPLIST_FILE = "OEM/NDAS/NDAS Info.plist";
+				INSTALL_PATH = /;
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "NDAS Utility";
+				SDKROOT = macosx10.4;
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9A5AA1B008A74DA20063F151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = macosx10.4;
+			};
+			name = Debug;
+		};
+		9A5AA1B108A74DA20063F151 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = macosx10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A5AA1A308A74DA20063F151 /* Build configuration list for PBXNativeTarget "NDAS Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5AA1A408A74DA20063F151 /* Debug */,
+				9A5AA1A508A74DA20063F151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5AA1AF08A74DA20063F151 /* Build configuration list for PBXProject "NDAS Utility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5AA1B008A74DA20063F151 /* Debug */,
+				9A5AA1B108A74DA20063F151 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

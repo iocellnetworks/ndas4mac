@@ -1,0 +1,50 @@
+/* Uninstall success */
+"\nThe uninstalling was done successfully.\n" = "\nアンインストールを完了しました。\n";
+
+/* Uninstall NDAdmin */
+"\nStart Uninstalling Admin Application.\n" = "\nHDH-UL シリーズ 管理ユーティリティを削除しています...\n";
+
+/* Uninstall lanscsibus */
+"\nStart Uninstalling LanScsiBus.\n" = "\nLanScsiBus ドライバーを削除しています...\n";
+
+/* Uninstall NDService */
+"\nStart Uninstalling ND Service.\n" = "\nND サービスを削除しています...\n";
+
+/* Uninstall netLpx */
+"\nStart Uninstalling netLpx.\n" = "\nnetLpx ドライバーを削除しています...\n";
+
+/* Uninstall Info */
+"Uninstall Info\n" = "HDH-UL LAN Install でインストールされた全てのファイルを削除します。\n";
+
+/* Uninstall NDAdmin success */
+"The removal of the Administrator was ended successfully.\n" = "HDH-UL シリーズ  管理ユーティリティを削除しました。\n";
+
+/* Uninstall lanscsibus success */
+"The removal of the LanScsiBus was ended successfully.\n" = "LanScsiBus ドライバーを削除しました。\n";
+
+/* Uninstall NDService success */
+"The removal of the ND Service was ended successfully.\n" = "ND サービスを削除しました。\n";
+
+/* Uninstall netLpx success */
+"The removal of the netLpx was ended successfully.\n" = "netLpx ドライバーを削除しました。\n";
+
+/* About Menu */
+"About %@" = "%@ について";
+
+/* Preferences */
+"Preferences..." = "環境設定...";
+
+/* Services */
+"Services" = "サービス";
+
+/* Hide Menu */
+"Hide %@" = "%@ を隠す";
+
+/* Hide Others */
+"Hide Others" = "ほかを隠す";
+
+/* Show All */
+"Show All" = "すべてを表示";
+
+/* Quit Menu */
+"Quit %@" = "%@ を終了";

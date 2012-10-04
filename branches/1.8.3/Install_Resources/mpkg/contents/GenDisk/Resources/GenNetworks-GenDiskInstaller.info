@@ -1,0 +1,16 @@
+Title XIMETA ND Installer
+Version 1.1
+Description 
+DefaultLocation (null)
+DeleteWarning 
+
+### Package Flags
+
+NeedsAuthorization NO
+Required NO
+Relocatable NO
+RequiresReboot NO
+UseUserMask YES
+OverwritePermissions NO
+InstallFat NO
+RootVolumeOnly NO

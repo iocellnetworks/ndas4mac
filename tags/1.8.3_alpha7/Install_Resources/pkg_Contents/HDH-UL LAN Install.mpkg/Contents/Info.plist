@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleGetInfoString</key>
+	<string>I-O DATA HDH-UL Series Installer 1.3.1</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.XiMeta..IODATAInstaller</string>
+	<key>CFBundleName</key>
+	<string>I-O DATA HDH-UL Series Installer</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.3.1</string>
+	<key>IFMajorVersion</key>
+	<integer>1</integer>
+	<key>IFMinorVersion</key>
+	<integer>3</integer>
+	<key>IFPkgFlagComponentDirectory</key>
+	<string>../Packages</string>
+	<key>IFPkgFlagPackageList</key>
+	<array>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>NDService.pkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>netlpx.pkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>LanScsiBus.pkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>HDH-UL Admin.pkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+	</array>
+	<key>IFPkgFormatVersion</key>
+	<real>0.10000000000000001</real>
+	<key>IFRequirementDicts</key>
+	<array>
+		<dict>
+			<key>LabelKey</key>
+			<string>OSverLabel</string>
+			<key>Level</key>
+			<string>requires</string>
+			<key>MessageKey</key>
+			<string>OSverMessage</string>
+			<key>SpecArgument</key>
+			<string>sysv</string>
+			<key>SpecType</key>
+			<string>gestalt</string>
+			<key>TestObject</key>
+			<string>4128</string>
+			<key>TestOperator</key>
+			<string>ge</string>
+		</dict>
+	</array>
+</dict>
+</plist>

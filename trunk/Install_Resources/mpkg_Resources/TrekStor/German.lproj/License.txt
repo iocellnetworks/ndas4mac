@@ -1,0 +1,47 @@
+﻿Indem Sie diese Software installieren oder jemanden dazu ermächtigen akzeptieren Sie die nachfolgenden Lizenzbedingungen.
+
+DEFINITIONEN
+
+"Software" bezieht sich auf die Programme, Vorlagen und Daten, die durch diese Installation installiert werden.
+
+“Dokumentation” bezieht sich auf diese oder jede anderen Hinweise, gedruckt oder online, die mit dieser Software zur Verfügung gestellt werden. 
+
+ „Lizenz“ bedeutet die Lizenz, diese Software zu benutzen. Diese Lizenz wird gemäß den nachfolgenden Bestimmungen gewährt.
+
+„Kunde“ bezieht sich auf die natürliche oder juristische Person, auf den diese Lizenz ausgestellt wird.
+
+LIZENZ
+
+Gewährung der Lizenz: Der Kunde erwirbt von TREKSTOR GmbH & Co. KG das nicht ausschließliche Nutzungsrecht an der Software. TREKSTOR GmbH & Co. KG behält sich Rechte, die nicht in diesem Vertrag erwähnt werden, ausdrücklich vor.
+
+Der Kunde erwirbt nur eine Lizenz. TREKSTOR GmbH & Co. KG behält das Eigentumsrecht an der Software und der Dokumentation und jedweder Kopien einschließlich der Originale, die mit diesem Vertrag übergeben werden.
+
+Kopien: Der Kunde darf die Software nur insoweit kopieren, als es notwendig ist, diese zu nutzen. Dies schließt das Kopieren der Software auf die Festplatte oder auf einen Netzwerk-Server ein, um diese zugänglich zu machen, sowie das Kopieren der Software in ein Backup Archiv. Auf jeder Kopie müssen die Bezeichnungen der Warenzeichen und Urheberrechte erhalten bleiben. Der Kunde darf die Dokumentation nicht kopieren.
+
+Übertragung und Nutzung: Der Kunde darf die Software oder die Dokumentation nicht auf eine andere Person übertragen, solange der Dritte diesem Vertrag nicht zustimmt und der Kunde nicht alle Kopien der Software und die Dokumentation, einschließlich der Originale, überträgt.
+
+Der Kunde darf zu keinen anderen als den oben genannten Bedingungen die Software oder die Dokumentation vermieten, verleihen, unterlizensieren oder Dritten zugänglich machen. Der Kunde darf die Software nicht dekompilieren, abändern oder rückentwickeln oder von der Software oder der Dokumentation abgeleitet ein eigenes Werk entwickeln.
+
+Die Software ist sowohl durch Urheberrechtsgesetze und internationale Urheberrechtsverträge als auch durch andere Gesetze und Vereinbarungen über geistiges Eigentum geschützt.
+
+GEWÄHRLEISTUNGS- UND HAFTUNGSBESCHRÄNKUNGEN
+
+Datenträger: TREKSTOR GmbH & Co. KG gewährleistet die physische Unversehrtheit des Datenträgers, der die Software enthält, zum Zeitpunkt des Eintreffens beim Kunden. TREKSTOR GmbH & Co. KG ersetzt den Datenträger kostenfrei, wenn der Kunde diesen innerhalb von 30 Tagen seit Erwerb der Lizenz unter Vorauszahlung des Portos an TREKSTOR GmbH & Co. KG zurücksendet.
+
+Einschränkung der Gewährleistung: TREKSTOR GmbH & Co. KG gewährleistet die in der Dokumentation festgelegten Eigenschaften der Software, sofern die Nichtübereinstimmung TREKSTOR GmbH & Co. KG innerhalb von 90 Tagen seit dem Erwerb der Lizenz  schriftlich angezeigt wird. TREKSTOR GmbH & Co. KG wird in diesem Fall entweder den Mangel beheben oder dem Kunden den Kaufpreis Zug um Zug gegen Herausgabe aller Kopien der Software und der Dokumentation erstatten. Im Falle einer Kaufpreis-Rückerstattung erlischt die Lizenz.
+
+Außer in den vorgenannten Fällen übernimmt TREKSTOR GmbH & Co. KG keine Gewährleistung. TREKSTOR GmbH & Co. KG schließt alle Gewährleistung hinsichtlich der Verwertbarkeit, Kompatibilität oder Verwendbarkeit zu einer bestimmten Zweckbestimmung aus. TREKSTOR GmbH & Co. KG gewährleistet nicht die Fehlerfreiheit der Software.
+
+Haftungsbeschränkung: TREKSTOR GmbH & Co. KG haftet – soweit gesetzlich zulässig - nicht für direkte oder indirekte Schäden gleich welcher Art, auch wenn auf die Möglichkeit derartiger Schäden hingewiesen worden ist. TREKSTOR GmbH & Co. KG haftet nicht für Vermögensschäden, die durch den Gebrauch der Software verursacht worden sind, einschließlich entgangenen Gewinns, Datenverlusts oder irgendwelcher Ansprüche Dritter.
+
+Die Haftung von TREKSTOR GmbH & Co. KG für Schäden, die im Zusammenhang mit diesem Vertrag, der Software oder der Dokumentation entstehen, ist in der Höhe auf den Kaufpreis der Lizenz beschränkt.
+
+Über diese Vereinbarung hinaus gehende Rechte des Kunden sind ausgeschlossen.
+
+ALLGEMEINE BESTIMMUNGEN
+
+Schadensersatz: Der Kunde stimmt zu, TREKSTOR GmbH & Co. KG von allen Ansprüchen Dritter freizustellen, die aus dem Vertragsverhältnis herrühren sowie TREKSTOR GmbH & Co. KG die notwendigen Kosten der Rechtsverfolgung zu ersetzen. TREKSTOR GmbH & Co. KG behält sich das Recht der Prozessführung in allen TREKSTOR GmbH & Co. KG, den Kunden und Dritte betreffenden Fragen vor.
+
+Die in diesem Vertrag getroffenen Vereinbarungen sind abschließend. Kein Vertriebspartner, Angestellter und kein Dritter ist seitens TREKSTOR GmbH & Co. KG berechtigt, daran Änderungen vorzunehmen oder etwas anderes zu vereinbaren.
+
+

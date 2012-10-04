@@ -1,0 +1,91 @@
+#!/bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Darwin/OSX XiMeta NetDisk Meta package installation script.
+#
+###########################################################################
+
+ID="/usr/bin/id"
+WHOAMI=`$ID|sed -e 's/(.*//'`
+SYSTEM=`uname -sr`
+
+if [ "$WHOAMI" != "uid=0" ] ; then
+	echo "You need super user privilege to install."
+	exit 1
+fi
+
+SERVICE_NAME="NDASService"
+SERVICE_ITNAME="XiMetaNDASService"
+SERVICE_LD_NAME="com.ximeta.NDASService.plist"
+SERVICE_LD_LABEL="com.ximeta.NDASService"
+SERVICE_STARTUP_DIR="/Library/StartupItems/$SERVICE_ITNAME"
+SERVICE_LAUNCHDAEMON="/Library/LaunchDaemons/$SERVICE_LD_NAME"
+
+SERVICE_INSTALL_DIR="/usr/sbin"
+
+# Check OS Version.
+OSVERSION="$(sw_vers -productVersion)"
+MAJOR="$(echo $OSVERSION | sed 's/\..*//')"
+MINOR="$(echo $OSVERSION | sed -E 's/[0-9]+\.([0-9]+)\..*/\1/')"
+PATCH="$(echo $OSVERSION | sed -E 's/[0-9]+\.[0-9]+\.([0-9]+).*/\1/')"
+
+#echo "MAJOR: $MAJOR"
+#echo "MINOR: $MINOR"
+#echo "PATCH: $PATCH"
+
+# Delete Old Startup Item
+if [ -d "/System/$SERVICE_STARTUP_DIR" ] ; then
+	rm -R "/System/$SERVICE_STARTUP_DIR"
+fi
+
+if [ $MAJOR -eq 10 ] ; then
+	if [ $MINOR -le 3 ] ; then
+		# Delete LaunchDeamon
+		if [ -f "$SERVICE_LAUNCHDAEMON" ] ; then
+			rm "$SERVICE_LAUNCHDAEMON"
+			rm -r "/Library/LaunchDaemons"
+		fi
+
+		# -------------------------------------------------------------------------
+		# Load NetdiskService for immediate use
+		# -------------------------------------------------------------------------
+
+		if [ -d "$SERVICE_STARTUP_DIR" ] ; then
+
+			/sbin/SystemStarter restart "$SERVICE_ITNAME"
+
+		fi
+		
+	else
+		# Delete Startup Item
+		if [ -d "$SERVICE_STARTUP_DIR" ] ; then
+			rm -R "$SERVICE_STARTUP_DIR"
+		fi
+		
+		if [ -f "$SERVICE_LAUNCHDAEMON" ] ; then
+		
+			/bin/launchctl unload "$SERVICE_LAUNCHDAEMON"
+			/bin/launchctl load "$SERVICE_LAUNCHDAEMON"
+			/bin/launchctl start "$SERVICE_LD_LABEL"
+
+		fi
+
+	fi
+fi
+
+# -------------------------------------------------------------------------
+# Make sure we have the right permissions
+# -------------------------------------------------------------------------
+
+#SERVICE_INSTALL_DIR="/usr/sbin"
+
+#chown -R root:wheel "${SERVICE_INSTALL_DIR}"
+
+# -------------------------------------------------------------------------
+# exit successfully.
+# -------------------------------------------------------------------------
+
+exit 0

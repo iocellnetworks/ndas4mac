@@ -1,0 +1,23 @@
+#ifdef WIN32
+#include "stdafx.h"
+#else
+#include "Transfer.h"
+#endif
+
+#include <CoreServices/CoreServices.h>
+#include "NDASID.h"
+
+const NDASID_EXT_KEY	NDAS_ID_KEY_DEFAULT = {{0x45,0x32,0x56,0x2f,0xec,0x4a,0x38,0x53}, {0x1e,0x4e,0x0f,0xeb,0x33,0x27,0x50,0xc1}}; 
+
+const NDAS_OEM_CODE NDAS_OEM_CODE_DEFAULT_SUPER = { 0xBB, 0xEA, 0x30, 0x15, 0x73, 0x50, 0x4A, 0x1F };
+
+const NDAS_OEM_CODE NDAS_OEM_CODE_SAMPLE  = { 0x07, 0x06, 0x05, 0x04, 0x03, 0x02, 0x01, 0x00 };
+const NDAS_OEM_CODE NDAS_OEM_CODE_DEFAULT = { 0xBB, 0xEA, 0x30, 0x15, 0x73, 0x50, 0x4A, 0x1F };
+const NDAS_OEM_CODE NDAS_OEM_CODE_RUTTER  = NDAS_OEM_CODE_DEFAULT;
+const NDAS_OEM_CODE NDAS_OEM_CODE_SEAGATE = { 0x52, 0x41, 0x27, 0x46, 0xBC, 0x6E, 0xA2, 0x99 };
+
+const NDASID_EXT_DATA NDAS_ID_EXTENSION_DEFAULT = { 0xCD, NDAS_VID_DEFAULT, 0xFF, 0xFF };
+const NDASID_EXT_DATA NDAS_ID_EXTENSION_SEAGATE = { 0xCD, NDAS_VID_SEAGATE, 0xFF, 0xFF };
+
+#define AUTOLOCK_CONTEXT(CONTEXT) 	CAutoCritSecLock _auto_context_lock_((CONTEXT)->lock)
+#define UNLOCK_CONTEXT(CONTEXT) _auto_context_lock_.Release()

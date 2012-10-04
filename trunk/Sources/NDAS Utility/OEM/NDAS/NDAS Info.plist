@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>nda</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>NDAS Info</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>application/x-ndasutility</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>NDASRegistrationInfo</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>ndas</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>NDAS Info</string>
+			<key>CFBundleTypeMIMETypes</key>
+			<array>
+				<string>application/x-ndasutility</string>
+			</array>
+			<key>CFBundleTypeName</key>
+			<string>NDASRegistrationInfo</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
+			<key>NSPersistentStoreTypeKey</key>
+			<string>XML</string>
+		</dict>
+	</array>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>NDAS Utility.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.ximeta.NDASUtility</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>209</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.8.2</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
+	<key>ModelName</key>
+	<string>NDAS</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+</dict>
+</plist>

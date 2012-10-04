@@ -1,0 +1,102 @@
+#! /bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Darwin/OSX XiMeta NetDisk Meta package installation script.
+#
+###########################################################################
+
+ID="/usr/bin/id"
+WHOAMI=`$ID|sed -e 's/(.*//'`
+SYSTEM=`uname -sr`
+
+if [ "$WHOAMI" != "uid=0" ] ; then
+	echo "You need super user privilege to install."
+	exit 1
+fi
+
+KEXT_NAME="NDASFamily.kext"
+KEXT_INSTALL_DIR="/System/Library/Extensions/"
+
+# Cleanup
+if [ -d "${KEXT_INSTALL_DIR}"/"${KEXT_NAME}" ] ; then
+	rm -rf "${KEXT_INSTALL_DIR}"/"${KEXT_NAME}"
+fi
+
+# Check OS Version.
+OS_VER=`uname -r | cut -d . -f 1`
+if test $OS_VER -ge 10 ; then
+
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6 ] ; then
+		mv "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6 "${KEXT_INSTALL_DIR}"/"${KEXT_NAME}"
+	fi
+elif test $OS_VER -ge 9 ; then
+
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5 ] ; then
+		mv "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5 "${KEXT_INSTALL_DIR}"/"${KEXT_NAME}"
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6
+	fi
+elif test $OS_VER -ge 8 ; then
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4 ] ; then
+		mv "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4 "${KEXT_INSTALL_DIR}"/"${KEXT_NAME}"
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6
+	fi
+else
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3 ] ; then
+		mv "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.3 "${KEXT_INSTALL_DIR}"/"${KEXT_NAME}"
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.4
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.5
+	fi
+	if [ -d "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6 ] ; then
+		rm -rf "${KEXT_INSTALL_DIR}"/NDASFamily.kext-10.6
+	fi
+fi
+
+# -------------------------------------------------------------------------
+# Make sure we have the right permissions
+# -------------------------------------------------------------------------
+
+#chown root:wheel "${KEXT_INSTALL_DIR}"
+
+# -------------------------------------------------------------------------
+# Load NDASFamily Driver for immediate use
+# -------------------------------------------------------------------------
+
+kextload -b com.ximeta.driver.NDASFamily
+
+# -------------------------------------------------------------------------
+# exit successfully.
+# -------------------------------------------------------------------------
+
+exit 0

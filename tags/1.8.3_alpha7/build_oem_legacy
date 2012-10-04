@@ -1,0 +1,225 @@
+#! /bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Build Installer.
+#
+###########################################################################
+
+case $1 in
+    nd          ) OEM_PREFIX="ND";;
+    ndas        ) OEM_PREFIX="NDAS";;
+    eoseed      ) OEM_PREFIX="EOSEED";;
+    logitec     ) OEM_PREFIX="LHD-LU2";;
+    iodata      ) OEM_PREFIX="HDH-UL";;
+    gennetworks ) OEM_PREFIX="GenDisk";;
+    freecom		) OEM_PREFIX="Freecom NDAS";;
+    generic		) OEM_PREFIX="Generic";;
+    *           )   echo "Usage: $0 { nd | ndas | eoseed | logitec | iodata | gennetworks | freecom | generic }"
+                    exit -1
+;;
+esac
+
+
+# Get Currentn Dir.
+BUILDROOT=`pwd`
+
+# Tools
+PKGMAKER=/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker
+
+# Clean Temp Files.
+if [ -d "${BUILDROOT}"/Dist_Root/Package_Contents_legacy ] ; then 
+	chmod -R 777 "${BUILDROOT}"/Dist_Root/Package_Contents_legacy
+	rm -R "${BUILDROOT}"/Dist_Root/Package_Contents_legacy
+fi
+
+#Clean Dist Files.
+if [ -d "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}" ] ; then 
+	chmod -R 777 "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"
+	rm -R "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"
+fi
+
+# Copy Package Contents.
+if [  ! -d  "${BUILDROOT}"/Dist_Root ] ; then 
+	mkdir "${BUILDROOT}"/Dist_Root
+fi
+
+cp -Rf "${BUILDROOT}"/Package_Contents "${BUILDROOT}"/Dist_Root/Package_Contents_legacy
+
+#################################################
+#
+# Build Contents.
+#
+#################################################
+
+#################################################
+# Build Utility
+
+cd "${BUILDROOT}"/Sources/NDAS\ Utility
+
+if [ -d  build ] ; then 
+	chmod -R 777 build
+	rm -R build	
+fi
+
+xcodebuild clean
+case $1 in
+    generic     )   xcodebuild clean install -target NDAS\ Utility DSTROOT="${BUILDROOT}"/Dist_Root/Package_Contents_legacy/NDAS\ Utility;;
+    *           )   xcodebuild clean install -target "${OEM_PREFIX}"\ Utility DSTROOT="${BUILDROOT}"/Dist_Root/Package_Contents_legacy/"${OEM_PREFIX}"\ Utility;;
+esac
+if [ $? != 0 ] ; then
+	echo "Can't Build NDAS Utility"
+	exit
+fi
+
+#################################################
+# Build NDASFamily
+
+cd "${BUILDROOT}"/Sources/NDASFamily
+xcodebuild clean install -project NDASFamily_legacy.xcodeproj DSTROOT="${BUILDROOT}"/Dist_Root/Package_Contents_legacy/NDASFamily
+if [ $? != 0 ] ; then
+	echo "Can't Build NDAS Family"
+	exit
+fi
+
+#################################################
+# Build NDASService
+
+cd "${BUILDROOT}"/Sources/NDASService
+xcodebuild clean install DSTROOT="${BUILDROOT}"/Dist_Root/Package_Contents_legacy/NDASService
+if [ $? != 0 ] ; then
+	echo "Can't Build NDASService"
+	exit
+fi
+
+#################################################
+# Build netlpx
+
+cd "${BUILDROOT}"/Sources/netlpx_legacy
+xcodebuild clean install -project netlpx.xcodeproj DSTROOT="${BUILDROOT}"/Dist_Root/Package_Contents_legacy/netlpx
+if [ $? != 0 ] ; then
+	echo "Can't Build netlpx"
+	exit
+fi
+
+#################################################
+# Build Uninstallers
+
+cd "${BUILDROOT}"/Sources/Uninstaller
+
+if [ -d  build ] ; then 
+	chmod -R 777 build
+	rm -R build	
+fi
+
+case $1 in
+    generic     )   xcodebuild clean install -target NDAS\ Uninstaller DSTROOT="${BUILDROOT}"/Dist_Root/Package_Contents_legacy;;
+    *           )   xcodebuild clean install -target "${OEM_PREFIX}"\ Uninstaller DSTROOT="${BUILDROOT}"/Dist_Root/Package_Contents_legacy;;
+esac
+if [ $? != 0 ] ; then
+	echo "Can't Build Uninstaller"
+	exit
+fi
+
+#################################################
+#
+# Build Packages.
+#
+#################################################
+
+if [  ! -d  "${BUILDROOT}"/Dist_legacy ] ; then 
+	mkdir "${BUILDROOT}"/Dist_legacy
+fi
+
+if [  ! -d  "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}" ] ; then 
+    mkdir "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"
+    mkdir "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/Packages
+fi
+
+#################################################
+# Build NDASFammily
+
+$PKGMAKER -build -p "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/Packages/NDASFamily.pkg -f "${BUILDROOT}"/Dist_Root/Package_Contents_legacy/NDASFamily -r "${BUILDROOT}"/Install_Resources/NDASFamily_legacy -i "${BUILDROOT}"/Dist_Root/Packages/NDASFamily_legacy/Info.plist -d "${BUILDROOT}"/Dist_Root/Packages/NDASFamily_legacy/Description.plist 
+
+
+#################################################
+# Build Utility
+
+case $1 in
+    generic     )   $PKGMAKER -build -p "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/Packages/NDAS\ Utility.pkg -f "${BUILDROOT}"/Dist_Root/Package_Contents_legacy/NDAS\ Utility -i "${BUILDROOT}"/Dist_Root/Packages/NDAS\ Utility/Info.plist -d "${BUILDROOT}"/Dist_Root/Packages/NDAS\ Utility/Description.plist;; 
+    *           )   $PKGMAKER -build -p "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/Packages/"${OEM_PREFIX}"\ Utility.pkg -f "${BUILDROOT}"/Dist_Root/Package_Contents_legacy/"${OEM_PREFIX}"\ Utility -i "${BUILDROOT}"/Dist_Root/Packages/"${OEM_PREFIX}"\ Utility/Info.plist -d "${BUILDROOT}"/Dist_Root/Packages/"${OEM_PREFIX}"\ Utility/Description.plist;; 
+esac
+
+#################################################
+# Build NDASService
+
+$PKGMAKER -build -p "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/Packages/NDASService.pkg -f "${BUILDROOT}"/Dist_Root/Package_Contents_legacy/NDASService -r "${BUILDROOT}"/Install_Resources/NDASService -i "${BUILDROOT}"/Dist_Root/Packages/NDASService/Info.plist -d "${BUILDROOT}"/Dist_Root/Packages/NDASService/Description.plist 
+
+
+#################################################
+# Build netlpx
+
+$PKGMAKER -build -p "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/Packages/netlpx.pkg -f "${BUILDROOT}"/Dist_Root/Package_Contents_legacy/netlpx -r "${BUILDROOT}"/Install_Resources/netlpx_legacy -i "${BUILDROOT}"/Dist_Root/Packages/netlpx_legacy/Info.plist -d "${BUILDROOT}"/Dist_Root/Packages/netlpx_legacy/Description.plist 
+
+#################################################
+# Copy mpkg
+
+case $1 in
+    iodata      )   cp -Rf "${BUILDROOT}"/Dist_Root/Packages/HDH-UL\ LAN\ Install.mpkg "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}" ;;
+    generic     )   cp -Rf "${BUILDROOT}"/Dist_Root/Packages/Generic\ Install.mpkg "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"
+    				mv "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/Generic\ Install.mpkg "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}"/NDAS\ Install.mpkg;; 
+	*           )   cp -Rf "${BUILDROOT}"/Dist_Root/Packages/"${OEM_PREFIX}"\ Install.mpkg "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}" ;;
+esac
+
+#################################################
+# Copy Uninstallers
+
+case $1 in
+    generic     )   cp -Rf "${BUILDROOT}"/Dist_Root/Package_Contents_legacy/Applications/NDAS\ Uninstall.app "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}";;
+    *           )   cp -Rf "${BUILDROOT}"/Dist_Root/Package_Contents_legacy/Applications/"${OEM_PREFIX}"\ Uninstall.app "${BUILDROOT}"/Dist_legacy/"${OEM_PREFIX}";;
+esac
+
+#################################################
+# Cleanup svn files
+
+cd "${BUILDROOT}"/Dist_legacy
+
+# oem root
+rm -rf */.svn
+#Packages
+rm -rf */*/.svn
+# In Package 
+rm -rf */*/.svn
+# In Package Contents 
+rm -rf */*/*/.svn
+# In Package Resources 
+rm -rf */*/*/*/.svn
+# In Package for localizing 
+rm -rf */*/*/*/*/.svn
+# In Package for localizing 
+rm -rf */*/*/*/*/*/.svn
+
+#################################################
+# Cleanup .DS_Store files
+
+# oem root
+rm -f */.DS_Store
+#Packages
+rm -f */*/.DS_Store
+# In Package 
+rm -f */*/.DS_Store
+# In Package Contents 
+rm -f */*/*/.DS_Store
+# In Package Resources 
+rm -f */*/*/*/.DS_Store
+# In Package for localizing 
+rm -f */*/*/*/*/.DS_Store
+# In Package for localizing 
+rm -f */*/*/*/*/*/.DS_Store
+
+
+
+
+

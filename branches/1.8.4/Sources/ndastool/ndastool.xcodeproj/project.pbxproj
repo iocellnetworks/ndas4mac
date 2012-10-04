@@ -1,0 +1,228 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DD76F6A0486A84900D96B5E /* ndastool.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* ndastool.1 */; };
+		9AA161B809612A9E0032B5F5 /* NDASGetInformation.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AA161B709612A9E0032B5F5 /* NDASGetInformation.c */; };
+		9AA161BA09612ABA0032B5F5 /* NDASGetInformation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AA161B909612ABA0032B5F5 /* NDASGetInformation.h */; };
+		9AA1624609612CF70032B5F5 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA1624509612CF70032B5F5 /* CoreServices.framework */; };
+		9AA1625B09612F8B0032B5F5 /* NDASBusEnumeratorUserClientTypes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AA1625A09612F8B0032B5F5 /* NDASBusEnumeratorUserClientTypes.h */; };
+		9AA16281096136410032B5F5 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA16280096136410032B5F5 /* IOKit.framework */; };
+		9AA1629709613C250032B5F5 /* LanScsiDiskInformationBlock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AA1629609613C250032B5F5 /* LanScsiDiskInformationBlock.h */; };
+		9AF4F5B30962AD87008BC23C /* NDASNotification.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AF4F5B20962AD87008BC23C /* NDASNotification.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* ndastool.1 in CopyFiles */,
+				9AA161BA09612ABA0032B5F5 /* NDASGetInformation.h in CopyFiles */,
+				9AA1625B09612F8B0032B5F5 /* NDASBusEnumeratorUserClientTypes.h in CopyFiles */,
+				9AA1629709613C250032B5F5 /* LanScsiDiskInformationBlock.h in CopyFiles */,
+				9AF4F5B30962AD87008BC23C /* NDASNotification.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* ndastool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ndastool; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA161B709612A9E0032B5F5 /* NDASGetInformation.c */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.c; name = NDASGetInformation.c; path = "../Shared Sources/NDASGetInformation.c"; sourceTree = SOURCE_ROOT; };
+		9AA161B909612ABA0032B5F5 /* NDASGetInformation.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; name = NDASGetInformation.h; path = ../Inc/NDASGetInformation.h; sourceTree = SOURCE_ROOT; };
+		9AA1624509612CF70032B5F5 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		9AA1625A09612F8B0032B5F5 /* NDASBusEnumeratorUserClientTypes.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; name = NDASBusEnumeratorUserClientTypes.h; path = ../Inc/NDASBusEnumeratorUserClientTypes.h; sourceTree = SOURCE_ROOT; };
+		9AA16280096136410032B5F5 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		9AA1629609613C250032B5F5 /* LanScsiDiskInformationBlock.h */ = {isa = PBXFileReference; fileEncoding = 0; lastKnownFileType = sourcecode.c.h; name = LanScsiDiskInformationBlock.h; path = ../Inc/LanScsiDiskInformationBlock.h; sourceTree = SOURCE_ROOT; };
+		9AF4F5B20962AD87008BC23C /* NDASNotification.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = NDASNotification.h; path = ../Inc/NDASNotification.h; sourceTree = SOURCE_ROOT; };
+		C6859E8B029090EE04C91782 /* ndastool.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ndastool.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA1624609612CF70032B5F5 /* CoreServices.framework in Frameworks */,
+				9AA16281096136410032B5F5 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* ndastool */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = ndastool;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9AA16280096136410032B5F5 /* IOKit.framework */,
+				9AA1624509612CF70032B5F5 /* CoreServices.framework */,
+				08FB7796FE84155DC02AAC07 /* main.cpp */,
+				9AF4F5B20962AD87008BC23C /* NDASNotification.h */,
+				9AA161B909612ABA0032B5F5 /* NDASGetInformation.h */,
+				9AA161B709612A9E0032B5F5 /* NDASGetInformation.c */,
+				9AA1625A09612F8B0032B5F5 /* NDASBusEnumeratorUserClientTypes.h */,
+				9AA1629609613C250032B5F5 /* LanScsiDiskInformationBlock.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* ndastool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* ndastool.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* ndastool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "ndastool" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ndastool;
+			productInstallPath = "$(HOME)/bin";
+			productName = ndastool;
+			productReference = 8DD76F6C0486A84900D96B5E /* ndastool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "ndastool" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ndastool */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* ndastool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
+				9AA161B809612A9E0032B5F5 /* NDASGetInformation.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = ndastool;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = ndastool;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "ndastool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "ndastool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleGetInfoString</key>
+	<string>1.8.0, Copyright © 2007 XIMETA, Inc.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.ximeta.NDASInstaller</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.8.0</string>
+	<key>IFMajorVersion</key>
+	<string>1</string>
+	<key>IFMinorVersion</key>
+	<string>800</string>
+	<key>IFPkgFlagBackgroundAlignment</key>
+	<string>center</string>
+	<key>IFPkgFlagBackgroundScaling</key>
+	<string>none</string>
+	<key>IFPkgFlagComponentDirectory</key>
+	<string>./Contents/Packages</string>
+	<key>IFPkgFlagPackageList</key>
+	<array>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>NDAS Utility.pkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>NDASFamily.pkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>NDASService.mpkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+		<dict>
+			<key>IFPkgFlagPackageLocation</key>
+			<string>netlpx.mpkg</string>
+			<key>IFPkgFlagPackageSelection</key>
+			<string>required</string>
+		</dict>
+	</array>
+	<key>IFPkgFormatVersion</key>
+	<real>0.10000000149011612</real>
+</dict>
+</plist>

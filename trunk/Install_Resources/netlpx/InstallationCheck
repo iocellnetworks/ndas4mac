@@ -1,0 +1,51 @@
+#!/usr/bin/perl
+use File::Find;
+
+my $result = 0, $basedir = "/sw";
+my $PACKAGE_PATH = $ENV{PACKAGE_PATH};
+
+DO_CHECKS:
+{
+	$TargetSystemBuild = GetPathEntry("/System/Library/CoreServices/SystemVersion.plist", "ProductVersion");
+
+	if ($TargetSystemBuild lt "10.2.8")
+	{
+       	$result = ((1 << 6) | (1 << 5) | 20);
+        last;
+	}
+}
+
+exit $result;
+
+##################
+sub GetPathEntry
+{
+    my $path		= $_[0];
+    my $entry		= $_[1];
+
+    my $oldSeperator = $/;
+    $/ = \0;
+
+    open( PLIST, "$path") || do {
+        return 0;
+    };
+
+    $plistData = <PLIST>;
+    $plistData =~ /<dict>(.*?)<\/dict>/gis;
+
+    @items = split(/<key>/, $plistData);
+
+    shift @items;
+    foreach $item (@items) {
+        $item =~ /(.*?)<\/key>.*?<string>(.*?)<\/string>/gis;
+        $versiondata{ $1 } = $2;
+    }
+
+    close(PLIST);
+
+    $/ = $oldSeperator;
+
+    return $versiondata{$entry};
+ }
+
+

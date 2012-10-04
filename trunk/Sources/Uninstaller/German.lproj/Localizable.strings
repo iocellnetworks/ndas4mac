@@ -1,0 +1,38 @@
+/* Uninstall success */
+"\nThe uninstaller has successfully uninstalled the %@ Software.\n" = "\nDie Deinstallation wurde erfolgreich beendet.\n";
+
+/* Uninstall NDAdmin */
+"\n%@ %@ is being removed.\n" = "\nDer %@ %@ wird entfernt.\n";
+
+/* Uninstall lanscsibus */
+"\nNDAS Bus Enumerator is being removed.\n" = "\nDer NDAS Bus Enumerator wird entfernt.\n";
+
+/* Uninstall NDService */
+"\nNDAS Service is being removed.\n" = "\nDer NDAS Service wird entfernt.\n";
+
+/* Uninstall netLpx */
+"\nnetLpx is being removed.\n" = "\nnetLpx wird entfernt.\n";
+
+/* This will remove all files previously installed by the %@ installer. */
+"All files previously installed by the %@ installer are being removed.\n" = "Alle Daten, die vorher von dem Installateur %@ installiert wurden, werden entfernt.\n";
+
+/* Uninstall NDAS Utility success */
+"%@ %@ has been successfully removed.\n" = "Der %@ %@ wurde erfolgreich entfernt.\n";
+
+/* Uninstall NDAS Bus Enumerator success */
+"NDAS Bus Enumerator has been successfully removed.\n" = "Der NDAS Bus Enumerator wurde erfolgreich entfernt.\n";
+
+/* Uninstall NDASService success */
+"NDAS Service has been successfully removed.\n" = "Der NDAS Service wurde erfolgreich entfernt.\n";
+
+/* Uninstall netLpx success */
+"netLpx has been successfully removed.\n" = "netLpx wurde erfolgreich entfernt.\n";
+
+/* About Menu */
+"About %@" = "Über %@";
+
+/* Hide Menu */
+"Hide %@" = "%@ ausblenden";
+
+/* Quit Menu */
+"Quit %@" = "%@ beenden";

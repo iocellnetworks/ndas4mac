@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "HDH-UL シリーズ 管理ユーティリティ";
+CFBundleDisplayName = "HDH-UL シリーズ 管理ユーティリティ";
+CFBundleShortVersionString = "1.3";
+CFBundleGetInfoString = "1.3, Copyright 2004 XIMETA, Inc., all rights reserved.";
+NSHumanReadableCopyright = "Copyright 2004 XIMETA, Inc.";

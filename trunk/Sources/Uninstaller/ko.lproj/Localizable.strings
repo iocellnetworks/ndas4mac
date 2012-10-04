@@ -1,0 +1,38 @@
+/* Uninstall success */
+"\nThe uninstaller has successfully uninstalled the %@ Software.\n" = "\n모든 내용을 성공적으로 제거 하였습니다.\n";
+
+/* Uninstall NDAdmin */
+"\n%@ %@ is being removed.\n" = "\n%@ %@을(를) 제거 합니다.\n";
+
+/* Uninstall lanscsibus */
+"\nNDAS Bus Enumerator is being removed.\n" = "\nNDAS Bus Enumerator를 제거 합니다.\n";
+
+/* Uninstall NDService */
+"\nNDAS Service is being removed.\n" = "\nNDAS 서비스를 제거 합니다..\n";
+
+/* Uninstall netLpx */
+"\nnetLpx is being removed.\n" = "\nnetLpx를 제거 합니다..\n";
+
+/* This will remove all files previously installed by the %@ installer. */
+"All files previously installed by the %@ installer are being removed.\n" = "이 프로그램은 %@ 설치프로그램이 설치한 모든 파일들을 지웁니다.\n";
+
+/* Uninstall NDAdmin success */
+"%@ %@ has been successfully removed.\n" = "%@ %@을(를) 제거 하였습니다.\n";
+
+/* Uninstall lanscsibus success */
+"NDAS Bus Enumerator has been successfully removed.\n" = "NDAS Bus Enumerator를 제거 하였습니다.\n";
+
+/* Uninstall NDService success */
+"NDAS Service has been successfully removed.\n" = "NDAS 서비스를 제거 하였습니다.\n";
+
+/* Uninstall netLpx success */
+"netLpx has been successfully removed.\n" = "netLpx를 제거 하였습니다.\n";
+
+/* About Menu */
+"About %@" = "%@에 관하여";
+
+/* Hide Menu */
+"Hide %@" = "%@ 가리기";
+
+/* Quit Menu */
+"Quit %@" = "%@ 종료";

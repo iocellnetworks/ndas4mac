@@ -1,0 +1,6 @@
+﻿/* Label key */
+"OSverLabel" = "Mac OS X v10.2 or newer";
+
+/* Message key */
+
+"OSverMessage" = "ソフトウェアをインストーラする前にMac OS X v10.2かこれ以上にアープグレイードしてください。";

@@ -1,0 +1,7 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "LHD-LU2 Uninstaller";
+CFBundleDisplayName = "LHD-LU2 Uninstaller";
+CFBundleShortVersionString = "1.6";
+CFBundleGetInfoString = "1.6, Copyright 2004 XIMETA, Inc., all rights reserved.";
+NSHumanReadableCopyright = "Copyright 2004 XIMETA, Inc.";

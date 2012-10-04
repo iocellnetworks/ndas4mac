@@ -1,0 +1,51 @@
+#! /bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Darwin/OSX XiMeta NetDisk Meta package installation script.
+#
+###########################################################################
+
+ID="/usr/bin/id"
+WHOAMI=`$ID|sed -e 's/(.*//'`
+SYSTEM=`uname -sr`
+
+if [ "$WHOAMI" != "uid=0" ] ; then
+	echo "You need super user privilege to install."
+	exit 1
+fi
+
+SERVICE_NAME="NDASService"
+SERVICE_ITNAME="XiMetaNDASService"
+SERVICE_STARTUP_DIR="/System/Library/StartupItems/$KEXT_ITNAME"
+SERVICE_INSTALL_DIR="/usr/sbin"
+
+# Check OS Version.
+OS_VER=`uname -r | cut -c 1`
+
+# -------------------------------------------------------------------------
+# Make sure we have the right permissions
+# -------------------------------------------------------------------------
+
+#SERVICE_INSTALL_DIR="/usr/sbin"
+
+#chown -R root:wheel "${SERVICE_INSTALL_DIR}"
+
+# -------------------------------------------------------------------------
+# Load NetdiskService for immediate use
+# -------------------------------------------------------------------------
+
+if [ -d /System/Library/StartupItems/XiMetaNDASService ] ; then
+
+	/System/Library/StartupItems/XiMetaNDASService/XiMetaNDASService stop
+	/System/Library/StartupItems/XiMetaNDASService/XiMetaNDASService start
+
+fi
+
+# -------------------------------------------------------------------------
+# exit successfully.
+# -------------------------------------------------------------------------
+
+exit 0

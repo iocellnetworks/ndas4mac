@@ -1,0 +1,213 @@
+#! /bin/sh
+
+##########################################################################
+#           Copyright (c) 2003, XiMeta, Inc. All Rights Reserved
+##########################################################################
+#
+# Build XIMETA Installer.
+#
+###########################################################################
+
+# Get Currentn Dir.
+BUILDROOT=`pwd`
+
+# Tools
+PKGMAKER=/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker
+
+# Clean Temp Files.
+rm -rf $BUILDROOT/Dist_Root/Package_Contents
+
+# Copy Package Contents.
+if [  ! -d  $BUILDROOT/Dist_Root ] ; then 
+	mkdir $BUILDROOT/Dist_Root
+fi
+
+cp -Rf $BUILDROOT/Package_Contents $BUILDROOT/Dist_Root/Package_Contents
+
+#################################################
+#
+# Build Contents.
+#
+#################################################
+
+#################################################
+# Build NDASFamily
+
+cd $BUILDROOT/Sources/NDASFamily
+xcodebuild clean install DSTROOT=$BUILDROOT/Dist_Root/Package_Contents/NDASFamily
+xcodebuild clean -buildstyle Deployment
+
+#################################################
+# Build NDASService
+
+cd $BUILDROOT/Sources/NDASService
+xcodebuild clean build -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Package_Contents/NDASService/usr/sbin
+xcodebuild clean -buildstyle Deployment
+
+#################################################
+# Build netlpx
+
+cd $BUILDROOT/Sources/netlpx
+xcodebuild clean install DSTROOT=$BUILDROOT/Dist_Root/Package_Contents/netlpx
+xcodebuild clean -buildstyle Deployment
+
+#################################################
+# Build NDAdmin
+
+cd $BUILDROOT/Sources/NDAdmin
+xcodebuild clean build -target ND\ Admin -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Package_Contents/ND\ Admin/Applications
+xcodebuild clean build -target EOSEED\ Admin -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Package_Contents/EOSEED\ Admin/Applications
+xcodebuild clean build -target LHD-LU2\ Admin -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Package_Contents/LHD-LU2\ Admin/Applications
+xcodebuild clean build -target HDH-UL\ Admin -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Package_Contents/HDH-UL\ Admin/Applications
+xcodebuild clean build -target NDAS\ Admin -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Package_Contents/NDAS\ Admin/Applications
+xcodebuild clean build -target GenDisk\ Admin -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Package_Contents/GenDisk\ Admin/Applications
+xcodebuild clean -buildstyle Deployment
+
+#################################################
+# Build Uninstallers
+
+cd $BUILDROOT/Sources/Uninstaller
+xcodebuild clean build -target ND\ Uninstaller -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Applications/
+xcodebuild clean build -target EOSEED\ Uninstaller -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Applications/
+xcodebuild clean build -target LHD-LU2\ Uninstaller -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Applications/
+xcodebuild clean build -target HDH-UL\ Uninstaller -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Applications/
+xcodebuild clean build -target NDAS\ Uninstaller -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Applications/
+xcodebuild clean build -target GenDisk\ Uninstaller -buildstyle Deployment SYMROOT=$BUILDROOT/Dist_Root/Applications/
+xcodebuild clean -buildstyle Deployment
+
+#################################################
+#
+# Build Packages.
+#
+#################################################
+
+rm -rf $BUILDROOT/Dist
+
+mkdir $BUILDROOT/Dist
+
+mkdir $BUILDROOT/Dist/XIMETA
+mkdir $BUILDROOT/Dist/XIMETA/Packages
+
+mkdir $BUILDROOT/Dist/EOSEED
+mkdir $BUILDROOT/Dist/EOSEED/Packages
+
+mkdir $BUILDROOT/Dist/Logitec
+mkdir $BUILDROOT/Dist/Logitec/Packages
+
+mkdir $BUILDROOT/Dist/IODATA
+mkdir $BUILDROOT/Dist/IODATA/Packages
+
+mkdir $BUILDROOT/Dist/NDAS
+mkdir $BUILDROOT/Dist/NDAS/Packages
+
+mkdir $BUILDROOT/Dist/GenDisk
+mkdir $BUILDROOT/Dist/GenDisk/Packages
+
+#cd $BUILDROOT/Dist_Root/Packages
+
+#################################################
+# Build NDASFamily
+
+$PKGMAKER -build -p $BUILDROOT/Dist/XIMETA/Packages/NDASFamily.pkg -f $BUILDROOT/Dist_Root/Package_Contents/NDASFamily -r $BUILDROOT/Install_Resources/NDASFamily -i $BUILDROOT/Dist_Root/Packages/NDASFamily/Info.plist -d $BUILDROOT/Dist_Root/Packages/NDASFamily/Description.plist 
+
+#################################################
+# Build ND Admin
+
+$PKGMAKER -build -p $BUILDROOT/Dist/XIMETA/Packages/ND\ Admin.pkg -f $BUILDROOT/Dist_Root/Package_Contents/ND\ Admin -r $BUILDROOT/Install_Resources/ND\ Admin -i $BUILDROOT/Dist_Root/Packages/ND\ Admin/Info.plist -d $BUILDROOT/Dist_Root/Packages/ND\ Admin/Description.plist 
+
+#################################################
+# Build EOSEED Admin
+
+$PKGMAKER -build -p $BUILDROOT/Dist/EOSEED/Packages/EOSEED\ Admin.pkg -f $BUILDROOT/Dist_Root/Package_Contents/EOSEED\ Admin -r $BUILDROOT/Install_Resources/EOSEED\ Admin -i $BUILDROOT/Dist_Root/Packages/EOSEED\ Admin/Info.plist -d $BUILDROOT/Dist_Root/Packages/EOSEED\ Admin/Description.plist 
+
+#################################################
+# Build Logitec Admin
+
+$PKGMAKER -build -p $BUILDROOT/Dist/Logitec/Packages/LHD-LU2\ Admin.pkg -f $BUILDROOT/Dist_Root/Package_Contents/LHD-LU2\ Admin -r $BUILDROOT/Install_Resources/LHD-LU2\ Admin -i $BUILDROOT/Dist_Root/Packages/LHD-LU2\ Admin/Info.plist -d $BUILDROOT/Dist_Root/Packages/LHD-LU2\ Admin/Description.plist 
+
+#################################################
+# Build IODATA Admin
+
+$PKGMAKER -build -p $BUILDROOT/Dist/IODATA/Packages/HDH-UL\ Admin.pkg -f $BUILDROOT/Dist_Root/Package_Contents/HDH-UL\ Admin -r $BUILDROOT/Install_Resources/HDH-UL\ Admin -i $BUILDROOT/Dist_Root/Packages/HDH-UL\ Admin/Info.plist -d $BUILDROOT/Dist_Root/Packages/HDH-UL\ Admin/Description.plist 
+
+#################################################
+# Build NDAS Admin
+
+$PKGMAKER -build -p $BUILDROOT/Dist/NDAS/Packages/NDAS\ Admin.pkg -f $BUILDROOT/Dist_Root/Package_Contents/NDAS\ Admin -r $BUILDROOT/Install_Resources/NDAS\ Admin -i $BUILDROOT/Dist_Root/Packages/NDAS\ Admin/Info.plist -d $BUILDROOT/Dist_Root/Packages/NDAS\ Admin/Description.plist 
+
+#################################################
+# Build GenDisk Admin
+
+$PKGMAKER -build -p $BUILDROOT/Dist/GenDisk/Packages/GenDisk\ Admin.pkg -f $BUILDROOT/Dist_Root/Package_Contents/GenDisk\ Admin -r $BUILDROOT/Install_Resources/GenDisk\ Admin -i $BUILDROOT/Dist_Root/Packages/GenDisk\ Admin/Info.plist -d $BUILDROOT/Dist_Root/Packages/GenDisk\ Admin/Description.plist 
+
+
+#################################################
+# Build NDASService
+
+$PKGMAKER -build -p $BUILDROOT/Dist/XIMETA/Packages/NDASService.pkg -f $BUILDROOT/Dist_Root/Package_Contents/NDASService -r $BUILDROOT/Install_Resources/NDASService -i $BUILDROOT/Dist_Root/Packages/NDASService/Info.plist -d $BUILDROOT/Dist_Root/Packages/NDASService/Description.plist 
+
+
+#################################################
+# Build netlpx
+
+$PKGMAKER -build -p $BUILDROOT/Dist/XIMETA/Packages/netlpx.pkg -f $BUILDROOT/Dist_Root/Package_Contents/netlpx -r $BUILDROOT/Install_Resources/netlpx -i $BUILDROOT/Dist_Root/Packages/netlpx/Info.plist -d $BUILDROOT/Dist_Root/Packages/netlpx/Description.plist 
+
+#################################################
+# Copy packages.
+
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASFamily.pkg $BUILDROOT/Dist/EOSEED/Packages/NDASFamily.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASFamily.pkg $BUILDROOT/Dist/Logitec/Packages/NDASFamily.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASFamily.pkg $BUILDROOT/Dist/IODATA/Packages/NDASFamily.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASFamily.pkg $BUILDROOT/Dist/NDAS/Packages/NDASFamily.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASFamily.pkg $BUILDROOT/Dist/GenDisk/Packages/NDASFamily.pkg
+
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASService.pkg $BUILDROOT/Dist/EOSEED/Packages/NDASService.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASService.pkg $BUILDROOT/Dist/Logitec/Packages/NDASService.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASService.pkg $BUILDROOT/Dist/IODATA/Packages/NDASService.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASService.pkg $BUILDROOT/Dist/NDAS/Packages/NDASService.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/NDASService.pkg $BUILDROOT/Dist/GenDisk/Packages/NDASService.pkg
+
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/netlpx.pkg $BUILDROOT/Dist/EOSEED/Packages/netlpx.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/netlpx.pkg $BUILDROOT/Dist/Logitec/Packages/netlpx.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/netlpx.pkg $BUILDROOT/Dist/IODATA/Packages/netlpx.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/netlpx.pkg $BUILDROOT/Dist/NDAS/Packages/netlpx.pkg
+cp -Rf $BUILDROOT/Dist/XIMETA/Packages/netlpx.pkg $BUILDROOT/Dist/GenDisk/Packages/netlpx.pkg
+
+#################################################
+# Copy mpkg
+
+cp -Rf $BUILDROOT/Dist_Root/Packages/ND\ Installer.mpkg $BUILDROOT/Dist/XIMETA
+cp -Rf $BUILDROOT/Dist_Root/Packages/EOSEED\ Installer.mpkg $BUILDROOT/Dist/EOSEED
+cp -Rf $BUILDROOT/Dist_Root/Packages/LHD-LU2\ Installer.mpkg $BUILDROOT/Dist/Logitec
+cp -Rf $BUILDROOT/Dist_Root/Packages/HDH-UL\ LAN\ Install.mpkg $BUILDROOT/Dist/IODATA
+cp -Rf $BUILDROOT/Dist_Root/Packages/NDAS\ Installer.mpkg $BUILDROOT/Dist/NDAS
+cp -Rf $BUILDROOT/Dist_Root/Packages/GenDisk\ Installer.mpkg $BUILDROOT/Dist/GenDisk
+
+#################################################
+# Copy Uninstallers
+
+cp -Rf $BUILDROOT/Dist_Root/Applications/ND\ Uninstaller.app $BUILDROOT/Dist/XIMETA
+cp -Rf $BUILDROOT/Dist_Root/Applications/EOSEED\ Uninstaller.app $BUILDROOT/Dist/EOSEED
+cp -Rf $BUILDROOT/Dist_Root/Applications/LHD-LU2\ Uninstaller.app $BUILDROOT/Dist/Logitec
+cp -Rf $BUILDROOT/Dist_Root/Applications/HDH-UL\ Uninstaller.app $BUILDROOT/Dist/IODATA
+cp -Rf $BUILDROOT/Dist_Root/Applications/NDAS\ Uninstaller.app $BUILDROOT/Dist/NDAS
+cp -Rf $BUILDROOT/Dist_Root/Applications/GenDisk\ Uninstaller.app $BUILDROOT/Dist/GenDisk
+
+#################################################
+# Cleanup svn files
+
+cd $BUILDROOT/Dist
+# oem root
+rm -rf */.svn
+#Packages
+rm -rf */*/.svn
+# In Package 
+rm -rf */*/.svn
+# In Package Contents 
+rm -rf */*/*/.svn
+# In Package Resources 
+rm -rf */*/*/*/.svn
+# In Package for localizing 
+rm -rf */*/*/*/*/.svn
+
+

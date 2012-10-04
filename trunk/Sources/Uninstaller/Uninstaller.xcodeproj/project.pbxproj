@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9A30B37009D92FF7005438D1 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9A75EED709B6E437001A3F53 /* MainMenu.nib */; };
+		9A30B37209D92FF7005438D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		9A30B37309D92FF7005438D1 /* UIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A75ED6809B6D8F8001A3F53 /* UIController.m */; };
+		9A30B37509D92FF7005438D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9A30B37609D92FF7005438D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A75ED0409B6D0F6001A3F53 /* Security.framework */; };
+		9A30B46209D9310D005438D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A30B46109D9310D005438D1 /* InfoPlist.strings */; };
+		9A30B49209D935F4005438D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ED1509B6D131001A3F53 /* Localizable.strings */; };
+		9A75ED0509B6D0F6001A3F53 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A75ED0409B6D0F6001A3F53 /* Security.framework */; };
+		9A75ED1709B6D131001A3F53 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ED1509B6D131001A3F53 /* Localizable.strings */; };
+		9A75ED6909B6D8F8001A3F53 /* UIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A75ED6809B6D8F8001A3F53 /* UIController.m */; };
+		9A75EED909B6E437001A3F53 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9A75EED709B6E437001A3F53 /* MainMenu.nib */; };
+		9A95DFD309EE19D50033A7CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ED1509B6D131001A3F53 /* Localizable.strings */; };
+		9A95DFD409EE19D50033A7CF /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9A75EED709B6E437001A3F53 /* MainMenu.nib */; };
+		9A95DFD709EE19D50033A7CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		9A95DFD809EE19D50033A7CF /* UIController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A75ED6809B6D8F8001A3F53 /* UIController.m */; };
+		9A95DFDA09EE19D50033A7CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9A95DFDB09EE19D50033A7CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A75ED0409B6D0F6001A3F53 /* Security.framework */; };
+		9A95DFF009EE1A8C0033A7CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A95DFEE09EE1A8C0033A7CF /* InfoPlist.strings */; };
+		9AA2A67E0FE21493008E3CA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AA2A67D0FE21493008E3CA9 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Uninstaller_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Uninstaller_Prefix.pch; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* NDAS Uninstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NDAS Uninstaller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A30B0DA09D91314005438D1 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		9A30B0DD09D9132D005438D1 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9A30B37A09D92FF7005438D1 /* ShareDisk Uninstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShareDisk Uninstaller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A30B3A309D9304C005438D1 /* CO-WORLD Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "CO-WORLD Info.plist"; path = "OEM/CO-WORLD/CO-WORLD Info.plist"; sourceTree = "<group>"; };
+		9A30B3A509D93058005438D1 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = "OEM/CO-WORLD/English.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9A30B3FC09D930B4005438D1 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = OEM/NDAS/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A30B46309D93115005438D1 /* ko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ko; path = "OEM/CO-WORLD/ko.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9A30B46409D9311C005438D1 /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = "OEM/CO-WORLD/Japanese.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9A30B46509D93121005438D1 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = "OEM/CO-WORLD/German.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9A67802C0B4E582B001BB06F /* Freecom NDAS Uninstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freecom NDAS Uninstaller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A75EC7509B69FA1001A3F53 /* NDAS Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "NDAS Info.plist"; path = "OEM/NDAS/NDAS Info.plist"; sourceTree = "<group>"; };
+		9A75ED0409B6D0F6001A3F53 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		9A75ED1609B6D131001A3F53 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9A75ED1B09B6D145001A3F53 /* ko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9A75ED6709B6D8F8001A3F53 /* UIController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UIController.h; sourceTree = "<group>"; };
+		9A75ED6809B6D8F8001A3F53 /* UIController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = UIController.m; sourceTree = "<group>"; };
+		9A75EEED09B6E6A5001A3F53 /* ko */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = ko; path = ko.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		9A95DFEF09EE1A8C0033A7CF /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = OEM/Freecom/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A95DFF309EE1AAB0033A7CF /* ko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ko; path = OEM/Freecom/ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A95DFF409EE1AB10033A7CF /* Japanese */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Japanese; path = OEM/Freecom/Japanese.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A95DFF509EE1AB60033A7CF /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = OEM/Freecom/German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A95E00F09EE1B170033A7CF /* Freecom Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "Freecom Info.plist"; path = "OEM/Freecom/Freecom Info.plist"; sourceTree = "<group>"; };
+		9AA2A67F0FE2149E008E3CA9 /* ko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ko; path = OEM/NDAS/ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AA2A6800FE214AB008E3CA9 /* German */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = German; path = OEM/NDAS/German.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AA2A6810FE214AF008E3CA9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = OEM/NDAS/ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AA2A6820FE2151B008E3CA9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = ru; path = ru.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		9AA2A6830FE21538008E3CA9 /* ru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9ACC27800FDE47B90006AD01 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				9A75ED0509B6D0F6001A3F53 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A30B37409D92FF7005438D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A30B37509D92FF7005438D1 /* Cocoa.framework in Frameworks */,
+				9A30B37609D92FF7005438D1 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A95DFD909EE19D50033A7CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A95DFDA09EE19D50033A7CF /* Cocoa.framework in Frameworks */,
+				9A95DFDB09EE19D50033A7CF /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A75ED0409B6D0F6001A3F53 /* Security.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* NDAS Uninstaller.app */,
+				9A30B37A09D92FF7005438D1 /* ShareDisk Uninstaller.app */,
+				9A67802C0B4E582B001BB06F /* Freecom NDAS Uninstaller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Uninstaller */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Uninstaller;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Uninstaller_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				9A75ED6709B6D8F8001A3F53 /* UIController.h */,
+				9A75ED6809B6D8F8001A3F53 /* UIController.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A95DFBC09EE19400033A7CF /* NDAS */,
+				9A95DFBD09EE194B0033A7CF /* CO-WORLD */,
+				9A95DFC009EE19610033A7CF /* Freecom */,
+				9A75ED1509B6D131001A3F53 /* Localizable.strings */,
+				9A75EED709B6E437001A3F53 /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A95DFBC09EE19400033A7CF /* NDAS */ = {
+			isa = PBXGroup;
+			children = (
+				9A75EC7509B69FA1001A3F53 /* NDAS Info.plist */,
+				9AA2A67D0FE21493008E3CA9 /* InfoPlist.strings */,
+			);
+			name = NDAS;
+			sourceTree = "<group>";
+		};
+		9A95DFBD09EE194B0033A7CF /* CO-WORLD */ = {
+			isa = PBXGroup;
+			children = (
+				9A30B3A309D9304C005438D1 /* CO-WORLD Info.plist */,
+				9A30B46109D9310D005438D1 /* InfoPlist.strings */,
+			);
+			name = "CO-WORLD";
+			sourceTree = "<group>";
+		};
+		9A95DFC009EE19610033A7CF /* Freecom */ = {
+			isa = PBXGroup;
+			children = (
+				9A95E00F09EE1B170033A7CF /* Freecom Info.plist */,
+				9A95DFEE09EE1A8C0033A7CF /* InfoPlist.strings */,
+			);
+			name = Freecom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* NDAS Uninstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "NDAS Uninstaller" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				9AD764050C7A7C8500C05C4D /* Strip nib Bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NDAS Uninstaller";
+			productInstallPath = "$(HOME)/Applications";
+			productName = Uninstaller;
+			productReference = 8D1107320486CEB800E47090 /* NDAS Uninstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A30B36C09D92FF7005438D1 /* ShareDisk Uninstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A30B37709D92FF7005438D1 /* Build configuration list for PBXNativeTarget "ShareDisk Uninstaller" */;
+			buildPhases = (
+				9A30B36D09D92FF7005438D1 /* Resources */,
+				9A30B37109D92FF7005438D1 /* Sources */,
+				9A30B37409D92FF7005438D1 /* Frameworks */,
+				9AD764070C7A7C9800C05C4D /* Strip nib Bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShareDisk Uninstaller";
+			productInstallPath = "$(HOME)/Applications";
+			productName = Uninstaller;
+			productReference = 9A30B37A09D92FF7005438D1 /* ShareDisk Uninstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A95DFD109EE19D50033A7CF /* Freecom NDAS Uninstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A95DFDC09EE19D50033A7CF /* Build configuration list for PBXNativeTarget "Freecom NDAS Uninstaller" */;
+			buildPhases = (
+				9A95DFD209EE19D50033A7CF /* Resources */,
+				9A95DFD609EE19D50033A7CF /* Sources */,
+				9A95DFD909EE19D50033A7CF /* Frameworks */,
+				9AD764090C7A7CA600C05C4D /* Strip nib Bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Freecom NDAS Uninstaller";
+			productInstallPath = "$(HOME)/Applications";
+			productName = Uninstaller;
+			productReference = 9A67802C0B4E582B001BB06F /* Freecom NDAS Uninstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Uninstaller" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				ko,
+				ru,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Uninstaller */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* NDAS Uninstaller */,
+				9A30B36C09D92FF7005438D1 /* ShareDisk Uninstaller */,
+				9A95DFD109EE19D50033A7CF /* Freecom NDAS Uninstaller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A75ED1709B6D131001A3F53 /* Localizable.strings in Resources */,
+				9A75EED909B6E437001A3F53 /* MainMenu.nib in Resources */,
+				9AA2A67E0FE21493008E3CA9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A30B36D09D92FF7005438D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A30B49209D935F4005438D1 /* Localizable.strings in Resources */,
+				9A30B37009D92FF7005438D1 /* MainMenu.nib in Resources */,
+				9A30B46209D9310D005438D1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A95DFD209EE19D50033A7CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A95DFD309EE19D50033A7CF /* Localizable.strings in Resources */,
+				9A95DFD409EE19D50033A7CF /* MainMenu.nib in Resources */,
+				9A95DFF009EE1A8C0033A7CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AD764050C7A7C8500C05C4D /* Strip nib Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip nib Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"$TARGET_BUILD_DIR\" -name info.nib -delete\nfind \"$TARGET_BUILD_DIR\" -name classes.nib -delete";
+		};
+		9AD764070C7A7C9800C05C4D /* Strip nib Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip nib Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"$TARGET_BUILD_DIR\" -name info.nib -delete\nfind \"$TARGET_BUILD_DIR\" -name classes.nib -delete";
+		};
+		9AD764090C7A7CA600C05C4D /* Strip nib Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip nib Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find \"$TARGET_BUILD_DIR\" -name info.nib -delete\nfind \"$TARGET_BUILD_DIR\" -name classes.nib -delete";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				9A75ED6909B6D8F8001A3F53 /* UIController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A30B37109D92FF7005438D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A30B37209D92FF7005438D1 /* main.m in Sources */,
+				9A30B37309D92FF7005438D1 /* UIController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A95DFD609EE19D50033A7CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A95DFD709EE19D50033A7CF /* main.m in Sources */,
+				9A95DFD809EE19D50033A7CF /* UIController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A30B46109D9310D005438D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A30B3A509D93058005438D1 /* English */,
+				9A30B46309D93115005438D1 /* ko */,
+				9A30B46409D9311C005438D1 /* Japanese */,
+				9A30B46509D93121005438D1 /* German */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9A75ED1509B6D131001A3F53 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A75ED1609B6D131001A3F53 /* English */,
+				9A75ED1B09B6D145001A3F53 /* ko */,
+				9A30B0DD09D9132D005438D1 /* German */,
+				9AA2A6830FE21538008E3CA9 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9A75EED709B6E437001A3F53 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ACC27800FDE47B90006AD01 /* English */,
+				9A75EEED09B6E6A5001A3F53 /* ko */,
+				9A30B0DA09D91314005438D1 /* German */,
+				9AA2A6820FE2151B008E3CA9 /* ru */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		9A95DFEE09EE1A8C0033A7CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A95DFEF09EE1A8C0033A7CF /* English */,
+				9A95DFF309EE1AAB0033A7CF /* ko */,
+				9A95DFF409EE1AB10033A7CF /* Japanese */,
+				9A95DFF509EE1AB60033A7CF /* German */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9AA2A67D0FE21493008E3CA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A30B3FC09D930B4005438D1 /* English */,
+				9AA2A67F0FE2149E008E3CA9 /* ko */,
+				9AA2A6800FE214AB008E3CA9 /* German */,
+				9AA2A6810FE214AF008E3CA9 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A30B37809D92FF7005438D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "OEM/CO-WORLD/CO-WORLD Info.plist";
+				INSTALL_PATH = /Applications;
+				PRODUCT_NAME = "ShareDisk Uninstaller";
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		9A30B37909D92FF7005438D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "OEM/CO-WORLD/CO-WORLD Info.plist";
+				INSTALL_PATH = /Applications;
+				PRODUCT_NAME = "ShareDisk Uninstaller";
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9A95DFDD09EE19D50033A7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "OEM/Freecom/Freecom Info.plist";
+				INSTALL_PATH = /Applications;
+				PRODUCT_NAME = "Freecom NDAS Uninstaller";
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		9A95DFDE09EE19D50033A7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "OEM/Freecom/Freecom Info.plist";
+				INSTALL_PATH = /Applications;
+				PRODUCT_NAME = "Freecom NDAS Uninstaller";
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 201;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "OEM/NDAS/NDAS Info.plist";
+				INSTALL_PATH = /Applications;
+				PRODUCT_NAME = "NDAS Uninstaller";
+				SDKROOT = macosx10.4;
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CURRENT_PROJECT_VERSION = 201;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "OEM/NDAS/NDAS Info.plist";
+				INSTALL_PATH = /Applications;
+				PRODUCT_NAME = "NDAS Uninstaller";
+				SDKROOT = macosx10.4;
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = macosx10.4;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = macosx10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A30B37709D92FF7005438D1 /* Build configuration list for PBXNativeTarget "ShareDisk Uninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A30B37809D92FF7005438D1 /* Debug */,
+				9A30B37909D92FF7005438D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A95DFDC09EE19D50033A7CF /* Build configuration list for PBXNativeTarget "Freecom NDAS Uninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A95DFDD09EE19D50033A7CF /* Debug */,
+				9A95DFDE09EE19D50033A7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "NDAS Uninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Uninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

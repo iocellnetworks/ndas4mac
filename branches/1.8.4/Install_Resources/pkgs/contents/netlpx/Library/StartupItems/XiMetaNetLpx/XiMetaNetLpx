@@ -1,0 +1,34 @@
+#!/bin/sh
+
+##
+# Load XiMeta NetDisk LPX network kernel modules
+##
+
+. /etc/rc.common
+
+StartService ()
+{
+    ##
+    # Load network kernel modules
+    # This is a workaround for the fact that kextd does not presently know
+    # when to load BSD modules.
+    # Do this regardless of the startup state of networking; we're pretty
+    # sure a network will show up eventually.
+    ##
+    if [ -d /System/Library/Extensions/netlpx.kext ]; then
+	ConsoleMessage "Starting XIMETA LPX Protocol"
+	kextload -v /System/Library/Extensions/netlpx.kext
+    fi
+}
+
+StopService ()
+{
+    return 0
+}
+
+RestartService ()
+{
+    return 0
+}
+
+RunService "$1"

@@ -1,0 +1,49 @@
+BY INSTALLING OR USING THIS SOFTWARE OR AUTHORIZING ANY OTHER PERSON TO DO SO, YOU ACCEPT THIS LICENSE AGREEMENT AND ARE BOUND BY ITS TERMS.
+
+
+DEFINITIONS
+
+Software.  "Software" means the computer programs, templates, and other information installed by this installation utility.
+
+Documentation.  "Documentation" means the manual and any other instructional or descriptive material, printed or on-line, provided with the Software.
+
+License.  "License" means the license to use the Software. The License is granted pursuant to the provisions of this Agreement.
+
+Customer.  "Customer" means the person or business entity to whom this copy of the Software is licensed.
+
+
+LICENSE
+
+Grant of License.  Subject to Customer's compliance with this Agreement, XiMeta grants to Customer, and Customer purchases, a nonexclusive License to use the Software.  Rights not expressly granted by this Agreement are reserved by XiMeta.
+
+Customer purchases a License only. XiMeta retains title to and ownership of the Software and Documentation and any copies thereof, including the originals provided with this Agreement.
+
+Copies.  Customer may not copy the Software except as necessary to use the Software.  Such necessary use includes copying the Software to the internal hard disk, copying the Software to a network file server in order to make the Software available for use, and copying the Software to archival backup media. All trademark and copyright notices must be included on any copies made. Customer may not copy the Documentation.
+
+Transfer and Use.  Customer may not transfer any copy of the Software or Documentation to any other person or entity unless the transferee first accepts this Agreement and Customer transfers all copies of the Software and Documentation, including the originals.
+
+Customer may not rent, loan, lease, sublicense, or otherwise make the Software or Documentation available for use by any other person except as provided above.  Customer may not modify, decompile, disassemble, or reverse engineer the Software or create any derivative works based on the Software or the Documentation.
+
+Government Use.  Use, duplication, or disclosure by the Federal Government is subject to restrictions as set forth in FAR clauses 52.227-14, "Rights in Date--General"; 52.227-19, "Commercial Computer Software--Restricted Rights"; and subdivision (c)(1)(ii) of the Rights in Technical Data and Computer Software clause DFAR 252.227-7013; and the limitations set forth elsewhere in this license agreement.  Unpublished rights are reserved under copyright laws of the United States.
+
+LIMITED WARRANTY AND LIMITED LIABILITY
+
+Media.  XiMeta warrants that if the media containing the Software is physically defective when received by Customer, then XiMeta will provide a replacement at no charge, provided the media is returned to XiMeta, postage prepaid, within 30 days of the purchase of this License.
+
+Limited Warranty.  XiMeta warrants that if the Software fails to substantially conform to the specifications in the Documentation, and if the nonconformity is reported in writing to XiMeta within 90 days of the purchase of this License, then XiMeta will, at its discretion, either remedy the nonconformity, or refund the purchase price to Customer upon return of all copies of the Software and Documentation to XiMeta. In the event of a refund, the License shall terminate.
+
+EXCEPT FOR THE FOREGOING LIMITED WARRANTY, XIMETA MAKES NO WARRANTY OR REPRESENTATION RELATING TO THE SOFTWARE, THE DOCUMENTATION, OR THIS AGREEMENT. XIMETA DISCLAIMS AND EXCLUDES ANY AND ALL IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. XIMETA DOES NOT WARRANT THAT THE SOFTWARE WILL MEET CUSTOMER'S REQUIREMENTS OR THAT THE SOFTWARE IS WITHOUT DEFECT OR ERROR.
+
+Limited Liability.  XIMETA SHALL NOT BE LIABLE FOR SPECIAL, INCIDENTAL, CONSEQUENTIAL, INDIRECT, OR PUNITIVE DAMAGES, EVEN IF XIMETA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. XiMeta is not responsible for any costs incurred as a result of the use of the Software, including but not limited to, lost profits or revenue, loss of data, costs of recreating data, the cost of any substitute equipment or program, or claims by any third party.
+
+XIMETA'S AGGREGATE LIABILITY ARISING FROM OR RELATING TO THIS AGREEMENT OR THE SOFTWARE OR DOCUMENTATION IS LIMITED TO THE PURCHASE PRICE PAID FOR THE LICENSE.
+
+Sole Remedy.  THIS AGREEMENT DEFINES THE SOLE AND EXCLUSIVE REMEDY OF CUSTOMER.
+
+GENERAL PROVISIONS
+
+Indemnification.  Customer agrees that Customer shall defend and hold XiMeta harmless against any liability, claim, or suit and shall pay any related expense, including but not limited to reasonable attorneys' fees, arising out of any use of the Software or Content.  XiMeta reserves the right to control all litigation involving XiMeta, Customer, and third parties.
+
+Entire Agreement.  This Agreement represents the entire agreement between XiMeta and Customer. No distributor, employee, or other person is authorized by XiMeta to modify this Agreement or to make any warranty or representation which is different than, or in addition to, the warranties and representations of this Agreement.
+
+Governing Law.  This Agreement shall be governed by the laws of the State of California and of the United States of America.

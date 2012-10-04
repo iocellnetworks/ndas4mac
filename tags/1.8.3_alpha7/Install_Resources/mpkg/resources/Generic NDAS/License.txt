@@ -1,0 +1,8 @@
+How to replace the License document.
+
+1. Expand Generic NDAS Mac Installer_xx.zip file.
+2. Replace the file "Generic NDAS Mac Installer/NDAS Install.mpkg/Contents/Resources/License.txt" with new License file.
+3. Re-pack Generic NDAS Mac Installer folder.
+
+- You MUST keep the License file name-"License.txt" And The Character Set of License.txt file MUST be "UTF-8".
+- The supported extensions (and file formats) are .txt (text file), .rtf (Rich Text Format), .rtfd (Rich Text Format Directory), and .html (Hypertext Markup Language).

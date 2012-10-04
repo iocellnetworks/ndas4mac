@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "NDAS アンインストール";
+NSHumanReadableCopyright = "Copyright © 2009 XIMETA, Inc. All rights reserved.";

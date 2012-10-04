@@ -1,0 +1,67 @@
+#ifndef NDUILIB_NETDISKID_H
+#define NDUILIB_NETDISKID_H
+
+#define NDAS_VID_AUTO_MASK	0x80
+
+#define NDAS_VID_UNKNOWN 				0x00
+#define NDAS_VID_GENERAL				0x01 
+#define NDAS_VID_LINUX_ONLY				0x10
+#define NDAS_VID_WINDWOS_RO				0x20
+#define NDAS_VID_SOFT_NEDISK2			0x30
+#define NDAS_VID_EMULATOR				0x40	
+#define NDAS_VID_SEAGATE				0x41
+//	NDAS_VID_AUTO_REGISTRY = 0x60,
+//	NDAS_VID_SOFT_NETDISK = 0xA0,
+//	NDAS_VID_PNP = 0xFF,
+
+#define NDAS_VID_GENERAL_AUTO			(NDAS_VID_GENERAL | NDAS_VID_AUTO_MASK)
+#define NDAS_VID_LINUX_ONLY_AUTO		(NDAS_VID_LINUX_ONLY | NDAS_VID_AUTO_MASK)
+#define NDAS_VID_WINDWOS_RO_AUTO		(NDAS_VID_WINDWOS_RO | NDAS_VID_AUTO_MASK)
+#define NDAS_VID_SOFT_NEDISK2_AUTO		(NDAS_VID_SOFT_NEDISK2 | NDAS_VID_AUTO_MASK)
+
+typedef struct _NDASID_EXT_KEY {
+	uint8_t Key1[8];
+	uint8_t Key2[8];
+} NDASID_EXT_KEY, *PNDASID_EXT_KEY;
+
+typedef struct _NDASID_EXT_DATA {
+	uint8_t Seed;
+	uint8_t VID;
+	uint8_t Reserved[2];
+} NDASID_EXT_DATA, *PNDASID_EXT_DATA;
+
+/* <TITLE NDAS_OEM_CODE>
+
+NDAS OEM Code is a 8-byte array of bytes.
+I64Value is provided as an union. 
+It is recommended not to use I64Value but use Bytes fields.
+Existing I64Value should be translated Bytes, 
+considering endian of the original development target system.
+*/
+
+typedef union _NDAS_OEM_CODE
+{
+	uint8_t		Bytes[8];
+	uint64_t	UI64Value;
+//	ULARGE_INTEGER Value;
+} NDAS_OEM_CODE, *PNDAS_OEM_CODE;
+
+extern const NDASID_EXT_KEY	NDAS_ID_KEY_DEFAULT;
+
+extern const NDAS_OEM_CODE NDAS_OEM_CODE_GENERAL_SUPER;
+
+extern const NDAS_OEM_CODE NDAS_OEM_CODE_SAMPLE;
+extern const NDAS_OEM_CODE NDAS_OEM_CODE_GENERAL;
+extern const NDAS_OEM_CODE NDAS_OEM_CODE_GENERAL_AUTO;
+extern const NDAS_OEM_CODE NDAS_OEM_CODE_RUTTER;
+extern const NDAS_OEM_CODE NDAS_OEM_CODE_SEAGATE;
+//extern const NDAS_OEM_CODE NDAS_OEM_CODE_SOFT_NETDISK;
+
+extern const NDASID_EXT_DATA NDAS_ID_EXTENSION_GENERAL;
+extern const NDASID_EXT_DATA NDAS_ID_EXTENSION_GENERAL_AUTO;
+extern const NDASID_EXT_DATA NDAS_ID_EXTENSION_SEAGATE;
+extern const NDASID_EXT_DATA NDAS_ID_EXTENSION_WINDOWS_RO;
+//extern const NDASID_EXT_DATA NDAS_ID_EXTENSION_AUTO_REGISTRY;
+//extern const NDASID_EXT_DATA NDAS_ID_EXTENSION_SOFT_NETDISK;
+
+#endif

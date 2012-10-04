@@ -1,0 +1,38 @@
+/* Uninstall success */
+"\nThe uninstalling was ended successfully.\n" = "\nThe uninstalling was ended successfully.\n";
+
+/* Uninstall NDAdmin */
+"\nStart Uninstalling Admin Application.\n" = "\nIt removes the Administrator.\n";
+
+/* Uninstall lanscsibus */
+"\nStart Uninstalling LanScsiBus.\n" = "\nIt removes the LanScsiBus.\n";
+
+/* Uninstall NDService */
+"\nStart Uninstalling ND Service.\n" = "\nIt removes the ND Service.\n";
+
+/* Uninstall netLpx */
+"\nStart Uninstalling netLpx.\n" = "\nIt removes the netLpx.\n";
+
+/* Uninstall Info */
+"Uninstall Info\n" = "This will remove all files previously installed by the %@ installer.\n";
+
+/* Uninstall NDAdmin success */
+"The removal of the Administrator was ended successfully.\n" = "The removal of the Administrator was ended successfully.\n";
+
+/* Uninstall lanscsibus success */
+"The removal of the LanScsiBus was ended successfully.\n" = "The removal of the LanScsiBus was ended successfully.\n";
+
+/* Uninstall NDService success */
+"The removal of the ND Service was ended successfully.\n" = "The removal of the ND Service was ended successfully.\n";
+
+/* Uninstall netLpx success */
+"The removal of the netLpx was ended successfully.\n" = "The removal of the netLpx was ended successfully.\n";
+
+/* About Menu */
+"About %@" = "About %@";
+
+/* Hide Menu */
+"Hide %@" = "Hide %@";
+
+/* Quit Menu */
+"Quit %@" = "Quit %@";

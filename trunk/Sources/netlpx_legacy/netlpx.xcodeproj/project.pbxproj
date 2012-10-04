@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32A4FEBC0562C75700D090E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		9A66CD5406351041003B00FD /* lpx_module.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CD5206351041003B00FD /* lpx_module.h */; };
+		9A66CD5506351041003B00FD /* lpx_module.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CD5306351041003B00FD /* lpx_module.c */; };
+		9A66CEB006351184003B00FD /* smp_var.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9106351184003B00FD /* smp_var.h */; };
+		9A66CEB106351184003B00FD /* lpx_usrreq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CE9206351184003B00FD /* lpx_usrreq.c */; };
+		9A66CEB206351184003B00FD /* lpx_pcb.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CE9306351184003B00FD /* lpx_pcb.c */; };
+		9A66CEB306351184003B00FD /* lpx_control.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CE9406351184003B00FD /* lpx_control.c */; };
+		9A66CEB406351184003B00FD /* smp_debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CE9506351184003B00FD /* smp_debug.c */; };
+		9A66CEB506351184003B00FD /* smp_debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9606351184003B00FD /* smp_debug.h */; };
+		9A66CEB606351184003B00FD /* smp_usrreq.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9706351184003B00FD /* smp_usrreq.h */; };
+		9A66CEB706351184003B00FD /* smp_timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9806351184003B00FD /* smp_timer.h */; };
+		9A66CEB806351184003B00FD /* smp_usrreq_int.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9906351184003B00FD /* smp_usrreq_int.h */; };
+		9A66CEB906351184003B00FD /* lpx_if.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9A06351184003B00FD /* lpx_if.h */; };
+		9A66CEBA06351184003B00FD /* lpx_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CE9B06351184003B00FD /* lpx_input.c */; };
+		9A66CEBB06351184003B00FD /* lpx_input.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9C06351184003B00FD /* lpx_input.h */; };
+		9A66CEBC06351184003B00FD /* smp.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9D06351184003B00FD /* smp.h */; };
+		9A66CEBD06351184003B00FD /* lpx_module_int.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CE9E06351184003B00FD /* lpx_module_int.h */; };
+		9A66CEBE06351184003B00FD /* smp_usrreq.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CE9F06351184003B00FD /* smp_usrreq.c */; };
+		9A66CEBF06351184003B00FD /* lpx_outputfl.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CEA006351184003B00FD /* lpx_outputfl.c */; };
+		9A66CEC006351184003B00FD /* lpx_outputfl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEA106351184003B00FD /* lpx_outputfl.h */; };
+		9A66CEC106351184003B00FD /* lpx.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEA206351184003B00FD /* lpx.h */; };
+		9A66CEC206351184003B00FD /* lpx_cksum.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CEA306351184003B00FD /* lpx_cksum.c */; };
+		9A66CEC306351184003B00FD /* lpx_control.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEA406351184003B00FD /* lpx_control.h */; };
+		9A66CEC406351184003B00FD /* lpx_cksum.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEA506351184003B00FD /* lpx_cksum.h */; };
+		9A66CEC506351184003B00FD /* lpx_control_int.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEA606351184003B00FD /* lpx_control_int.h */; };
+		9A66CEC606351184003B00FD /* lpx_ether_attach.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CEA706351184003B00FD /* lpx_ether_attach.c */; };
+		9A66CEC706351184003B00FD /* lpx_ether_attach.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEA806351184003B00FD /* lpx_ether_attach.h */; };
+		9A66CEC806351184003B00FD /* lpx_ether_attach_int.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEA906351184003B00FD /* lpx_ether_attach_int.h */; };
+		9A66CEC906351184003B00FD /* lpx_usrreq.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEAA06351184003B00FD /* lpx_usrreq.h */; };
+		9A66CECA06351184003B00FD /* lpx_pcb.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEAB06351184003B00FD /* lpx_pcb.h */; };
+		9A66CECB06351184003B00FD /* lpx_usrreq_int.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEAC06351184003B00FD /* lpx_usrreq_int.h */; };
+		9A66CECC06351184003B00FD /* lpx_var.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEAD06351184003B00FD /* lpx_var.h */; };
+		9A66CECD06351184003B00FD /* lpx_outputfl_int.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A66CEAE06351184003B00FD /* lpx_outputfl_int.h */; };
+		9A66CECE06351184003B00FD /* lpx_proto.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66CEAF06351184003B00FD /* lpx_proto.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		9A22C6E508E8E78A00F6C403 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_3;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32A4FEC30562C75700D090E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A4FEC40562C75800D090E7 /* netlpx.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = netlpx.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A66CD5206351041003B00FD /* lpx_module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_module.h; sourceTree = "<group>"; };
+		9A66CD5306351041003B00FD /* lpx_module.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_module.c; sourceTree = "<group>"; };
+		9A66CE9106351184003B00FD /* smp_var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smp_var.h; sourceTree = "<group>"; };
+		9A66CE9206351184003B00FD /* lpx_usrreq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_usrreq.c; sourceTree = "<group>"; };
+		9A66CE9306351184003B00FD /* lpx_pcb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_pcb.c; sourceTree = "<group>"; };
+		9A66CE9406351184003B00FD /* lpx_control.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_control.c; sourceTree = "<group>"; };
+		9A66CE9506351184003B00FD /* smp_debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smp_debug.c; sourceTree = "<group>"; };
+		9A66CE9606351184003B00FD /* smp_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smp_debug.h; sourceTree = "<group>"; };
+		9A66CE9706351184003B00FD /* smp_usrreq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smp_usrreq.h; sourceTree = "<group>"; };
+		9A66CE9806351184003B00FD /* smp_timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smp_timer.h; sourceTree = "<group>"; };
+		9A66CE9906351184003B00FD /* smp_usrreq_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smp_usrreq_int.h; sourceTree = "<group>"; };
+		9A66CE9A06351184003B00FD /* lpx_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_if.h; sourceTree = "<group>"; };
+		9A66CE9B06351184003B00FD /* lpx_input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_input.c; sourceTree = "<group>"; };
+		9A66CE9C06351184003B00FD /* lpx_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_input.h; sourceTree = "<group>"; };
+		9A66CE9D06351184003B00FD /* smp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smp.h; sourceTree = "<group>"; };
+		9A66CE9E06351184003B00FD /* lpx_module_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_module_int.h; sourceTree = "<group>"; };
+		9A66CE9F06351184003B00FD /* smp_usrreq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smp_usrreq.c; sourceTree = "<group>"; };
+		9A66CEA006351184003B00FD /* lpx_outputfl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_outputfl.c; sourceTree = "<group>"; };
+		9A66CEA106351184003B00FD /* lpx_outputfl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_outputfl.h; sourceTree = "<group>"; };
+		9A66CEA206351184003B00FD /* lpx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx.h; sourceTree = "<group>"; };
+		9A66CEA306351184003B00FD /* lpx_cksum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_cksum.c; sourceTree = "<group>"; };
+		9A66CEA406351184003B00FD /* lpx_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_control.h; sourceTree = "<group>"; };
+		9A66CEA506351184003B00FD /* lpx_cksum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_cksum.h; sourceTree = "<group>"; };
+		9A66CEA606351184003B00FD /* lpx_control_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_control_int.h; sourceTree = "<group>"; };
+		9A66CEA706351184003B00FD /* lpx_ether_attach.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_ether_attach.c; sourceTree = "<group>"; };
+		9A66CEA806351184003B00FD /* lpx_ether_attach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_ether_attach.h; sourceTree = "<group>"; };
+		9A66CEA906351184003B00FD /* lpx_ether_attach_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_ether_attach_int.h; sourceTree = "<group>"; };
+		9A66CEAA06351184003B00FD /* lpx_usrreq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_usrreq.h; sourceTree = "<group>"; };
+		9A66CEAB06351184003B00FD /* lpx_pcb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_pcb.h; sourceTree = "<group>"; };
+		9A66CEAC06351184003B00FD /* lpx_usrreq_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_usrreq_int.h; sourceTree = "<group>"; };
+		9A66CEAD06351184003B00FD /* lpx_var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_var.h; sourceTree = "<group>"; };
+		9A66CEAE06351184003B00FD /* lpx_outputfl_int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpx_outputfl_int.h; sourceTree = "<group>"; };
+		9A66CEAF06351184003B00FD /* lpx_proto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpx_proto.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32A4FEBF0562C75700D090E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* netlpx */ = {
+			isa = PBXGroup;
+			children = (
+				247142CAFF3F8F9811CA285C /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = netlpx;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32A4FEC30562C75700D090E7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32A4FEC40562C75800D090E7 /* netlpx.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9A66CE9106351184003B00FD /* smp_var.h */,
+				9A66CE9206351184003B00FD /* lpx_usrreq.c */,
+				9A66CE9306351184003B00FD /* lpx_pcb.c */,
+				9A66CE9406351184003B00FD /* lpx_control.c */,
+				9A66CE9506351184003B00FD /* smp_debug.c */,
+				9A66CE9606351184003B00FD /* smp_debug.h */,
+				9A66CE9706351184003B00FD /* smp_usrreq.h */,
+				9A66CE9806351184003B00FD /* smp_timer.h */,
+				9A66CE9906351184003B00FD /* smp_usrreq_int.h */,
+				9A66CE9A06351184003B00FD /* lpx_if.h */,
+				9A66CE9B06351184003B00FD /* lpx_input.c */,
+				9A66CE9C06351184003B00FD /* lpx_input.h */,
+				9A66CE9D06351184003B00FD /* smp.h */,
+				9A66CE9E06351184003B00FD /* lpx_module_int.h */,
+				9A66CE9F06351184003B00FD /* smp_usrreq.c */,
+				9A66CEA006351184003B00FD /* lpx_outputfl.c */,
+				9A66CEA106351184003B00FD /* lpx_outputfl.h */,
+				9A66CEA206351184003B00FD /* lpx.h */,
+				9A66CEA306351184003B00FD /* lpx_cksum.c */,
+				9A66CEA406351184003B00FD /* lpx_control.h */,
+				9A66CEA506351184003B00FD /* lpx_cksum.h */,
+				9A66CEA606351184003B00FD /* lpx_control_int.h */,
+				9A66CEA706351184003B00FD /* lpx_ether_attach.c */,
+				9A66CEA806351184003B00FD /* lpx_ether_attach.h */,
+				9A66CEA906351184003B00FD /* lpx_ether_attach_int.h */,
+				9A66CEAA06351184003B00FD /* lpx_usrreq.h */,
+				9A66CEAB06351184003B00FD /* lpx_pcb.h */,
+				9A66CEAC06351184003B00FD /* lpx_usrreq_int.h */,
+				9A66CEAD06351184003B00FD /* lpx_var.h */,
+				9A66CEAE06351184003B00FD /* lpx_outputfl_int.h */,
+				9A66CEAF06351184003B00FD /* lpx_proto.c */,
+				9A66CD5206351041003B00FD /* lpx_module.h */,
+				9A66CD5306351041003B00FD /* lpx_module.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32A4FEBA0562C75700D090E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A66CD5406351041003B00FD /* lpx_module.h in Headers */,
+				9A66CEB006351184003B00FD /* smp_var.h in Headers */,
+				9A66CEB506351184003B00FD /* smp_debug.h in Headers */,
+				9A66CEB606351184003B00FD /* smp_usrreq.h in Headers */,
+				9A66CEB706351184003B00FD /* smp_timer.h in Headers */,
+				9A66CEB806351184003B00FD /* smp_usrreq_int.h in Headers */,
+				9A66CEB906351184003B00FD /* lpx_if.h in Headers */,
+				9A66CEBB06351184003B00FD /* lpx_input.h in Headers */,
+				9A66CEBC06351184003B00FD /* smp.h in Headers */,
+				9A66CEBD06351184003B00FD /* lpx_module_int.h in Headers */,
+				9A66CEC006351184003B00FD /* lpx_outputfl.h in Headers */,
+				9A66CEC106351184003B00FD /* lpx.h in Headers */,
+				9A66CEC306351184003B00FD /* lpx_control.h in Headers */,
+				9A66CEC406351184003B00FD /* lpx_cksum.h in Headers */,
+				9A66CEC506351184003B00FD /* lpx_control_int.h in Headers */,
+				9A66CEC706351184003B00FD /* lpx_ether_attach.h in Headers */,
+				9A66CEC806351184003B00FD /* lpx_ether_attach_int.h in Headers */,
+				9A66CEC906351184003B00FD /* lpx_usrreq.h in Headers */,
+				9A66CECA06351184003B00FD /* lpx_pcb.h in Headers */,
+				9A66CECB06351184003B00FD /* lpx_usrreq_int.h in Headers */,
+				9A66CECC06351184003B00FD /* lpx_var.h in Headers */,
+				9A66CECD06351184003B00FD /* lpx_outputfl_int.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32A4FEB80562C75700D090E7 /* netlpx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2DB7AD08E812B500AE9CE7 /* Build configuration list for PBXNativeTarget "netlpx" */;
+			buildPhases = (
+				32A4FEB90562C75700D090E7 /* ShellScript */,
+				32A4FEBA0562C75700D090E7 /* Headers */,
+				32A4FEBB0562C75700D090E7 /* Resources */,
+				32A4FEBD0562C75700D090E7 /* Sources */,
+				32A4FEBF0562C75700D090E7 /* Frameworks */,
+				32A4FEC00562C75700D090E7 /* Rez */,
+				32A4FEC10562C75700D090E7 /* ShellScript */,
+			);
+			buildRules = (
+				9A22C6E508E8E78A00F6C403 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = netlpx;
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = netlpx;
+			productReference = 32A4FEC40562C75800D090E7 /* netlpx.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9A2DB7B108E812B500AE9CE7 /* Build configuration list for PBXProject "netlpx" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* netlpx */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32A4FEB80562C75700D090E7 /* netlpx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32A4FEBB0562C75700D090E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A4FEBC0562C75700D090E7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		32A4FEC00562C75700D090E7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32A4FEB90562C75700D090E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPreprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		32A4FEC10562C75700D090E7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPostprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A4FEBD0562C75700D090E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A66CD5506351041003B00FD /* lpx_module.c in Sources */,
+				9A66CEB106351184003B00FD /* lpx_usrreq.c in Sources */,
+				9A66CEB206351184003B00FD /* lpx_pcb.c in Sources */,
+				9A66CEB306351184003B00FD /* lpx_control.c in Sources */,
+				9A66CEB406351184003B00FD /* smp_debug.c in Sources */,
+				9A66CEBA06351184003B00FD /* lpx_input.c in Sources */,
+				9A66CEBE06351184003B00FD /* smp_usrreq.c in Sources */,
+				9A66CEBF06351184003B00FD /* lpx_outputfl.c in Sources */,
+				9A66CEC206351184003B00FD /* lpx_cksum.c in Sources */,
+				9A66CEC606351184003B00FD /* lpx_ether_attach.c in Sources */,
+				9A66CECE06351184003B00FD /* lpx_proto.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A2DB7AE08E812B500AE9CE7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 201;
+				GCC_VERSION = 3.3;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MODULE_NAME = com.ximeta.nke.netlpx;
+				MODULE_START = netlpx_start;
+				MODULE_STOP = netlpx_stop;
+				MODULE_VERSION = 201;
+				PRODUCT_NAME = netlpx;
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				VALID_ARCHS = "ppc ppc64 ppc7400 ppc970";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Development;
+		};
+		9A2DB7AF08E812B500AE9CE7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 201;
+				DEPLOYMENT_LOCATION = NO;
+				GCC_VERSION = 3.3;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MODULE_NAME = com.ximeta.nke.netlpx;
+				MODULE_START = netlpx_start;
+				MODULE_STOP = netlpx_stop;
+				MODULE_VERSION = 201;
+				PRODUCT_NAME = netlpx;
+				USER_HEADER_SEARCH_PATHS = ../Inc;
+				VALID_ARCHS = "ppc ppc64 ppc7400 ppc970";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Deployment;
+		};
+		9A2DB7B208E812B500AE9CE7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Development;
+		};
+		9A2DB7B308E812B500AE9CE7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A2DB7AD08E812B500AE9CE7 /* Build configuration list for PBXNativeTarget "netlpx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2DB7AE08E812B500AE9CE7 /* Development */,
+				9A2DB7AF08E812B500AE9CE7 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		9A2DB7B108E812B500AE9CE7 /* Build configuration list for PBXProject "netlpx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2DB7B208E812B500AE9CE7 /* Development */,
+				9A2DB7B308E812B500AE9CE7 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
